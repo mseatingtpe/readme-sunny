@@ -1,0 +1,25 @@
+title: Sunny's README
+description: 一個活的、會演化的「我」的紀錄
+baseurl: ""
+url: ""
+
+theme: minima
+
+collections:
+  content:
+    output: true
+    permalink: /content/:name/
+
+defaults:
+  - scope:
+      path: "content/raw"
+    values:
+      layout: "post"
+
+exclude:
+  - scripts/
+  - openspec/
+  - "*.py"
+  - CLAUDE.md
+  - .claude/
+  - .spectra/

@@ -1,0 +1,13 @@
+# 萃取框架：七維度固定結構
+# 每篇內容萃取後產生一個 YAML 檔案，格式如下：
+
+source: "content/raw/YYYY-MM-DD-slug.md"
+timestamp: "YYYY-MM-DD"
+topics:
+  - "主題標籤（如：AI、創業、身份、愛、文化）"
+stance: "這時候的作者相信什麼（一到三句話）"
+tension: "這個信念跟什麼對立或矛盾（可為 null）"
+connections:
+  - "跨領域串連：作者把哪些不同領域的東西連在一起"
+shift_signal: "轉變訊號：有沒有「以前...現在...」的表述（可為 null）"
+key_quote: "最代表這篇的一句原文"
