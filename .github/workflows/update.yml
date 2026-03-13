@@ -1,29 +1,17 @@
-name: Update Content & Skill
+name: Update README
 
 on:
   schedule:
-    # 每天早上 9 點 (UTC+8) = UTC 01:00
-    - cron: '0 1 * * *'
-  workflow_dispatch:
-    inputs:
-      force_extract:
-        description: '強制重新萃取所有文章'
-        required: false
-        default: 'false'
-        type: boolean
-
-permissions:
-  contents: write
+    - cron: '0 1 * * *'  # 每天 UTC 01:00（台灣 09:00）
+  workflow_dispatch:  # 手動觸發
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
@@ -37,35 +25,30 @@ jobs:
         id: check
         run: |
           if git diff --quiet content/raw/; then
-            echo "has_new=false" >> $GITHUB_OUTPUT
+            echo "new_content=false" >> "$GITHUB_OUTPUT"
           else
-            echo "has_new=true" >> $GITHUB_OUTPUT
+            echo "new_content=true" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Extract worldview dimensions
-        if: steps.check.outputs.has_new == 'true' || github.event.inputs.force_extract == 'true'
+        if: steps.check.outputs.new_content == 'true'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: |
-          if [ "${{ github.event.inputs.force_extract }}" = "true" ]; then
-            python scripts/extract.py --all --force
-          else
-            # Only extract new files (those without existing extractions)
-            python scripts/extract.py --all
-          fi
+        run: python scripts/extract.py --all
 
-      - name: Generate Skill
-        if: steps.check.outputs.has_new == 'true' || github.event.inputs.force_extract == 'true'
-        run: python scripts/generate_skill.py --auto
+      - name: Generate Skill (update dynamics only)
+        if: steps.check.outputs.new_content == 'true'
+        run: python scripts/generate_skill.py --update-dynamics
+
+      - name: Generate README
+        run: python scripts/generate_readme.py
 
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add content/ .claude/skills/
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "auto: update content and skill $(date +%Y-%m-%d)"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "auto: update content and README"
             git push
           fi
