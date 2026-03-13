@@ -5,11 +5,6 @@ url: ""
 
 theme: minima
 
-collections:
-  content:
-    output: true
-    permalink: /content/:name/
-
 defaults:
   - scope:
       path: "content/raw"
@@ -23,3 +18,8 @@ exclude:
   - CLAUDE.md
   - .claude/
   - .spectra/
+  - content/extractions/
+  - content/worldview-profile.yaml
+  - content/raw/_template-substack.md
+  - content/raw/_template-media.md
+  - content/raw/_template-presentation.md
