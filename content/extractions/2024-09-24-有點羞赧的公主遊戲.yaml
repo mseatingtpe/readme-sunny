@@ -1,16 +1,34 @@
-source: "content/raw/2024-09-24-有點羞赧的公主遊戲.md"
-timestamp: "2024-09-24"
+source: content/raw/2024-09-24-有點羞赧的公主遊戲.md
+timestamp: '2024-09-24'
 topics:
-  - 工具
-  - AI
-  - 身份
-  - 文化
-  - 女性
-stance: "每個人都應該被善待如公主，用 Yes, and 的態度面對新工具與新嘗試，鄙視鏈沒有盡頭，不如一開始就不要跳進去。"
-tension: "反對技術菁英主義者對非專業者使用 AI 寫程式或 Canva 做設計的嘲諷與否定。"
+- name: AI
+  stance: AI 寫程式和 Canva 做設計都是推進想做的事情的第一步，不應因工具的門檻低而鄙視使用者。
+  tension: 與認為非專業者使用 AI／低門檻工具是褻瀆專業的觀點對立。
+  shift_signal: null
+  key_quote: 不管是 Canva 或是 Cursor，都是推進想做的事情的第一步。
+- name: 身份
+  stance: 公主遊戲是打造心靈堡壘的方式，每個人都值得被善待如公主，這不是傲慢而是自信和開放的態度。
+  tension: 與「不要自我感覺良好」「鄙視鏈」的文化對立。
+  shift_signal: null
+  key_quote: 反正鄙視鏈沒有盡頭，那一開始就不要跳進去鄙視鏈裡面，每個人都應該是被好好善待的公主。
+- name: 學習
+  stance: 認知到自己的極限才知道怎麼找高手救自己，學習是從嘗試和搞砸中累積的，不是天才。
+  tension: 與認為能力是天賦而非累積的觀點對立。
+  shift_signal: null
+  key_quote: 就是因為認知到自己的極限，想要追求更好的品質時，才知道怎麼找到高手救我。
+- name: 文化
+  stance: 環境中的「Yes, and」態度比否定更能推動創造力，認知落差是推進世界的永動機。
+  tension: 與習慣說「不能這樣做」「我們就是這樣」的否定文化對立。
+  shift_signal: null
+  key_quote: 每個人都說不，那誰不會喪氣？
 connections:
-  - "即興戲劇的 Yes, and 概念應用於職場與學習態度"
-  - "大學影像設計課的創作經驗連結到工具民主化的觀點"
-  - "認知落差作為推進世界的永動機"
-shift_signal: null
-key_quote: "認知落差就是推進世界的永動機，有嚮往才會有追求。"
+- 即興戲劇的「Yes, and」概念應用於職場文化與學習態度
+- 工具民主化（AI、Canva）與自我認同（公主遊戲）的交織
+keywords:
+- 公主遊戲
+- Yes, and
+- 鄙視鏈
+- 認知落差
+- Cursor
+- Canva
+- 文人相輕

@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sunny's Worldview Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #58a6ff;
+      --accent2: #f78166;
+      --accent3: #7ee787;
+      --accent4: #d2a8ff;
+      --accent5: #f0c674;
+      --accent6: #79c0ff;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, "Noto Sans TC", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 300;
+      letter-spacing: 0.05em;
+    }
+    header p {
+      color: var(--muted);
+      margin-top: 0.5rem;
+    }
+    .stats {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+    .stat { text-align: center; }
+    .stat .num { font-size: 2rem; font-weight: 600; color: var(--accent); }
+    .stat .label { font-size: 0.8rem; color: var(--muted); }
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .section h2 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    /* ─── Evolution Grid ─── */
+    .evo-grid {
+      display: grid;
+      grid-template-columns: 80px repeat(var(--topic-count), 1fr);
+      gap: 0;
+      overflow-x: auto;
+    }
+    .evo-header {
+      position: sticky;
+      top: 0;
+      background: var(--surface);
+      padding: 0.8rem 0.5rem;
+      text-align: center;
+      font-weight: 600;
+      font-size: 0.85rem;
+      border-bottom: 2px solid var(--border);
+      z-index: 2;
+    }
+    .evo-header.date-col {
+      text-align: right;
+      padding-right: 1rem;
+      color: var(--muted);
+    }
+    .evo-date {
+      grid-column: 1;
+      text-align: right;
+      padding: 0.8rem 1rem 0.8rem 0;
+      font-size: 0.8rem;
+      color: var(--muted);
+      border-top: 1px solid rgba(48,54,61,0.4);
+      white-space: nowrap;
+    }
+    .evo-cell {
+      padding: 0.8rem 0.6rem;
+      border-top: 1px solid rgba(48,54,61,0.4);
+      border-left: 1px solid rgba(48,54,61,0.2);
+      position: relative;
+      min-height: 60px;
+    }
+    .evo-cell:hover {
+      background: rgba(88,166,255,0.05);
+    }
+    .evo-entry {
+      font-size: 0.78rem;
+      line-height: 1.5;
+      cursor: pointer;
+      padding: 0.4rem 0.5rem;
+      border-radius: 6px;
+      transition: background 0.15s;
+    }
+    .evo-entry:hover {
+      background: rgba(255,255,255,0.05);
+    }
+    .evo-stance {
+      color: var(--text);
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .evo-quote {
+      color: var(--muted);
+      font-style: italic;
+      font-size: 0.75rem;
+      margin-top: 0.3rem;
+    }
+    .evo-shift {
+      display: inline-block;
+      margin-top: 0.3rem;
+      font-size: 0.7rem;
+      color: var(--accent3);
+      background: rgba(126,231,135,0.1);
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+    }
+    .evo-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-right: 0.3rem;
+      vertical-align: middle;
+    }
+    .evo-empty {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    .evo-line {
+      width: 1px;
+      height: 100%;
+      background: rgba(48,54,61,0.5);
+    }
+
+    /* ─── Word Cloud ─── */
+    #wordcloud {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem 0.8rem;
+      padding: 2rem 1rem;
+      min-height: 200px;
+    }
+    .wc-word {
+      display: inline-block;
+      cursor: default;
+      transition: all 0.2s;
+      line-height: 1.3;
+    }
+    .wc-word:hover {
+      transform: scale(1.15);
+      text-shadow: 0 0 12px currentColor;
+    }
+
+    /* ─── Tooltip ─── */
+    .tooltip {
+      display: none;
+      position: fixed;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem;
+      max-width: 400px;
+      font-size: 0.85rem;
+      z-index: 100;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    }
+    .tooltip.show { display: block; }
+    .tooltip .t-date { color: var(--accent); font-weight: 600; }
+    .tooltip .t-topic { color: var(--accent4); margin: 0.3rem 0; font-size: 0.8rem; }
+    .tooltip .t-stance { margin: 0.5rem 0; }
+    .tooltip .t-quote {
+      border-left: 3px solid var(--accent2);
+      padding-left: 0.8rem;
+      color: var(--muted);
+      font-style: italic;
+      margin-top: 0.5rem;
+    }
+    .tooltip .t-tension {
+      color: var(--accent2);
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+    }
+    .tooltip .t-shift {
+      color: var(--accent3);
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+    }
+
+    /* ─── Timeline ─── */
+    #timeline { width: 100%; overflow-x: auto; padding: 1rem 0; }
+    .timeline-track { position: relative; min-height: 200px; padding: 2rem 0; }
+    .timeline-line {
+      position: absolute; top: 50%; left: 0; right: 0;
+      height: 2px; background: var(--border);
+    }
+    .timeline-dot {
+      position: absolute; top: 50%;
+      width: 12px; height: 12px; border-radius: 50%;
+      background: var(--accent); border: 2px solid var(--surface);
+      transform: translate(-50%, -50%);
+      cursor: pointer; transition: all 0.2s; z-index: 2;
+    }
+    .timeline-dot:hover {
+      transform: translate(-50%, -50%) scale(1.5);
+      background: var(--accent2);
+    }
+    .timeline-label {
+      position: absolute; font-size: 10px; color: var(--muted);
+      white-space: nowrap; transform: translateX(-50%);
+    }
+    .timeline-label.above { bottom: calc(50% + 14px); }
+    .timeline-label.below { top: calc(50% + 14px); }
+
+    /* ─── Radar ─── */
+    #radar-container { max-width: 450px; margin: 0 auto; }
+
+    /* ─── Bottom row ─── */
+    .bottom-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    @media (max-width: 768px) {
+      .bottom-row { grid-template-columns: 1fr; }
+      .evo-grid { font-size: 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Sunny's Worldview Dashboard</h1>
+      <p>Perpetual Beta — 永久測試版本的自己就是最好版本</p>
+      <div class="stats" id="stats"></div>
+    </header>
+
+    <div class="section">
+      <h2>Evolution — 主題態度演變</h2>
+      <div id="evolution"></div>
+    </div>
+
+    <div class="section">
+      <h2>Word Cloud — 文字雲</h2>
+      <div id="wordcloud"></div>
+    </div>
+
+    <div class="section">
+      <h2>Timeline — 時間軸</h2>
+      <div id="timeline">
+        <div class="timeline-track" id="timeline-track"></div>
+      </div>
+    </div>
+
+    <div class="bottom-row">
+      <div class="section">
+        <h2>Radar — 主題關注度</h2>
+        <div id="radar-container">
+          <canvas id="radar"></canvas>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Legend — 圖例</h2>
+        <div id="legend"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tooltip" id="tooltip"></div>
+
+  <script>
+    const TOPIC_GROUPS = {
+      'AI & 工具': { sub: ['AI', '工具', '自動化'], color: '#58a6ff' },
+      '工作 & 管理': { sub: ['管理', '工作'], color: '#f78166' },
+      '身份 & 生活': { sub: ['身份', '生活', '情緒'], color: '#7ee787' },
+      '愛 & 關係': { sub: ['愛', '女性', '資本'], color: '#d2a8ff' },
+      '文化 & 創作': { sub: ['文化', '品味', '創作'], color: '#f0c674' },
+      '學習 & 信仰': { sub: ['學習', '信仰'], color: '#79c0ff' },
+    };
+
+    const tooltip = document.getElementById('tooltip');
+
+    function showTooltip(e, item) {
+      let html = `<div class="t-date">${item.date}</div>`;
+      if (item.topicGroup) html += `<div class="t-topic">${item.topicGroup}</div>`;
+      html += `<div class="t-stance">${item.stance}</div>`;
+      if (item.key_quote) html += `<div class="t-quote">「${item.key_quote}」</div>`;
+      if (item.tension) html += `<div class="t-tension">⚡ ${item.tension}</div>`;
+      if (item.shift_signal) html += `<div class="t-shift">↗ 轉變：${item.shift_signal}</div>`;
+      tooltip.innerHTML = html;
+      tooltip.classList.add('show');
+      requestAnimationFrame(() => {
+        const rect = tooltip.getBoundingClientRect();
+        let x = e.clientX + 15, y = e.clientY - 10;
+        if (x + rect.width > window.innerWidth) x = e.clientX - rect.width - 15;
+        if (y + rect.height > window.innerHeight) y = window.innerHeight - rect.height - 10;
+        if (y < 10) y = 10;
+        tooltip.style.left = x + 'px';
+        tooltip.style.top = y + 'px';
+      });
+    }
+
+    function hideTooltip() { tooltip.classList.remove('show'); }
+
+    // ─── Build merged data per group ───
+    function buildGroupData(topics) {
+      const groupData = {};
+      for (const [group, { sub }] of Object.entries(TOPIC_GROUPS)) {
+        const entries = [];
+        const seen = new Set();
+        for (const t of sub) {
+          if (topics[t]) {
+            for (const e of topics[t]) {
+              const key = e.timestamp + '|' + e.source;
+              if (!seen.has(key)) {
+                seen.add(key);
+                entries.push(e);
+              }
+            }
+          }
+        }
+        entries.sort((a, b) => String(a.timestamp).localeCompare(String(b.timestamp)));
+        groupData[group] = entries;
+      }
+      return groupData;
+    }
+
+    // ─── EVOLUTION GRID ───
+    function renderEvolution(data) {
+      const container = document.getElementById('evolution');
+      const topics = data.topics || {};
+      const groupData = buildGroupData(topics);
+      const groupNames = Object.keys(TOPIC_GROUPS);
+
+      // Collect all unique dates
+      const allDates = new Set();
+      for (const entries of Object.values(groupData)) {
+        for (const e of entries) allDates.add(String(e.timestamp));
+      }
+      const sortedDates = [...allDates].sort();
+
+      const colCount = groupNames.length;
+      const grid = document.createElement('div');
+      grid.className = 'evo-grid';
+      grid.style.setProperty('--topic-count', colCount);
+
+      // Header row
+      const dateHeader = document.createElement('div');
+      dateHeader.className = 'evo-header date-col';
+      dateHeader.textContent = '日期';
+      grid.appendChild(dateHeader);
+
+      groupNames.forEach(group => {
+        const h = document.createElement('div');
+        h.className = 'evo-header';
+        h.innerHTML = `<span class="evo-dot" style="background:${TOPIC_GROUPS[group].color}"></span>${group}`;
+        grid.appendChild(h);
+      });
+
+      // Data rows
+      sortedDates.forEach(date => {
+        // Date cell
+        const dateCell = document.createElement('div');
+        dateCell.className = 'evo-date';
+        dateCell.textContent = date;
+        grid.appendChild(dateCell);
+
+        // Topic cells
+        groupNames.forEach(group => {
+          const cell = document.createElement('div');
+          cell.className = 'evo-cell';
+
+          const entry = groupData[group].find(e => String(e.timestamp) === date);
+          if (entry) {
+            const entryDiv = document.createElement('div');
+            entryDiv.className = 'evo-entry';
+
+            // Truncated stance
+            const stanceText = entry.stance || '';
+            const stanceDiv = document.createElement('div');
+            stanceDiv.className = 'evo-stance';
+            stanceDiv.textContent = stanceText;
+            entryDiv.appendChild(stanceDiv);
+
+            // Key quote preview
+            if (entry.key_quote) {
+              const quoteDiv = document.createElement('div');
+              quoteDiv.className = 'evo-quote';
+              const q = entry.key_quote;
+              quoteDiv.textContent = '「' + (q.length > 25 ? q.slice(0, 23) + '…' : q) + '」';
+              entryDiv.appendChild(quoteDiv);
+            }
+
+            // Shift signal badge
+            if (entry.shift_signal) {
+              const shiftDiv = document.createElement('div');
+              shiftDiv.className = 'evo-shift';
+              shiftDiv.textContent = '↗ 轉變';
+              entryDiv.appendChild(shiftDiv);
+            }
+
+            // Tooltip on hover
+            entryDiv.addEventListener('mouseover', e => showTooltip(e, {
+              date,
+              topicGroup: group,
+              stance: entry.stance,
+              key_quote: entry.key_quote,
+              tension: entry.tension,
+              shift_signal: entry.shift_signal,
+            }));
+            entryDiv.addEventListener('mouseout', hideTooltip);
+
+            cell.appendChild(entryDiv);
+          } else {
+            // Empty cell with faint line
+            const empty = document.createElement('div');
+            empty.className = 'evo-empty';
+            const line = document.createElement('div');
+            line.className = 'evo-line';
+            empty.appendChild(line);
+            cell.appendChild(empty);
+          }
+
+          grid.appendChild(cell);
+        });
+      });
+
+      container.appendChild(grid);
+    }
+
+    // ─── WORD CLOUD ───
+    function renderWordCloud() {
+      fetch('wordcloud.json')
+        .then(r => r.json())
+        .then(words => {
+          const container = document.getElementById('wordcloud');
+          if (!words.length) {
+            container.innerHTML = '<p style="color:var(--muted)">尚未產生關鍵字資料。</p>';
+            return;
+          }
+
+          const maxCount = words[0].count;
+          const minCount = words[words.length - 1].count;
+          const colors = ['#58a6ff', '#f78166', '#7ee787', '#d2a8ff', '#f0c674', '#79c0ff', '#e6edf3'];
+
+          // Shuffle for visual variety
+          const shuffled = words.sort(() => Math.random() - 0.5);
+
+          shuffled.forEach(({ word, count }) => {
+            const span = document.createElement('span');
+            span.className = 'wc-word';
+            span.textContent = word;
+
+            const ratio = maxCount === minCount ? 0.5 : (count - minCount) / (maxCount - minCount);
+            const fontSize = 0.75 + ratio * 2.2;
+            span.style.fontSize = fontSize + 'rem';
+            span.style.opacity = 0.45 + ratio * 0.55;
+            span.style.color = colors[Math.floor(Math.random() * colors.length)];
+            span.title = `${word}: ${count} 次`;
+            container.appendChild(span);
+          });
+        });
+    }
+
+    // ─── TIMELINE ───
+    function renderTimeline(data) {
+      const track = document.getElementById('timeline-track');
+      const events = data.timeline;
+      if (!events.length) return;
+
+      const dates = events.map(e => new Date(e.date));
+      const minDate = Math.min(...dates);
+      const maxDate = Math.max(...dates);
+      const range = maxDate - minDate || 1;
+
+      const trackWidth = Math.max(track.clientWidth, events.length * 55);
+      track.style.width = trackWidth + 'px';
+
+      const line = document.createElement('div');
+      line.className = 'timeline-line';
+      track.appendChild(line);
+
+      // Find topic color for an event
+      function getEventColor(event) {
+        for (const [group, { sub, color }] of Object.entries(TOPIC_GROUPS)) {
+          if (event.topics.some(t => sub.includes(t))) return color;
+        }
+        return '#58a6ff';
+      }
+
+      events.forEach((event, i) => {
+        const date = new Date(event.date);
+        const pct = ((date - minDate) / range) * 85 + 5;
+
+        const dot = document.createElement('div');
+        dot.className = 'timeline-dot';
+        dot.style.left = pct + '%';
+        dot.style.background = getEventColor(event);
+        dot.addEventListener('mouseover', e => showTooltip(e, {
+          date: event.date,
+          topicGroup: event.topics.join(' · '),
+          stance: event.stance,
+          key_quote: event.key_quote,
+          shift_signal: event.shift_signal,
+        }));
+        dot.addEventListener('mouseout', hideTooltip);
+        track.appendChild(dot);
+
+        const label = document.createElement('div');
+        label.className = 'timeline-label ' + (i % 2 === 0 ? 'above' : 'below');
+        label.style.left = pct + '%';
+        label.textContent = event.date;
+        track.appendChild(label);
+      });
+    }
+
+    // ─── RADAR ───
+    function renderRadar(data) {
+      const labels = [];
+      const values = [];
+      for (const [group, { sub }] of Object.entries(TOPIC_GROUPS)) {
+        const count = sub.reduce((sum, t) => sum + (data.topic_counts[t] || 0), 0);
+        labels.push(group);
+        values.push(count);
+      }
+
+      new Chart(document.getElementById('radar'), {
+        type: 'radar',
+        data: {
+          labels,
+          datasets: [{
+            label: '提及次數',
+            data: values,
+            backgroundColor: 'rgba(88, 166, 255, 0.12)',
+            borderColor: '#58a6ff',
+            borderWidth: 2,
+            pointBackgroundColor: Object.values(TOPIC_GROUPS).map(g => g.color),
+            pointBorderColor: '#0d1117',
+            pointBorderWidth: 2,
+            pointRadius: 5,
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { display: false } },
+          scales: {
+            r: {
+              beginAtZero: true,
+              grid: { color: 'rgba(48,54,61,0.8)' },
+              angleLines: { color: 'rgba(48,54,61,0.8)' },
+              pointLabels: {
+                color: '#e6edf3',
+                font: { size: 12, family: '-apple-system, Noto Sans TC, sans-serif' },
+              },
+              ticks: { color: '#8b949e', backdropColor: 'transparent', stepSize: 5 },
+            },
+          },
+        },
+      });
+    }
+
+    // ─── LEGEND ───
+    function renderLegend() {
+      const container = document.getElementById('legend');
+      let html = '<div style="padding:0.5rem">';
+      for (const [group, { sub, color }] of Object.entries(TOPIC_GROUPS)) {
+        html += `<div style="margin-bottom:1rem">
+          <div style="font-weight:600;margin-bottom:0.3rem">
+            <span class="evo-dot" style="background:${color}"></span>${group}
+          </div>
+          <div style="color:var(--muted);font-size:0.8rem;padding-left:1.1rem">
+            包含：${sub.join('、')}
+          </div>
+        </div>`;
+      }
+      html += `<div style="margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--border);font-size:0.8rem;color:var(--muted)">
+        <div style="margin-bottom:0.5rem"><span class="evo-shift" style="font-size:0.75rem">↗ 轉變</span> = 態度有明顯變化</div>
+        <div>Hover 任何格子看完整立場、語錄和張力</div>
+      </div>`;
+      container.innerHTML = html;
+    }
+
+    // ─── STATS ───
+    function renderStats(data) {
+      const stats = document.getElementById('stats');
+      const items = [
+        { num: data.total_extractions, label: '篇萃取' },
+        { num: Object.keys(TOPIC_GROUPS).length, label: '個主題群' },
+        { num: data.articles.length, label: '篇文章' },
+        { num: data.last_updated, label: '最後更新' },
+      ];
+      stats.innerHTML = items.map(s =>
+        `<div class="stat"><div class="num">${s.num}</div><div class="label">${s.label}</div></div>`
+      ).join('');
+    }
+
+    // ─── INIT ───
+    fetch('data.json')
+      .then(r => r.json())
+      .then(data => {
+        renderStats(data);
+        renderEvolution(data);
+        renderWordCloud();
+        renderTimeline(data);
+        renderRadar(data);
+        renderLegend();
+      })
+      .catch(err => {
+        document.body.innerHTML = `<div style="padding:3rem;text-align:center;color:#f78166">
+          載入失敗：${err.message}<br>請確認 data.json 存在
+        </div>`;
+      });
+  </script>
+</body>
+</html>

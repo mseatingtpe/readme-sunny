@@ -15,26 +15,40 @@ RAW_DIR = CONTENT_DIR / "raw"
 EXTRACT_DIR = CONTENT_DIR / "extractions"
 PROFILE_PATH = CONTENT_DIR / "worldview-profile.yaml"
 
-EXTRACTION_PROMPT = """你是一個世界觀萃取系統。請從以下文章中萃取七個維度。
+EXTRACTION_PROMPT = """你是一個世界觀萃取系統。請從以下文章中萃取作者的世界觀。
+
+重要：每個主題必須有**獨立的、針對該主題的** stance。不要把同一句話複製到多個主題。
+
+主題標籤限定以下六組（只選文章真正有討論到的，不要硬湊）：
+- AI（AI 工具、自動化、數位轉型）
+- 工作（管理、組織、職場）
+- 身份（自我認同、生活方式、情緒）
+- 愛（愛情、友情、關係）
+- 文化（品味、創作、內容產業）
+- 學習（知識、信仰、成長）
 
 規則：
 - 用繁體中文回應
-- 每個欄位都要填寫，除非標註「可為 null」
+- 每個 topic 的 stance 必須針對該主題，用一到兩句話概括作者在這篇文章中對該主題的態度
 - key_quote 必須是文章中的原文，不要改寫
-- stance 用一到三句話概括
+- keywords 從文章中提取 3-8 個有代表性的詞彙或短語（用於文字雲）
 - 如果文章沒有明確的轉變訊號，shift_signal 填 null
 - 如果沒有明確的矛盾或張力，tension 填 null
-- topics 使用簡短標籤，如：AI、創業、身份、愛、文化、管理、自動化
 
 請以 JSON 格式回應，結構如下：
-{
-  "topics": ["標籤1", "標籤2"],
-  "stance": "這時候的作者相信什麼",
-  "tension": "這個信念跟什麼對立或矛盾（或 null）",
+{{
+  "topics": [
+    {{
+      "name": "主題標籤",
+      "stance": "作者在這篇文章中對這個主題的態度",
+      "tension": "這個態度跟什麼對立或矛盾（或 null）",
+      "shift_signal": "轉變訊號（或 null）",
+      "key_quote": "這個主題最代表的一句原文"
+    }}
+  ],
   "connections": ["跨領域串連1", "跨領域串連2"],
-  "shift_signal": "轉變訊號（或 null）",
-  "key_quote": "最代表這篇的一句原文"
-}
+  "keywords": ["關鍵詞1", "關鍵詞2", "關鍵詞3"]
+}}
 
 文章內容：
 ---
@@ -115,11 +129,8 @@ def extract_file(filepath, force=False):
         "source": f"content/raw/{filepath.name}",
         "timestamp": date,
         "topics": result.get("topics", []),
-        "stance": result.get("stance", ""),
-        "tension": result.get("tension"),
         "connections": result.get("connections", []),
-        "shift_signal": result.get("shift_signal"),
-        "key_quote": result.get("key_quote", ""),
+        "keywords": result.get("keywords", []),
     }
 
     EXTRACT_DIR.mkdir(parents=True, exist_ok=True)
@@ -140,29 +151,53 @@ def update_worldview_profile():
             if data:
                 extractions.append(data)
 
-    # Group by topic
+    # Group by topic — new format has per-topic stances
     by_topic = {}
+    all_keywords = []
     for ext in extractions:
-        for topic in ext.get("topics", []):
-            if topic not in by_topic:
-                by_topic[topic] = []
-            by_topic[topic].append({
-                "timestamp": ext["timestamp"],
-                "stance": ext["stance"],
-                "tension": ext.get("tension"),
-                "shift_signal": ext.get("shift_signal"),
-                "key_quote": ext["key_quote"],
-                "source": ext["source"],
-            })
+        all_keywords.extend(ext.get("keywords", []))
+        topics = ext.get("topics", [])
+        for topic_entry in topics:
+            # New format: topic_entry is a dict with name, stance, etc.
+            if isinstance(topic_entry, dict):
+                name = topic_entry["name"]
+                if name not in by_topic:
+                    by_topic[name] = []
+                by_topic[name].append({
+                    "timestamp": ext["timestamp"],
+                    "stance": topic_entry.get("stance", ""),
+                    "tension": topic_entry.get("tension"),
+                    "shift_signal": topic_entry.get("shift_signal"),
+                    "key_quote": topic_entry.get("key_quote", ""),
+                    "source": ext["source"],
+                })
+            else:
+                # Old format: topic_entry is a string
+                if topic_entry not in by_topic:
+                    by_topic[topic_entry] = []
+                by_topic[topic_entry].append({
+                    "timestamp": ext["timestamp"],
+                    "stance": ext.get("stance", ""),
+                    "tension": ext.get("tension"),
+                    "shift_signal": ext.get("shift_signal"),
+                    "key_quote": ext.get("key_quote", ""),
+                    "source": ext["source"],
+                })
 
     # Sort each topic by timestamp
     for topic in by_topic:
         by_topic[topic].sort(key=lambda x: str(x["timestamp"]))
 
+    # Keyword frequency
+    keyword_freq = {}
+    for kw in all_keywords:
+        keyword_freq[kw] = keyword_freq.get(kw, 0) + 1
+
     profile = {
         "last_updated": str(max(str(e["timestamp"]) for e in extractions)) if extractions else "",
         "total_extractions": len(extractions),
         "topics": by_topic,
+        "keywords": keyword_freq,
     }
 
     with open(PROFILE_PATH, "w", encoding="utf-8") as f:

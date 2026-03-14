@@ -1,18 +1,36 @@
-source: "content/raw/2024-10-21-我從生產力工具學會的三件事和關於信仰的雜感.md"
-timestamp: "2024-10-21"
+source: content/raw/2024-10-21-我從生產力工具學會的三件事和關於信仰的雜感.md
+timestamp: '2024-10-21'
 topics:
-  - 工具
-  - 管理
-  - 自動化
-  - 文化
-  - 信仰
-stance: "試算表是解構資訊的第一步，生產力工具的價值在於體驗設計而非功能堆疊；信仰與宗教活動是使用者體驗設計的究極場景。"
-tension: "反對為了管理工具而管理工具的做法，主張先理解目的再選擇工具。"
+- name: 工作
+  stance: Spreadsheet 是解構資訊的第一步，生產力工具的價值在於理解其目的而非盲目使用，任何工具都比不上採取行動。
+  tension: 與為了管理工具而管理工具、追求 step-by-step 教學的心態對立。
+  shift_signal: null
+  key_quote: 雖然我確實很會使用生產力工具，我仍強烈的主張 spreadsheet （試算表）是解構資訊和行為的第一步。
+- name: 學習
+  stance: 學習方式是閱讀範本推敲場景、閱讀說明書、直接上手實作，比起教學更傾向觸發想像。
+  tension: 與期待手把手教學的學習方式對立。
+  shift_signal: null
+  key_quote: 比起 Step by step 的教學，我更傾向提取行為背後的目的，觸發想像，進一步協助創造更多案例。
+- name: 文化
+  stance: 信仰及宗教活動是使用者體驗設計的究極場景，所有行為都基於某種意念，道德是行為的最高準則。
+  tension: null
+  shift_signal: 開始對宗教信仰的存在和執行感到敬畏，從世俗工具思維延伸到信仰場域的思考。
+  key_quote: 信仰及宗教活動簡直是使用者體驗設計的究極場景，透過集體的意志，讓人進到場域就知道要完成什麼行為。
+- name: AI
+  stance: 如同訓練 LLM，在社會中長成為一個人的過程也是不斷輸入指令和知識、反覆試錯。
+  tension: null
+  shift_signal: null
+  key_quote: 如同使用 LLM、訓練 LLM，在社會中長成為一個人的過程，其實也是不斷輸入指令和知識，反覆試錯而來。
 connections:
-  - "宗教信仰的參拜流程類比為使用者體驗設計與 onboarding process"
-  - "Asana 的 Dependency 概念連結專案管理方法論"
-  - "Canva 與 Notion 範本作為場景想像的觸發器"
-  - "LLM 訓練過程類比人的社會化學習"
-  - "搭公車招手攔車的焦慮連結到場域行為設計"
-shift_signal: null
-key_quote: "信仰及宗教活動簡直是使用者體驗設計的究極場景，透過集體的意志，讓人進到場域就知道要完成什麼行為。"
+- 生產力工具的 dependency 概念連結到宗教信仰的行為設計
+- 公車招手攔車的場域指引連結到使用者體驗設計與 on-boarding process
+- Canva 範本與 Notion 範本作為認知場景的入口
+keywords:
+- 生產力工具
+- spreadsheet
+- dependency
+- metadata
+- 使用者體驗設計
+- 信仰
+- on-boarding
+- 範本

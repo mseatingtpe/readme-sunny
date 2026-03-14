@@ -1,15 +1,30 @@
-source: "content/raw/2025-04-23-每天早上-7-點請-chatgpt-寫一封信給我-90-by-chatgpt.md"
-timestamp: "2025-04-23"
+source: content/raw/2025-04-23-每天早上-7-點請-chatgpt-寫一封信給我-90-by-chatgpt.md
+timestamp: '2025-04-23'
 topics:
-  - AI
-  - 工具
-  - 身份
-  - 自動化
-stance: "AI 不是用來趨吉避凶，而是用來校對自己的節奏；方法論讓 AI 寫就好，重要的是設計出對自己說話的方式。"
-tension: "與把 AI 當作冷冰冰的工具或套裝內容的觀點對立，認為 AI 可以成為溫柔且具體的每日陪伴。"
+- name: AI
+  stance: AI 不是冷冰冰的黃曆轉述，而是可以設計成「知道你最近狀態的老朋友」，用來校對每日情緒與身體節奏。
+  tension: 與把 AI 當作套裝內容或純工具的觀點對立——作者認為 AI 可以成為個人化的溫柔陪伴。
+  shift_signal: 看到 PJ Wu 的電子報後被解放，決定「方法論讓 AI 寫就好」。
+  key_quote: 這樣每天早上的那封信，對我來說就不是套裝內容，而是「今天的我值得被這樣說話」的開始。
+- name: 學習
+  stance: 思考如何思考、學習如何學習本身就是有價值的事；meta-prompt 是系統化思考的方法。
+  tension: null
+  shift_signal: null
+  key_quote: 思考如何思考，學習如何學習，這件事真有趣。
+- name: 身份
+  stance: 比起預測未來或趨吉避凶，更在意的是察覺自己的變化以及和身體的關係。
+  tension: 與命理用於趨吉避凶的傳統用途對立，作者將其轉化為自我覺察工具。
+  shift_signal: 開始使用每日信件後，能察覺為什麼某些日子特別順暢、某些日子特別卡。
+  key_quote: 開始這麼做之後，比起趨吉避凶，我更能察覺自己的變化，以及和身體的關係。
 connections:
-  - "命理系統（八字、紫微、Human Design）與 AI prompt 設計的結合"
-  - "PJ Wu 探索 AI 寫作界線的電子報啟發了讓 AI 負責方法論的想法"
-  - "meta-prompt 作為思考如何思考的工具"
-shift_signal: "以前覺得要寫成文章很煩，看到 PJ Wu 的文章後被解放，決定方法論讓 AI 寫就好。"
-key_quote: "思考如何思考，學習如何學習，這件事真有趣。"
+- 命理系統（八字、紫微、Human Design）與 AI prompt 設計的結合
+- meta-prompt 作為委託多人或工具進行不同任務的溝通標準
+- PJ Wu 探索 AI 寫作界線的電子報啟發了讓 AI 負責方法論的想法
+keywords:
+- meta-prompt
+- 命理
+- 每日校對
+- ChatGPT task
+- 情緒節奏
+- 身體覺察
+- 即興
