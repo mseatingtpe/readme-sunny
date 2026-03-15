@@ -1,0 +1,30 @@
+source: content/raw/2025-03-13-從害怕被chatgpt取代到玩轉ai-商業周刊.md
+timestamp: '2025-03-13'
+topics:
+- name: AI
+  stance: AI不是威脅而是機會，關鍵在於主動學習運用AI工具來提升效率和拓展技能範圍。
+  tension: 從恐懼被AI取代到積極擁抱AI工具
+  shift_signal: 然而兩年後，情況完全相反
+  key_quote: AI非但沒有讓他失業，反而大幅提升了他的開發效率
+- name: 工作
+  stance: 在AI時代，工程師的價值在於善用新工具來創造更大的工作效益，而非被動等待被取代。
+  tension: 工程師職業受AI衝擊最大的普遍焦慮
+  shift_signal: null
+  key_quote: 成為同事眼中最善於運用AI工具的工程師之一
+- name: 學習
+  stance: 面對新技術變化需要保持「不設限的心態」，主動探索和學習才能充分發揮工具潛力。
+  tension: null
+  shift_signal: null
+  key_quote: 探索AI可能性的核心在於「不設限的心態」
+connections:
+- AI工具的掌握直接影響工作表現和職業前景
+- 開放學習心態是在技術變革中生存的關鍵
+keywords:
+- ChatGPT
+- AI工具
+- 全端工程師
+- 開發效率
+- 不設限心態
+- 技能拓展
+- 自動化
+- 職業前景
