@@ -1,7 +1,6 @@
 # Sunny's README
 
 一個活的、會演化的「我」的紀錄。
-
 Perpetual Beta — 永久測試版本的我就是最好的我。
 
 ---
@@ -9,6 +8,7 @@ Perpetual Beta — 永久測試版本的我就是最好的我。
 ## Skill
 
 這個 repo 包含一個 Claude Code Skill（`think-like-sunny`），用我的思考框架和語氣來回應問題。
+Why Skill? 因為 Sunny 有時也很好奇自己在想什麼。
 
 <details>
 <summary>怎麼使用</summary>
