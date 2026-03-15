@@ -13,7 +13,7 @@ from collections import Counter, defaultdict
 
 ROOT = Path(__file__).parent.parent
 RAW_DIR = ROOT / "content" / "raw"
-NOTES_PATH = ROOT / "substack_notes.md"
+NOTES_PATH = ROOT / "content" / "substack_notes.md"
 OUTPUT_PATH = ROOT / "docs" / "wordcloud.json"
 
 # Stop words — common words that don't carry meaning
