@@ -2,3 +2,4 @@
 openspec/.vector-search.db*
 .venv/
 .DS_Store
+openspec/
