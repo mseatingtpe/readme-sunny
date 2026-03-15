@@ -177,6 +177,8 @@ def main():
 
 這個 repo 包含一個 Claude Code Skill（[`think-like-sunny`](.claude/skills/think-like-sunny.md)），用我的思考框架和語氣來回應問題。
 
+會想寫成 skill 是因為我有時也很好奇自己怎麼想，也很好奇這樣萃取出來的東西跟我當下的真心差距多少。所以這個 skill 並不能代表我。
+
 <details>
 <summary>怎麼使用</summary>
 
