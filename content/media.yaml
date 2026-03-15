@@ -1,4 +1,13 @@
 # 採訪報導
+- title: "AI哲學辯證／當臉書上滿滿AI文，你仍在乎創作者的真誠？"
+  date: 2026-02-02
+  type: interview
+  publication: 遠見雜誌
+  url: https://tw.news.yahoo.com/ai%E5%93%B2%E5%AD%B8%E8%BE%AF%E8%AD%89-%E7%95%B6%E8%87%89%E6%9B%B8%E4%B8%8A%E6%BB%BF%E6%BB%BFai%E6%96%87-%E4%BD%A0%E4%BB%8D%E5%9C%A8%E4%B9%8E%E5%89%B5%E4%BD%9C%E8%80%85%E7%9A%84%E7%9C%9F%E8%AA%A0-095200957.html
+  speaker: Sunny C
+  has_content: true
+  description: 子軒採訪後記，探討 AI 時代創作者的真誠與信念
+
 - title: "《博恩夜夜秀》幕後功臣：薩泰爾團隊 AI 神用法，如何讓全員升級？"
   date: 2025-02-27
   type: interview
@@ -183,10 +192,18 @@
 
 # 供稿
 - title: 音樂劇《三個不結婚的女人》，從群像劇裡看見自己
-  date: 2025-01-01
+  date: 2025-05-09
   type: writing
   publication: wazaiii
-  url: ""
+  url: https://www.wazaiii.com/articles?id=art-3-unmarried-women-musical
   speaker: Sunny C
-  has_content: false
+  has_content: true
   description: 改編自漫畫家日下棗同名作品，人氣超夯場場完售
+
+- title: "《不良一族尋愛記》真的是戀綜嗎？愛情是選修，服從規則才是必修！"
+  date: 2025-12-31
+  type: writing
+  publication: wazaiii
+  url: https://www.wazaiii.com/articles?id=movie-badly-in-love
+  speaker: Sunny C
+  has_content: true
