@@ -1,13 +1,15 @@
 # Sunny's README
 
 一個活的、會演化的「我」的紀錄。
-*Perpetual Beta* — 永久測試版本的我就是最好的我。
+
+*Perpetual Beta* — 永久測試版本的自己就是最好版本。
 
 ---
 
 ## 這是什麼
 
 這個 repo 是一個自動化的世界觀追蹤系統。每當我寫新文章或接受採訪，系統會自動萃取我對六個主題的立場，追蹤它們如何隨時間演變。
+
 六個主題：**AI** · **工作** · **身份** · **愛** · **文化** · **學習**
 
 目前已從 26 篇內容中萃取，最後更新：2026-02-02。
@@ -25,7 +27,7 @@
 
 ## Skill
 
-這個 repo 包含一個 Claude Code Skill（`think-like-sunny`），用我的思考框架和語氣來回應問題。
+這個 repo 包含一個 Claude Code Skill（[`think-like-sunny`](.claude/skills/think-like-sunny.md)），用我的思考框架和語氣來回應問題。
 
 <details>
 <summary>怎麼使用</summary>

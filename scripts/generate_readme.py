@@ -175,7 +175,7 @@ def main():
     # Skill
     sections.append("""## Skill
 
-這個 repo 包含一個 Claude Code Skill（`think-like-sunny`），用我的思考框架和語氣來回應問題。
+這個 repo 包含一個 Claude Code Skill（[`think-like-sunny`](.claude/skills/think-like-sunny.md)），用我的思考框架和語氣來回應問題。
 
 <details>
 <summary>怎麼使用</summary>
