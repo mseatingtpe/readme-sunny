@@ -2,9 +2,28 @@
 
 一個活的、會演化的「我」的紀錄。
 
-Perpetual Beta — 永久測試版本的自己就是最好版本。
+*Perpetual Beta* — 永久測試版本的自己就是最好版本。
 
 ---
+
+## 這是什麼
+
+這個 repo 是一個自動化的世界觀追蹤系統。每當我寫新文章或接受採訪，系統會自動萃取我對六個主題的立場，追蹤它們如何隨時間演變。
+
+六個主題：**AI** · **工作** · **身份** · **愛** · **文化** · **學習**
+
+目前已從 26 篇內容中萃取，最後更新：2026-02-02。
+
+## 現在的我
+
+**AI** — AI應被視為創作媒介而非創作者，關鍵不在於工具本身，而在於使用者的信念和真誠意圖。
+**工作** — 效率和製程最佳化並不總是有用，高效率生產垃圾還是垃圾；世界獎勵的不是努力，而是在行動前先辨識價值。
+**身份** — 人類的獨特性在於「主動行為」——只有人能夠積極地選擇創造世界，這是AI無法取代的核心價值。
+**愛** — 愛是一切的解答——當心被愛佔據時根本沒有空間留給 AI Slop；「我愛你與你無關」不是愛而不得的痛苦⋯
+**文化** — 真誠的創作來自創作者的生命經驗與主動意圖，人們渴望與創作者建立真實連結，品味和批判思考是抵禦內容垃圾的關鍵。
+**學習** — 「知道」指向過去的經驗總結，「相信」指向未來的可能性與價值判斷；相信的本質是主動，讓角色得以在未知中前行。
+
+完整的演化過程、語錄、主題共現分析都在 **[互動式儀表板](https://mseatingtpe.github.io/readme-sunny/)**。
 
 ## Skill
 
@@ -18,71 +37,6 @@ Perpetual Beta — 永久測試版本的自己就是最好版本。
 
 Skill 會自動隨新文章更新「最近動態」層。核心身份和主題立場由我手動維護。
 </details>
-
-## 世界觀快照
-
-最後更新：2026-02-02｜共 26 篇萃取
-
-### AI
-
-AI應被視為創作媒介而非創作者，關鍵不在於工具本身，而在於使用者的信念和真誠意圖。
-
-> AI應被視為創作媒介而非創作者。區分高質內容與AI垃圾的關鍵在於「信念」——創作者想要解決的問題、傳遞的信息強度。
-
-*張力：AI工具的便利性與創作者真誠表達的對立*
-
-### 工作
-
-效率和製程最佳化並不總是有用，高效率生產垃圾還是垃圾；世界獎勵的不是努力，而是在行動前先辨識價值。
-
-> 高效率的生產垃圾，那也還是垃圾而已。
-
-*張力：對抗徒勞 vs. 過去追求生產力的慣性*
-
-### 學習
-
-「知道」指向過去的經驗總結，「相信」指向未來的可能性與價值判斷；相信的本質是主動，讓角色得以在未知中前行。
-
-> 相信的本質是主動，讓角色得以在未知中前行。
-
-### 文化
-
-真誠的創作來自創作者的生命經驗與主動意圖，人們渴望與創作者建立真實連結，品味和批判思考是抵禦內容垃圾的關鍵。
-
-> 人們渴望與創作者建立連結。真誠的內容來自創作者的生命經驗與主動意圖。
-
-*張力：高質量真誠內容與AI垃圾內容的對立*
-
-### 身份
-
-人類的獨特性在於「主動行為」——只有人能夠積極地選擇創造世界，這是AI無法取代的核心價值。
-
-> 人類獨特之處在於「主動行為」——只有人能夠積極地選擇創造世界。
-
-*張力：人類主動創造能力與AI被動生成的對立*
-
-### 愛
-
-愛是一切的解答——當心被愛佔據時根本沒有空間留給 AI Slop；「我愛你與你無關」不是愛而不得的痛苦，而是透過愛認識自己。
-
-> 當心被佔據的時候根本沒有空間留給 AI Slop。
-
-*張力：機器的愛追求效率與擴張，人類的愛伴隨笨拙的羈絆與承擔*
-
-### 愛情
-
-愛情在真實社交情境中是次要的，真正重要的是真心能否被真心回應，以及人與人之間的理解。
-
-> 無論是否為「不良一族」，每個人都渴望被理解，真心能否被真心回應才是核心。
-
-*張力：表面追求配對成功與真實人性互動的矛盾*
-
-
-## 互動式儀表板
-
-包含四個視覺化：世界觀演化網格、文字雲、時間軸、主題雷達圖。
-
-[前往儀表板](https://mseatingtpe.github.io/readme-sunny/)
 
 ## 媒體與分享
 
@@ -129,30 +83,9 @@ AI應被視為創作媒介而非創作者，關鍵不在於工具本身，而在
 | 2025-05-09 | [音樂劇《三個不結婚的女人》，從群像劇裡看見自己](https://www.wazaiii.com/articles?id=art-3-unmarried-women-musical) | wazaiii |
 
 
-## 文章
+## 找到我
 
-| 日期 | 標題 | 來源 |
-|------|------|------|
-| 2026-01-01 | [相信的事情列表 2025H2：18. 愛是一切的解答](https://masterofnonewithsunnyc.substack.com/p/2025h218) | substack |
-| 2025-12-17 | [亞洲巡迴報告 (1/n)：文化是防禦工事](https://masterofnonewithsunnyc.substack.com/p/1n) | substack |
-| 2025-12-01 | [丸之內虐待狂](https://masterofnonewithsunnyc.substack.com/p/027) | substack |
-| 2025-11-13 | [我對愛情的貧乏想像](https://masterofnonewithsunnyc.substack.com/p/27b) | substack |
-| 2025-08-22 | [「我不是我的我」](https://masterofnonewithsunnyc.substack.com/p/5e2) | substack |
-| 2025-08-07 | [喜歡的東西最好有 Copy](https://masterofnonewithsunnyc.substack.com/p/copy) | substack |
-| 2025-07-22 | [比絕望先一步抵達愛 AI](https://masterofnonewithsunnyc.substack.com/p/ai) | substack |
-| 2025-05-27 | [Be water, but clean #GAI2025‎ ](https://masterofnonewithsunnyc.substack.com/p/be-water-but-clean-gai2025) | substack |
-| 2025-05-13 | [講完女性主義跟喜劇，正在準備財務的演講，接著要賣 GAI 年會的門票](https://masterofnonewithsunnyc.substack.com/p/gai) | substack |
-| 2025-04-23 | [每天早上 7 點請 ChatGPT 寫一封信給我 <90% by ChatGPT> ](https://masterofnonewithsunnyc.substack.com/p/7-chatgpt-90-by-chatgpt) | substack |
-| 2025-04-22 | [Work-Life Harmony](https://masterofnonewithsunnyc.substack.com/p/work-life-harmony) | substack |
-| 2025-04-02 | [玫瑰不叫玫瑰不也一樣的香](https://masterofnonewithsunnyc.substack.com/p/21d) | substack |
-| 2025-03-19 | [世界不會變好，但你會](https://masterofnonewithsunnyc.substack.com/p/091) | substack |
-| 2025-03-06 | [桃花賊](https://masterofnonewithsunnyc.substack.com/p/39b) | substack |
-| 2025-03-03 | [就當我的心是塑膠做的吧（from 歌曲 AI 敢會愛）](https://masterofnonewithsunnyc.substack.com/p/from-ai) | substack |
-| 2024-11-26 | [從「合約產生器」完成到現在，差不多一年](https://masterofnonewithsunnyc.substack.com/p/04c) | substack |
-| 2024-10-21 | [我從生產力工具學會的三件事（和關於信仰的雜感）](https://masterofnonewithsunnyc.substack.com/p/8a8) | substack |
-| 2024-10-02 | [颱風天的問候](https://masterofnonewithsunnyc.substack.com/p/60a) | substack |
-| 2024-09-24 | [有點羞赧的公主遊戲](https://masterofnonewithsunnyc.substack.com/p/347) | substack |
-| 2024-09-20 | [工作的成就感因素分析](https://masterofnonewithsunnyc.substack.com/p/3e1) | substack |
+[Substack](https://masterofnonewithsunnyc.substack.com/) · [Instagram](https://www.instagram.com/ms.eatingtpe/) · [Threads](https://www.threads.com/@ms.eatingtpe)
 
 ---
 

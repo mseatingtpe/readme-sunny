@@ -1,402 +1,1794 @@
 [
   {
-    "word": "內容",
-    "count": 33
-  },
-  {
     "word": "世界",
-    "count": 31
-  },
-  {
-    "word": "愛",
-    "count": 29
-  },
-  {
-    "word": "想像",
-    "count": 28
+    "count": 62,
+    "articles": [
+      {
+        "title": "丸之內虐待狂",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/027"
+      },
+      {
+        "title": "桃花賊",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/39b"
+      },
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      }
+    ]
   },
   {
     "word": "喜歡",
-    "count": 25
+    "count": 58,
+    "articles": [
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "喜歡的東西最好有 Copy",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/copy"
+      },
+      {
+        "title": "丸之內虐待狂",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/027"
+      }
+    ]
   },
   {
-    "word": "台灣",
-    "count": 25
-  },
-  {
-    "word": "市場",
-    "count": 23
+    "word": "內容",
+    "count": 56,
+    "articles": [
+      {
+        "title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/1n"
+      },
+      {
+        "title": "每天早上 7 點請 ChatGPT 寫一封信給我 <90% by ChatGPT> ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/7-chatgpt-90-by-chatgpt"
+      },
+      {
+        "title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/2025h218"
+      }
+    ]
   },
   {
     "word": "工作",
-    "count": 21
+    "count": 53,
+    "articles": [
+      {
+        "title": "工作的成就感因素分析",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/3e1"
+      },
+      {
+        "title": "Work-Life Harmony",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/work-life-harmony"
+      },
+      {
+        "title": "為了加速文書作業，親自開發「合約產生器」！薩泰爾娛樂鄭晴元：別讓員工被低價值工作困住",
+        "url": "https://www.managertoday.com.tw/articles/view/68580"
+      }
+    ]
   },
   {
-    "word": "朋友",
-    "count": 20
+    "word": "想像",
+    "count": 44,
+    "articles": [
+      {
+        "title": "我對愛情的貧乏想像",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/27b"
+      },
+      {
+        "title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/8a8"
+      },
+      {
+        "title": "講完女性主義跟喜劇，正在準備財務的演講，接著要賣 GAI 年會的門票",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/gai"
+      }
+    ]
   },
   {
-    "word": "自由",
-    "count": 19
+    "word": "愛",
+    "count": 42,
+    "articles": [
+      {
+        "title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/2025h218"
+      },
+      {
+        "title": "「我不是我的我」",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/5e2"
+      },
+      {
+        "title": "喜歡的東西最好有 Copy",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/copy"
+      }
+    ]
   },
   {
     "word": "相信",
-    "count": 18
-  },
-  {
-    "word": "愛情",
-    "count": 18
-  },
-  {
-    "word": "感受",
-    "count": 16
+    "count": 40,
+    "articles": [
+      {
+        "title": "我對愛情的貧乏想像",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/27b"
+      },
+      {
+        "title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/2025h218"
+      },
+      {
+        "title": "Be water, but clean #GAI2025‎ ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/be-water-but-clean-gai2025"
+      }
+    ]
   },
   {
     "word": "看到",
-    "count": 16
+    "count": 34,
+    "articles": [
+      {
+        "title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/8a8"
+      },
+      {
+        "title": "工作的成就感因素分析",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/3e1"
+      },
+      {
+        "title": "丸之內虐待狂",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/027"
+      }
+    ]
+  },
+  {
+    "word": "愛情",
+    "count": 34,
+    "articles": [
+      {
+        "title": "我對愛情的貧乏想像",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/27b"
+      },
+      {
+        "title": "桃花賊",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/39b"
+      },
+      {
+        "title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/2025h218"
+      }
+    ]
   },
   {
     "word": "想要",
-    "count": 15
-  },
-  {
-    "word": "知識",
-    "count": 15
-  },
-  {
-    "word": "好像",
-    "count": 15
-  },
-  {
-    "word": "他們",
-    "count": 14
-  },
-  {
-    "word": "生活",
-    "count": 14
-  },
-  {
-    "word": "無法",
-    "count": 14
-  },
-  {
-    "word": "貧乏",
-    "count": 14
-  },
-  {
-    "word": "發生",
-    "count": 13
-  },
-  {
-    "word": "想到",
-    "count": 13
-  },
-  {
-    "word": "敘事",
-    "count": 13
-  },
-  {
-    "word": "故事",
-    "count": 13
-  },
-  {
-    "word": "未來",
-    "count": 13
-  },
-  {
-    "word": "短劇",
-    "count": 13
-  },
-  {
-    "word": "價值",
-    "count": 12
-  },
-  {
-    "word": "意識",
-    "count": 12
-  },
-  {
-    "word": "只有",
-    "count": 12
-  },
-  {
-    "word": "旅行",
-    "count": 12
-  },
-  {
-    "word": "這麼",
-    "count": 12
-  },
-  {
-    "word": "選擇",
-    "count": 12
-  },
-  {
-    "word": "文化",
-    "count": 12
-  },
-  {
-    "word": "這種",
-    "count": 12
-  },
-  {
-    "word": "產業",
-    "count": 12
-  },
-  {
-    "word": "資料",
-    "count": 11
-  },
-  {
-    "word": "流程",
-    "count": 11
-  },
-  {
-    "word": "解決",
-    "count": 11
+    "count": 32,
+    "articles": [
+      {
+        "title": "有點羞赧的公主遊戲",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/347"
+      },
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "丸之內虐待狂",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/027"
+      }
+    ]
   },
   {
     "word": "語言",
-    "count": 11
+    "count": 32,
+    "articles": [
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "桃花賊",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/39b"
+      },
+      {
+        "title": "Work-Life Harmony",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/work-life-harmony"
+      }
+    ]
   },
   {
-    "word": "作品",
-    "count": 11
+    "word": "電子",
+    "count": 32,
+    "articles": [
+      {
+        "title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/1n"
+      },
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "我對愛情的貧乏想像",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/27b"
+      }
+    ]
   },
   {
-    "word": "思考",
-    "count": 11
+    "word": "朋友",
+    "count": 32,
+    "articles": [
+      {
+        "title": "喜歡的東西最好有 Copy",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/copy"
+      },
+      {
+        "title": "講完女性主義跟喜劇，正在準備財務的演講，接著要賣 GAI 年會的門票",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/gai"
+      },
+      {
+        "title": "世界不會變好，但你會",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/091"
+      }
+    ]
   },
   {
     "word": "持續",
-    "count": 11
+    "count": 31,
+    "articles": [
+      {
+        "title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/1n"
+      },
+      {
+        "title": "工作的成就感因素分析",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/3e1"
+      },
+      {
+        "title": "從「合約產生器」完成到現在，差不多一年",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/04c"
+      }
+    ]
   },
   {
-    "word": "這是",
-    "count": 11
+    "word": "台灣",
+    "count": 31,
+    "articles": [
+      {
+        "title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/1n"
+      },
+      {
+        "title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/8a8"
+      },
+      {
+        "title": "Be water, but clean #GAI2025‎ ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/be-water-but-clean-gai2025"
+      }
+    ]
   },
   {
-    "word": "人類",
-    "count": 11
+    "word": "感受",
+    "count": 31,
+    "articles": [
+      {
+        "title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/1n"
+      },
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "每天早上 7 點請 ChatGPT 寫一封信給我 <90% by ChatGPT> ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/7-chatgpt-90-by-chatgpt"
+      }
+    ]
   },
   {
-    "word": "生成",
-    "count": 10
+    "word": "思考",
+    "count": 29,
+    "articles": [
+      {
+        "title": "Work-Life Harmony",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/work-life-harmony"
+      },
+      {
+        "title": "每天早上 7 點請 ChatGPT 寫一封信給我 <90% by ChatGPT> ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/7-chatgpt-90-by-chatgpt"
+      },
+      {
+        "title": "「我不是我的我」",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/5e2"
+      }
+    ]
   },
   {
-    "word": "很多",
-    "count": 10
+    "word": "管理",
+    "count": 28,
+    "articles": [
+      {
+        "title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/8a8"
+      },
+      {
+        "title": "從「合約產生器」完成到現在，差不多一年",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/04c"
+      },
+      {
+        "title": "《博恩夜夜秀》幕後功臣：薩泰爾團隊 AI 神用法，如何讓全員升級？",
+        "url": "https://www.gvm.com.tw/article/119569"
+      }
+    ]
   },
   {
-    "word": "清楚",
-    "count": 10
+    "word": "這種",
+    "count": 28,
+    "articles": [
+      {
+        "title": "從害怕被 ChatGPT 取代到玩轉 AI，菜鳥工程師兩年練出十年功",
+        "url": "https://www.businessweekly.com.tw/Archive/Article?StrId=7011988&rf=google"
+      },
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "丸之內虐待狂",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/027"
+      }
+    ]
   },
   {
-    "word": "自我",
-    "count": 10
+    "word": "故事",
+    "count": 28,
+    "articles": [
+      {
+        "title": "喜歡的東西最好有 Copy",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/copy"
+      },
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "音樂劇《三個不結婚的女人》，從群像劇裡看見自己",
+        "url": "https://www.wazaiii.com/articles?id=art-3-unmarried-women-musical"
+      }
+    ]
   },
   {
-    "word": "作者",
-    "count": 10
+    "word": "生活",
+    "count": 28,
+    "articles": [
+      {
+        "title": "每天早上 7 點請 ChatGPT 寫一封信給我 <90% by ChatGPT> ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/7-chatgpt-90-by-chatgpt"
+      },
+      {
+        "title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/8a8"
+      },
+      {
+        "title": "音樂劇《三個不結婚的女人》，從群像劇裡看見自己",
+        "url": "https://www.wazaiii.com/articles?id=art-3-unmarried-women-musical"
+      }
+    ]
   },
   {
-    "word": "進入",
-    "count": 10
+    "word": "好像",
+    "count": 28,
+    "articles": [
+      {
+        "title": "世界不會變好，但你會",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/091"
+      },
+      {
+        "title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/2025h218"
+      },
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      }
+    ]
   },
   {
-    "word": "作為",
-    "count": 10
+    "word": "他們",
+    "count": 27,
+    "articles": [
+      {
+        "title": "為了加速文書作業，親自開發「合約產生器」！薩泰爾娛樂鄭晴元：別讓員工被低價值工作困住",
+        "url": "https://www.managertoday.com.tw/articles/view/68580"
+      },
+      {
+        "title": "Be water, but clean #GAI2025‎ ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/be-water-but-clean-gai2025"
+      },
+      {
+        "title": "丸之內虐待狂",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/027"
+      }
+    ]
   },
   {
-    "word": "流動",
-    "count": 10
-  },
-  {
-    "word": "微短劇",
-    "count": 10
-  },
-  {
-    "word": "結構",
-    "count": 10
-  },
-  {
-    "word": "合約",
-    "count": 9
-  },
-  {
-    "word": "同事",
-    "count": 9
-  },
-  {
-    "word": "能力",
-    "count": 9
-  },
-  {
-    "word": "一定",
-    "count": 9
-  },
-  {
-    "word": "例如",
-    "count": 9
-  },
-  {
-    "word": "一次",
-    "count": 9
-  },
-  {
-    "word": "其他",
-    "count": 9
-  },
-  {
-    "word": "感覺",
-    "count": 9
-  },
-  {
-    "word": "確實",
-    "count": 9
-  },
-  {
-    "word": "設計",
-    "count": 9
-  },
-  {
-    "word": "日本",
-    "count": 9
-  },
-  {
-    "word": "那麼",
-    "count": 9
-  },
-  {
-    "word": "生命",
-    "count": 9
-  },
-  {
-    "word": "歷史",
-    "count": 9
-  },
-  {
-    "word": "決定",
-    "count": 9
-  },
-  {
-    "word": "也許",
-    "count": 9
-  },
-  {
-    "word": "一邊",
-    "count": 9
-  },
-  {
-    "word": "變成",
-    "count": 9
-  },
-  {
-    "word": "直接",
-    "count": 9
-  },
-  {
-    "word": "證明",
-    "count": 9
-  },
-  {
-    "word": "防禦",
-    "count": 9
-  },
-  {
-    "word": "自然",
-    "count": 8
-  },
-  {
-    "word": "平台",
-    "count": 8
-  },
-  {
-    "word": "不能",
-    "count": 8
-  },
-  {
-    "word": "行動",
-    "count": 8
-  },
-  {
-    "word": "經驗",
-    "count": 8
-  },
-  {
-    "word": "大學",
-    "count": 8
-  },
-  {
-    "word": "感謝",
-    "count": 8
-  },
-  {
-    "word": "個體",
-    "count": 8
-  },
-  {
-    "word": "書",
-    "count": 8
-  },
-  {
-    "word": "討論",
-    "count": 8
-  },
-  {
-    "word": "歌單",
-    "count": 8
-  },
-  {
-    "word": "完整",
-    "count": 8
-  },
-  {
-    "word": "中國",
-    "count": 8
-  },
-  {
-    "word": "他人",
-    "count": 8
-  },
-  {
-    "word": "認識",
-    "count": 8
-  },
-  {
-    "word": "有意",
-    "count": 8
-  },
-  {
-    "word": "差異",
-    "count": 8
-  },
-  {
-    "word": "形式",
-    "count": 8
-  },
-  {
-    "word": "愛是",
-    "count": 8
-  },
-  {
-    "word": "一堆",
-    "count": 8
-  },
-  {
-    "word": "風險",
-    "count": 8
-  },
-  {
-    "word": "資本",
-    "count": 8
-  },
-  {
-    "word": "記憶",
-    "count": 8
+    "word": "選擇",
+    "count": 27,
+    "articles": [
+      {
+        "title": "丸之內虐待狂",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/027"
+      },
+      {
+        "title": "每天早上 7 點請 ChatGPT 寫一封信給我 <90% by ChatGPT> ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/7-chatgpt-90-by-chatgpt"
+      },
+      {
+        "title": "音樂劇《三個不結婚的女人》，從群像劇裡看見自己",
+        "url": "https://www.wazaiii.com/articles?id=art-3-unmarried-women-musical"
+      }
+    ]
   },
   {
     "word": "公司",
-    "count": 7
+    "count": 26,
+    "articles": [
+      {
+        "title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/8a8"
+      },
+      {
+        "title": "Work-Life Harmony",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/work-life-harmony"
+      },
+      {
+        "title": "工作的成就感因素分析",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/3e1"
+      }
+    ]
+  },
+  {
+    "word": "市場",
+    "count": 26,
+    "articles": [
+      {
+        "title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/1n"
+      },
+      {
+        "title": "我對愛情的貧乏想像",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/27b"
+      },
+      {
+        "title": "有點羞赧的公主遊戲",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/347"
+      }
+    ]
+  },
+  {
+    "word": "資料",
+    "count": 25,
+    "articles": [
+      {
+        "title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/8a8"
+      },
+      {
+        "title": "為了加速文書作業，親自開發「合約產生器」！薩泰爾娛樂鄭晴元：別讓員工被低價值工作困住",
+        "url": "https://www.managertoday.com.tw/articles/view/68580"
+      },
+      {
+        "title": "每天早上 7 點請 ChatGPT 寫一封信給我 <90% by ChatGPT> ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/7-chatgpt-90-by-chatgpt"
+      }
+    ]
+  },
+  {
+    "word": "公主",
+    "count": 25,
+    "articles": [
+      {
+        "title": "有點羞赧的公主遊戲",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/347"
+      },
+      {
+        "title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/2025h218"
+      },
+      {
+        "title": "我對愛情的貧乏想像",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/27b"
+      }
+    ]
+  },
+  {
+    "word": "感謝",
+    "count": 25,
+    "articles": [
+      {
+        "title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/2025h218"
+      },
+      {
+        "title": "Be water, but clean #GAI2025‎ ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/be-water-but-clean-gai2025"
+      },
+      {
+        "title": "颱風天的問候",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/60a"
+      }
+    ]
+  },
+  {
+    "word": "例如",
+    "count": 24,
+    "articles": [
+      {
+        "title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/8a8"
+      },
+      {
+        "title": "我對愛情的貧乏想像",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/27b"
+      },
+      {
+        "title": "每天早上 7 點請 ChatGPT 寫一封信給我 <90% by ChatGPT> ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/7-chatgpt-90-by-chatgpt"
+      }
+    ]
+  },
+  {
+    "word": "情緒",
+    "count": 24,
+    "articles": [
+      {
+        "title": "每天早上 7 點請 ChatGPT 寫一封信給我 <90% by ChatGPT> ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/7-chatgpt-90-by-chatgpt"
+      },
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/1n"
+      }
+    ]
+  },
+  {
+    "word": "任務",
+    "count": 24,
+    "articles": [
+      {
+        "title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/8a8"
+      },
+      {
+        "title": "每天早上 7 點請 ChatGPT 寫一封信給我 <90% by ChatGPT> ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/7-chatgpt-90-by-chatgpt"
+      },
+      {
+        "title": "工作的成就感因素分析",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/3e1"
+      }
+    ]
+  },
+  {
+    "word": "人類",
+    "count": 24,
+    "articles": [
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "丸之內虐待狂",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/027"
+      },
+      {
+        "title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/2025h218"
+      }
+    ]
+  },
+  {
+    "word": "同事",
+    "count": 23,
+    "articles": [
+      {
+        "title": "為了加速文書作業，親自開發「合約產生器」！薩泰爾娛樂鄭晴元：別讓員工被低價值工作困住",
+        "url": "https://www.managertoday.com.tw/articles/view/68580"
+      },
+      {
+        "title": "有點羞赧的公主遊戲",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/347"
+      },
+      {
+        "title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/2025h218"
+      }
+    ]
+  },
+  {
+    "word": "很多",
+    "count": 23,
+    "articles": [
+      {
+        "title": "我對愛情的貧乏想像",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/27b"
+      },
+      {
+        "title": "從「合約產生器」完成到現在，差不多一年",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/04c"
+      },
+      {
+        "title": "喜歡的東西最好有 Copy",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/copy"
+      }
+    ]
+  },
+  {
+    "word": "角色",
+    "count": 23,
+    "articles": [
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "音樂劇《三個不結婚的女人》，從群像劇裡看見自己",
+        "url": "https://www.wazaiii.com/articles?id=art-3-unmarried-women-musical"
+      },
+      {
+        "title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/2025h218"
+      }
+    ]
+  },
+  {
+    "word": "分享",
+    "count": 23,
+    "articles": [
+      {
+        "title": "世界不會變好，但你會",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/091"
+      },
+      {
+        "title": "喜歡的東西最好有 Copy",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/copy"
+      },
+      {
+        "title": "工作的成就感因素分析",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/3e1"
+      }
+    ]
+  },
+  {
+    "word": "只有",
+    "count": 23,
+    "articles": [
+      {
+        "title": "喜歡的東西最好有 Copy",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/copy"
+      },
+      {
+        "title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/1n"
+      },
+      {
+        "title": "Be water, but clean #GAI2025‎ ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/be-water-but-clean-gai2025"
+      }
+    ]
+  },
+  {
+    "word": "這是",
+    "count": 23,
+    "articles": [
+      {
+        "title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/2025h218"
+      },
+      {
+        "title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/8a8"
+      },
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      }
+    ]
+  },
+  {
+    "word": "設計",
+    "count": 23,
+    "articles": [
+      {
+        "title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/8a8"
+      },
+      {
+        "title": "Be water, but clean #GAI2025‎ ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/be-water-but-clean-gai2025"
+      },
+      {
+        "title": "有點羞赧的公主遊戲",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/347"
+      }
+    ]
+  },
+  {
+    "word": "無法",
+    "count": 23,
+    "articles": [
+      {
+        "title": "丸之內虐待狂",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/027"
+      },
+      {
+        "title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/1n"
+      },
+      {
+        "title": "從「合約產生器」完成到現在，差不多一年",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/04c"
+      }
+    ]
+  },
+  {
+    "word": "價值",
+    "count": 22,
+    "articles": [
+      {
+        "title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/2025h218"
+      },
+      {
+        "title": "從「合約產生器」完成到現在，差不多一年",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/04c"
+      },
+      {
+        "title": "「我不是我的我」",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/5e2"
+      }
+    ]
+  },
+  {
+    "word": "ChatGPT",
+    "count": 22,
+    "articles": [
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "從害怕被 ChatGPT 取代到玩轉 AI，菜鳥工程師兩年練出十年功",
+        "url": "https://www.businessweekly.com.tw/Archive/Article?StrId=7011988&rf=google"
+      },
+      {
+        "title": "為了加速文書作業，親自開發「合約產生器」！薩泰爾娛樂鄭晴元：別讓員工被低價值工作困住",
+        "url": "https://www.managertoday.com.tw/articles/view/68580"
+      }
+    ]
+  },
+  {
+    "word": "想到",
+    "count": 22,
+    "articles": [
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "颱風天的問候",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/60a"
+      },
+      {
+        "title": "工作的成就感因素分析",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/3e1"
+      }
+    ]
+  },
+  {
+    "word": "未來",
+    "count": 22,
+    "articles": [
+      {
+        "title": "我對愛情的貧乏想像",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/27b"
+      },
+      {
+        "title": "「我不是我的我」",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/5e2"
+      },
+      {
+        "title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/2025h218"
+      }
+    ]
+  },
+  {
+    "word": "非常",
+    "count": 22,
+    "articles": [
+      {
+        "title": "颱風天的問候",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/60a"
+      },
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "喜歡的東西最好有 Copy",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/copy"
+      }
+    ]
+  },
+  {
+    "word": "自由",
+    "count": 22,
+    "articles": [
+      {
+        "title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/1n"
+      },
+      {
+        "title": "就當我的心是塑膠做的吧（from 歌曲 AI 敢會愛）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/from-ai"
+      },
+      {
+        "title": "世界不會變好，但你會",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/091"
+      }
+    ]
+  },
+  {
+    "word": "流程",
+    "count": 21,
+    "articles": [
+      {
+        "title": "為了加速文書作業，親自開發「合約產生器」！薩泰爾娛樂鄭晴元：別讓員工被低價值工作困住",
+        "url": "https://www.managertoday.com.tw/articles/view/68580"
+      },
+      {
+        "title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/8a8"
+      },
+      {
+        "title": "從「合約產生器」完成到現在，差不多一年",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/04c"
+      }
+    ]
+  },
+  {
+    "word": "學習",
+    "count": 21,
+    "articles": [
+      {
+        "title": "「我不是我的我」",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/5e2"
+      },
+      {
+        "title": "工作的成就感因素分析",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/3e1"
+      },
+      {
+        "title": "有點羞赧的公主遊戲",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/347"
+      }
+    ]
+  },
+  {
+    "word": "書",
+    "count": 21,
+    "articles": [
+      {
+        "title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/2025h218"
+      },
+      {
+        "title": "世界不會變好，但你會",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/091"
+      },
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      }
+    ]
+  },
+  {
+    "word": "討論",
+    "count": 21,
+    "articles": [
+      {
+        "title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/1n"
+      },
+      {
+        "title": "工作的成就感因素分析",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/3e1"
+      },
+      {
+        "title": "世界不會變好，但你會",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/091"
+      }
+    ]
+  },
+  {
+    "word": "這麼",
+    "count": 21,
+    "articles": [
+      {
+        "title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/1n"
+      },
+      {
+        "title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/2025h218"
+      },
+      {
+        "title": "有點羞赧的公主遊戲",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/347"
+      }
+    ]
+  },
+  {
+    "word": "生成",
+    "count": 20,
+    "articles": [
+      {
+        "title": "「我不是我的我」",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/5e2"
+      },
+      {
+        "title": "為了加速文書作業，親自開發「合約產生器」！薩泰爾娛樂鄭晴元：別讓員工被低價值工作困住",
+        "url": "https://www.managertoday.com.tw/articles/view/68580"
+      },
+      {
+        "title": "《博恩夜夜秀》幕後功臣：薩泰爾團隊 AI 神用法，如何讓全員升級？",
+        "url": "https://www.gvm.com.tw/article/119569"
+      }
+    ]
+  },
+  {
+    "word": "資訊",
+    "count": 20,
+    "articles": [
+      {
+        "title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/8a8"
+      },
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "「我不是我的我」",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/5e2"
+      }
+    ]
+  },
+  {
+    "word": "系統",
+    "count": 20,
+    "articles": [
+      {
+        "title": "Be water, but clean #GAI2025‎ ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/be-water-but-clean-gai2025"
+      },
+      {
+        "title": "我對愛情的貧乏想像",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/27b"
+      },
+      {
+        "title": "從「合約產生器」完成到現在，差不多一年",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/04c"
+      }
+    ]
+  },
+  {
+    "word": "感覺",
+    "count": 20,
+    "articles": [
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "喜歡的東西最好有 Copy",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/copy"
+      },
+      {
+        "title": "工作的成就感因素分析",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/3e1"
+      }
+    ]
+  },
+  {
+    "word": "文化",
+    "count": 20,
+    "articles": [
+      {
+        "title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/1n"
+      },
+      {
+        "title": "Work-Life Harmony",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/work-life-harmony"
+      },
+      {
+        "title": "Be water, but clean #GAI2025‎ ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/be-water-but-clean-gai2025"
+      }
+    ]
+  },
+  {
+    "word": "有人",
+    "count": 20,
+    "articles": [
+      {
+        "title": "有點羞赧的公主遊戲",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/347"
+      },
+      {
+        "title": "颱風天的問候",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/60a"
+      },
+      {
+        "title": "Be water, but clean #GAI2025‎ ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/be-water-but-clean-gai2025"
+      }
+    ]
+  },
+  {
+    "word": "存在",
+    "count": 20,
+    "articles": [
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "丸之內虐待狂",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/027"
+      },
+      {
+        "title": "Be water, but clean #GAI2025‎ ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/be-water-but-clean-gai2025"
+      }
+    ]
+  },
+  {
+    "word": "知識",
+    "count": 20,
+    "articles": [
+      {
+        "title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/2025h218"
+      },
+      {
+        "title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/8a8"
+      },
+      {
+        "title": "《博恩夜夜秀》幕後功臣：薩泰爾團隊 AI 神用法，如何讓全員升級？",
+        "url": "https://www.gvm.com.tw/article/119569"
+      }
+    ]
+  },
+  {
+    "word": "團隊",
+    "count": 19,
+    "articles": [
+      {
+        "title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/8a8"
+      },
+      {
+        "title": "《博恩夜夜秀》幕後功臣：薩泰爾團隊 AI 神用法，如何讓全員升級？",
+        "url": "https://www.gvm.com.tw/article/119569"
+      },
+      {
+        "title": "我對愛情的貧乏想像",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/27b"
+      }
+    ]
+  },
+  {
+    "word": "作為",
+    "count": 19,
+    "articles": [
+      {
+        "title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/1n"
+      },
+      {
+        "title": "丸之內虐待狂",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/027"
+      },
+      {
+        "title": "音樂劇《三個不結婚的女人》，從群像劇裡看見自己",
+        "url": "https://www.wazaiii.com/articles?id=art-3-unmarried-women-musical"
+      }
+    ]
+  },
+  {
+    "word": "能力",
+    "count": 18,
+    "articles": [
+      {
+        "title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/1n"
+      },
+      {
+        "title": "我對愛情的貧乏想像",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/27b"
+      },
+      {
+        "title": "有點羞赧的公主遊戲",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/347"
+      }
+    ]
+  },
+  {
+    "word": "意識",
+    "count": 18,
+    "articles": [
+      {
+        "title": "丸之內虐待狂",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/027"
+      },
+      {
+        "title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/2025h218"
+      },
+      {
+        "title": "為了加速文書作業，親自開發「合約產生器」！薩泰爾娛樂鄭晴元：別讓員工被低價值工作困住",
+        "url": "https://www.managertoday.com.tw/articles/view/68580"
+      }
+    ]
+  },
+  {
+    "word": "Master",
+    "count": 18,
+    "articles": [
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/8a8"
+      },
+      {
+        "title": "就當我的心是塑膠做的吧（from 歌曲 AI 敢會愛）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/from-ai"
+      }
+    ]
+  },
+  {
+    "word": "None",
+    "count": 18,
+    "articles": [
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/8a8"
+      },
+      {
+        "title": "就當我的心是塑膠做的吧（from 歌曲 AI 敢會愛）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/from-ai"
+      }
+    ]
+  },
+  {
+    "word": "各種",
+    "count": 18,
+    "articles": [
+      {
+        "title": "Be water, but clean #GAI2025‎ ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/be-water-but-clean-gai2025"
+      },
+      {
+        "title": "喜歡的東西最好有 Copy",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/copy"
+      },
+      {
+        "title": "有點羞赧的公主遊戲",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/347"
+      }
+    ]
+  },
+  {
+    "word": "不要",
+    "count": 18,
+    "articles": [
+      {
+        "title": "有點羞赧的公主遊戲",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/347"
+      },
+      {
+        "title": "桃花賊",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/39b"
+      },
+      {
+        "title": "丸之內虐待狂",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/027"
+      }
+    ]
+  },
+  {
+    "word": "決定",
+    "count": 18,
+    "articles": [
+      {
+        "title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/1n"
+      },
+      {
+        "title": "世界不會變好，但你會",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/091"
+      },
+      {
+        "title": "每天早上 7 點請 ChatGPT 寫一封信給我 <90% by ChatGPT> ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/7-chatgpt-90-by-chatgpt"
+      }
+    ]
+  },
+  {
+    "word": "閱讀",
+    "count": 18,
+    "articles": [
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/8a8"
+      },
+      {
+        "title": "Work-Life Harmony",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/work-life-harmony"
+      }
+    ]
+  },
+  {
+    "word": "行為",
+    "count": 18,
+    "articles": [
+      {
+        "title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/8a8"
+      },
+      {
+        "title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/2025h218"
+      },
+      {
+        "title": "從「合約產生器」完成到現在，差不多一年",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/04c"
+      }
+    ]
+  },
+  {
+    "word": "貧乏",
+    "count": 18,
+    "articles": [
+      {
+        "title": "我對愛情的貧乏想像",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/27b"
+      }
+    ]
+  },
+  {
+    "word": "發生",
+    "count": 17,
+    "articles": [
+      {
+        "title": "就當我的心是塑膠做的吧（from 歌曲 AI 敢會愛）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/from-ai"
+      },
+      {
+        "title": "「我不是我的我」",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/5e2"
+      },
+      {
+        "title": "為了加速文書作業，親自開發「合約產生器」！薩泰爾娛樂鄭晴元：別讓員工被低價值工作困住",
+        "url": "https://www.managertoday.com.tw/articles/view/68580"
+      }
+    ]
+  },
+  {
+    "word": "一定",
+    "count": 17,
+    "articles": [
+      {
+        "title": "Work-Life Harmony",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/work-life-harmony"
+      },
+      {
+        "title": "喜歡的東西最好有 Copy",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/copy"
+      },
+      {
+        "title": "我對愛情的貧乏想像",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/27b"
+      }
+    ]
+  },
+  {
+    "word": "一次",
+    "count": 17,
+    "articles": [
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/8a8"
+      },
+      {
+        "title": "從「合約產生器」完成到現在，差不多一年",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/04c"
+      }
+    ]
+  },
+  {
+    "word": "工程",
+    "count": 17,
+    "articles": [
+      {
+        "title": "從害怕被 ChatGPT 取代到玩轉 AI，菜鳥工程師兩年練出十年功",
+        "url": "https://www.businessweekly.com.tw/Archive/Article?StrId=7011988&rf=google"
+      },
+      {
+        "title": "Be water, but clean #GAI2025‎ ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/be-water-but-clean-gai2025"
+      },
+      {
+        "title": "為了加速文書作業，親自開發「合約產生器」！薩泰爾娛樂鄭晴元：別讓員工被低價值工作困住",
+        "url": "https://www.managertoday.com.tw/articles/view/68580"
+      }
+    ]
+  },
+  {
+    "word": "作品",
+    "count": 17,
+    "articles": [
+      {
+        "title": "丸之內虐待狂",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/027"
+      },
+      {
+        "title": "音樂劇《三個不結婚的女人》，從群像劇裡看見自己",
+        "url": "https://www.wazaiii.com/articles?id=art-3-unmarried-women-musical"
+      },
+      {
+        "title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/1n"
+      }
+    ]
+  },
+  {
+    "word": "訂閱",
+    "count": 17,
+    "articles": [
+      {
+        "title": "颱風天的問候",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/60a"
+      },
+      {
+        "title": "喜歡的東西最好有 Copy",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/copy"
+      },
+      {
+        "title": "丸之內虐待狂",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/027"
+      }
+    ]
+  },
+  {
+    "word": "不能",
+    "count": 17,
+    "articles": [
+      {
+        "title": "有點羞赧的公主遊戲",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/347"
+      },
+      {
+        "title": "「我不是我的我」",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/5e2"
+      },
+      {
+        "title": "工作的成就感因素分析",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/3e1"
+      }
+    ]
+  },
+  {
+    "word": "一下",
+    "count": 17,
+    "articles": [
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "桃花賊",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/39b"
+      },
+      {
+        "title": "世界不會變好，但你會",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/091"
+      }
+    ]
+  },
+  {
+    "word": "創作",
+    "count": 17,
+    "articles": [
+      {
+        "title": "我對愛情的貧乏想像",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/27b"
+      },
+      {
+        "title": "丸之內虐待狂",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/027"
+      },
+      {
+        "title": "AI哲學辯證／當臉書上滿滿AI文，你仍在乎創作者的真誠？",
+        "url": "https://tw.news.yahoo.com/ai%E5%93%B2%E5%AD%B8%E8%BE%AF%E8%AD%89-%E7%95%B6%E8%87%89%E6%9B%B8%E4%B8%8A%E6%BB%BF%E6%BB%BFai%E6%96%87-%E4%BD%A0%E4%BB%8D%E5%9C%A8%E4%B9%8E%E5%89%B5%E4%BD%9C%E8%80%85%E7%9A%84%E7%9C%9F%E8%AA%A0-095200957.html"
+      }
+    ]
+  },
+  {
+    "word": "體驗",
+    "count": 17,
+    "articles": [
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/8a8"
+      },
+      {
+        "title": "桃花賊",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/39b"
+      }
+    ]
+  },
+  {
+    "word": "一點",
+    "count": 17,
+    "articles": [
+      {
+        "title": "「我不是我的我」",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/5e2"
+      },
+      {
+        "title": "從「合約產生器」完成到現在，差不多一年",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/04c"
+      },
+      {
+        "title": "Work-Life Harmony",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/work-life-harmony"
+      }
+    ]
+  },
+  {
+    "word": "描述",
+    "count": 16,
+    "articles": [
+      {
+        "title": "每天早上 7 點請 ChatGPT 寫一封信給我 <90% by ChatGPT> ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/7-chatgpt-90-by-chatgpt"
+      },
+      {
+        "title": "為了加速文書作業，親自開發「合約產生器」！薩泰爾娛樂鄭晴元：別讓員工被低價值工作困住",
+        "url": "https://www.managertoday.com.tw/articles/view/68580"
+      },
+      {
+        "title": "桃花賊",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/39b"
+      }
+    ]
+  },
+  {
+    "word": "突然",
+    "count": 16,
+    "articles": [
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/2025h218"
+      },
+      {
+        "title": "有點羞赧的公主遊戲",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/347"
+      }
+    ]
+  },
+  {
+    "word": "形式",
+    "count": 16,
+    "articles": [
+      {
+        "title": "Be water, but clean #GAI2025‎ ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/be-water-but-clean-gai2025"
+      },
+      {
+        "title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/1n"
+      },
+      {
+        "title": "有點羞赧的公主遊戲",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/347"
+      }
+    ]
+  },
+  {
+    "word": "認知",
+    "count": 16,
+    "articles": [
+      {
+        "title": "有點羞赧的公主遊戲",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/347"
+      },
+      {
+        "title": "Work-Life Harmony",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/work-life-harmony"
+      },
+      {
+        "title": "「我不是我的我」",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/5e2"
+      }
+    ]
+  },
+  {
+    "word": "更好",
+    "count": 16,
+    "articles": [
+      {
+        "title": "有點羞赧的公主遊戲",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/347"
+      },
+      {
+        "title": "Be water, but clean #GAI2025‎ ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/be-water-but-clean-gai2025"
+      },
+      {
+        "title": "我對愛情的貧乏想像",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/27b"
+      }
+    ]
+  },
+  {
+    "word": "進入",
+    "count": 16,
+    "articles": [
+      {
+        "title": "Work-Life Harmony",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/work-life-harmony"
+      },
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "丸之內虐待狂",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/027"
+      }
+    ]
+  },
+  {
+    "word": "還有",
+    "count": 16,
+    "articles": [
+      {
+        "title": "世界不會變好，但你會",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/091"
+      },
+      {
+        "title": "颱風天的問候",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/60a"
+      },
+      {
+        "title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/1n"
+      }
+    ]
+  },
+  {
+    "word": "敘事",
+    "count": 16,
+    "articles": [
+      {
+        "title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/1n"
+      },
+      {
+        "title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/8a8"
+      },
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      }
+    ]
+  },
+  {
+    "word": "記憶",
+    "count": 16,
+    "articles": [
+      {
+        "title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/2025h218"
+      },
+      {
+        "title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/1n"
+      },
+      {
+        "title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/8a8"
+      }
+    ]
+  },
+  {
+    "word": "作者",
+    "count": 16,
+    "articles": [
+      {
+        "title": "AI哲學辯證／當臉書上滿滿AI文，你仍在乎創作者的真誠？",
+        "url": "https://tw.news.yahoo.com/ai%E5%93%B2%E5%AD%B8%E8%BE%AF%E8%AD%89-%E7%95%B6%E8%87%89%E6%9B%B8%E4%B8%8A%E6%BB%BF%E6%BB%BFai%E6%96%87-%E4%BD%A0%E4%BB%8D%E5%9C%A8%E4%B9%8E%E5%89%B5%E4%BD%9C%E8%80%85%E7%9A%84%E7%9C%9F%E8%AA%A0-095200957.html"
+      },
+      {
+        "title": "丸之內虐待狂",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/027"
+      },
+      {
+        "title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/1n"
+      }
+    ]
+  },
+  {
+    "word": "自我",
+    "count": 16,
+    "articles": [
+      {
+        "title": "「我不是我的我」",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/5e2"
+      },
+      {
+        "title": "就當我的心是塑膠做的吧（from 歌曲 AI 敢會愛）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/from-ai"
+      },
+      {
+        "title": "每天早上 7 點請 ChatGPT 寫一封信給我 <90% by ChatGPT> ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/7-chatgpt-90-by-chatgpt"
+      }
+    ]
+  },
+  {
+    "word": "品味",
+    "count": 16,
+    "articles": [
+      {
+        "title": "桃花賊",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/39b"
+      },
+      {
+        "title": "世界不會變好，但你會",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/091"
+      },
+      {
+        "title": "喜歡的東西最好有 Copy",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/copy"
+      }
+    ]
+  },
+  {
+    "word": "身體",
+    "count": 16,
+    "articles": [
+      {
+        "title": "每天早上 7 點請 ChatGPT 寫一封信給我 <90% by ChatGPT> ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/7-chatgpt-90-by-chatgpt"
+      },
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/2025h218"
+      }
+    ]
+  },
+  {
+    "word": "英文",
+    "count": 16,
+    "articles": [
+      {
+        "title": "Work-Life Harmony",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/work-life-harmony"
+      },
+      {
+        "title": "「我不是我的我」",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/5e2"
+      },
+      {
+        "title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/2025h218"
+      }
+    ]
+  },
+  {
+    "word": "流動",
+    "count": 16,
+    "articles": [
+      {
+        "title": "丸之內虐待狂",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/027"
+      },
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "Work-Life Harmony",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/work-life-harmony"
+      }
+    ]
+  },
+  {
+    "word": "無用",
+    "count": 15,
+    "articles": [
+      {
+        "title": "就當我的心是塑膠做的吧（from 歌曲 AI 敢會愛）",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/from-ai"
+      },
+      {
+        "title": "玫瑰不叫玫瑰不也一樣的香",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/21d"
+      },
+      {
+        "title": "工作的成就感因素分析",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/3e1"
+      }
+    ]
+  },
+  {
+    "word": "整理",
+    "count": 15,
+    "articles": [
+      {
+        "title": "每天早上 7 點請 ChatGPT 寫一封信給我 <90% by ChatGPT> ",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/7-chatgpt-90-by-chatgpt"
+      },
+      {
+        "title": "喜歡的東西最好有 Copy",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/copy"
+      },
+      {
+        "title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "url": "https://masterofnonewithsunnyc.substack.com/p/1n"
+      }
+    ]
   }
 ]

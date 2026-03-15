@@ -4,646 +4,536 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sunny's Worldview Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Noto+Sans+TC:wght@300;400;500;600&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
   <style>
     :root {
-      --bg: #0d1117;
-      --surface: #161b22;
-      --border: #30363d;
-      --text: #e6edf3;
-      --muted: #8b949e;
-      --accent: #58a6ff;
-      --accent2: #f78166;
-      --accent3: #7ee787;
-      --accent4: #d2a8ff;
-      --accent5: #f0c674;
-      --accent6: #79c0ff;
+      --bg: #FAF9F6; --surface: #FFFFFF; --surface-alt: #F5F0EB;
+      --border: #E8E0D8; --text: #2D2B28; --text-secondary: #6B6560;
+      --muted: #9B9590; --accent: #D97757; --accent-light: #E8956F;
+      --accent-subtle: rgba(217,119,87,0.08);
+      --amber: #C4944A; --sage: #6B8F71; --slate: #7B8794;
+      --plum: #9B7DB8; --sky: #5B9BD5; --rose: #C97B84;
+      --font-en: 'Source Serif 4', Georgia, serif;
+      --font-zh: 'Noto Sans TC', -apple-system, sans-serif;
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, "Noto Sans TC", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
+    [data-theme="dark"] {
+      --bg: #1A1918; --surface: #242220; --surface-alt: #2E2B28;
+      --border: #3D3832; --text: #E8E0D8; --text-secondary: #B0A89E;
+      --muted: #8A827A; --accent: #E8956F; --accent-light: #F0AB8A;
+      --accent-subtle: rgba(232,149,111,0.1);
     }
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem 1.5rem;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-    header h1 {
-      font-size: 2rem;
-      font-weight: 300;
-      letter-spacing: 0.05em;
-    }
-    header p {
-      color: var(--muted);
-      margin-top: 0.5rem;
-    }
-    .stats {
-      display: flex;
-      gap: 2rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 1.5rem;
-    }
-    .stat { text-align: center; }
-    .stat .num { font-size: 2rem; font-weight: 600; color: var(--accent); }
-    .stat .label { font-size: 0.8rem; color: var(--muted); }
-    .section {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-    }
-    .section h2 {
-      font-size: 1.1rem;
-      font-weight: 500;
-      margin-bottom: 1rem;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:var(--font-en),var(--font-zh); background:var(--bg); color:var(--text); line-height:1.7; -webkit-font-smoothing:antialiased; transition:background .3s,color .3s; }
+    .container { max-width:1100px; margin:0 auto; padding:3rem 2rem; }
 
-    /* ─── Evolution Grid ─── */
-    .evo-grid {
-      display: grid;
-      grid-template-columns: 80px repeat(var(--topic-count), 1fr);
-      gap: 0;
-      overflow-x: auto;
-    }
-    .evo-header {
-      position: sticky;
-      top: 0;
-      background: var(--surface);
-      padding: 0.8rem 0.5rem;
-      text-align: center;
-      font-weight: 600;
-      font-size: 0.85rem;
-      border-bottom: 2px solid var(--border);
-      z-index: 2;
-    }
-    .evo-header.date-col {
-      text-align: right;
-      padding-right: 1rem;
-      color: var(--muted);
-    }
-    .evo-date {
-      grid-column: 1;
-      text-align: right;
-      padding: 0.8rem 1rem 0.8rem 0;
-      font-size: 0.8rem;
-      color: var(--muted);
-      border-top: 1px solid rgba(48,54,61,0.4);
-      white-space: nowrap;
-    }
-    .evo-cell {
-      padding: 0.8rem 0.6rem;
-      border-top: 1px solid rgba(48,54,61,0.4);
-      border-left: 1px solid rgba(48,54,61,0.2);
-      position: relative;
-      min-height: 60px;
-    }
-    .evo-cell:hover {
-      background: rgba(88,166,255,0.05);
-    }
-    .evo-entry {
-      font-size: 0.78rem;
-      line-height: 1.5;
-      cursor: pointer;
-      padding: 0.4rem 0.5rem;
-      border-radius: 6px;
-      transition: background 0.15s;
-    }
-    .evo-entry:hover {
-      background: rgba(255,255,255,0.05);
-    }
-    .evo-stance {
-      color: var(--text);
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-    .evo-quote {
-      color: var(--muted);
-      font-style: italic;
-      font-size: 0.75rem;
-      margin-top: 0.3rem;
-    }
-    .evo-shift {
-      display: inline-block;
-      margin-top: 0.3rem;
-      font-size: 0.7rem;
-      color: var(--accent3);
-      background: rgba(126,231,135,0.1);
-      padding: 0.15rem 0.4rem;
-      border-radius: 4px;
-    }
-    .evo-dot {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      margin-right: 0.3rem;
-      vertical-align: middle;
-    }
-    .evo-empty {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-    }
-    .evo-line {
-      width: 1px;
-      height: 100%;
-      background: rgba(48,54,61,0.5);
-    }
+    /* Nav */
+    .nav { position:sticky; top:0; z-index:50; background:var(--bg); border-bottom:1px solid var(--border); padding:.6rem 0; transition:background .3s; }
+    .nav-inner { max-width:1100px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:0 2rem; gap:.5rem; }
+    .nav-links { display:flex; gap:.3rem; flex-wrap:wrap; list-style:none; }
+    .nav-links a { display:block; padding:.3rem .7rem; font-family:var(--font-zh); font-size:.72rem; color:var(--muted); text-decoration:none; border-radius:6px; transition:all .15s; letter-spacing:.04em; }
+    .nav-links a:hover,.nav-links a.active { color:var(--accent); background:var(--accent-subtle); }
+    .nav-controls { display:flex; gap:.5rem; align-items:center; }
+    .theme-toggle { background:none; border:1px solid var(--border); border-radius:8px; padding:.3rem .6rem; cursor:pointer; font-size:.85rem; color:var(--muted); transition:all .15s; }
+    .theme-toggle:hover { border-color:var(--accent); color:var(--accent); }
 
-    /* ─── Word Cloud ─── */
-    #wordcloud {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      gap: 0.4rem 0.8rem;
-      padding: 2rem 1rem;
-      min-height: 200px;
-    }
-    .wc-word {
-      display: inline-block;
-      cursor: default;
-      transition: all 0.2s;
-      line-height: 1.3;
-    }
-    .wc-word:hover {
-      transform: scale(1.15);
-      text-shadow: 0 0 12px currentColor;
-    }
+    /* Header */
+    header { text-align:center; margin-bottom:3rem; padding:3rem 0 1rem; }
+    header h1 { font-family:var(--font-en),var(--font-zh); font-size:2rem; font-weight:300; letter-spacing:.03em; }
+    header h1 span { font-weight:600; font-style:italic; }
+    header .subtitle { color:var(--muted); margin-top:.6rem; font-size:.9rem; font-weight:300; font-style:italic; }
+    .stats { display:flex; gap:3rem; justify-content:center; flex-wrap:wrap; margin-top:2.5rem; }
+    .stat { text-align:center; }
+    .stat .num { font-family:var(--font-en); font-size:2rem; font-weight:600; color:var(--accent); }
+    .stat .label { font-family:var(--font-zh); font-size:.72rem; color:var(--muted); text-transform:uppercase; letter-spacing:.1em; margin-top:.2rem; }
 
-    /* ─── Tooltip ─── */
-    .tooltip {
-      display: none;
-      position: fixed;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1rem;
-      max-width: 400px;
-      font-size: 0.85rem;
-      z-index: 100;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.5);
-    }
-    .tooltip.show { display: block; }
-    .tooltip .t-date { color: var(--accent); font-weight: 600; }
-    .tooltip .t-topic { color: var(--accent4); margin: 0.3rem 0; font-size: 0.8rem; }
-    .tooltip .t-stance { margin: 0.5rem 0; }
-    .tooltip .t-quote {
-      border-left: 3px solid var(--accent2);
-      padding-left: 0.8rem;
-      color: var(--muted);
-      font-style: italic;
-      margin-top: 0.5rem;
-    }
-    .tooltip .t-tension {
-      color: var(--accent2);
-      margin-top: 0.5rem;
-      font-size: 0.8rem;
-    }
-    .tooltip .t-shift {
-      color: var(--accent3);
-      margin-top: 0.5rem;
-      font-size: 0.8rem;
-    }
+    /* Section */
+    .section { background:var(--surface); border-radius:16px; padding:2rem; margin-bottom:2rem; box-shadow:0 1px 3px rgba(0,0,0,.04),0 4px 12px rgba(0,0,0,.03); transition:background .3s; }
+    .section h2 { font-family:var(--font-en),var(--font-zh); font-size:.8rem; font-weight:500; margin-bottom:1.5rem; color:var(--muted); text-transform:uppercase; letter-spacing:.12em; }
 
-    /* ─── Timeline ─── */
-    #timeline { width: 100%; overflow-x: auto; padding: 1rem 0; }
-    .timeline-track { position: relative; min-height: 200px; padding: 2rem 0; }
-    .timeline-line {
-      position: absolute; top: 50%; left: 0; right: 0;
-      height: 2px; background: var(--border);
-    }
-    .timeline-dot {
-      position: absolute; top: 50%;
-      width: 12px; height: 12px; border-radius: 50%;
-      background: var(--accent); border: 2px solid var(--surface);
-      transform: translate(-50%, -50%);
-      cursor: pointer; transition: all 0.2s; z-index: 2;
-    }
-    .timeline-dot:hover {
-      transform: translate(-50%, -50%) scale(1.5);
-      background: var(--accent2);
-    }
-    .timeline-label {
-      position: absolute; font-size: 10px; color: var(--muted);
-      white-space: nowrap; transform: translateX(-50%);
-    }
-    .timeline-label.above { bottom: calc(50% + 14px); }
-    .timeline-label.below { top: calc(50% + 14px); }
+    /* Word Cloud */
+    #wordcloud { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:.5rem 1rem; padding:2.5rem 1.5rem; min-height:220px; }
+    .wc-word { display:inline-block; cursor:pointer; transition:all .2s; line-height:1.3; font-weight:400; }
+    .wc-word:hover { transform:scale(1.12); opacity:1 !important; }
 
-    /* ─── Radar ─── */
-    #radar-container { max-width: 450px; margin: 0 auto; }
+    /* Co-occurrence */
+    .cooccur-wrapper { display:flex; justify-content:center; overflow-x:auto; padding:1rem 0; }
+    .cooccur-grid { display:inline-grid; gap:0; font-size:.75rem; }
+    .cooccur-cell { width:56px; height:56px; display:flex; align-items:center; justify-content:center; font-family:var(--font-en); font-weight:600; border-radius:4px; transition:transform .1s; cursor:pointer; position:relative; }
+    .cooccur-cell:hover { transform:scale(1.1); z-index:2; }
+    .cooccur-label { display:flex; align-items:center; justify-content:flex-end; padding-right:.8rem; font-family:var(--font-zh); font-size:.72rem; color:var(--text-secondary); white-space:nowrap; }
+    .cooccur-label-top { display:flex; align-items:flex-end; justify-content:center; padding-bottom:.5rem; font-family:var(--font-zh); font-size:.72rem; color:var(--text-secondary); writing-mode:vertical-lr; text-orientation:mixed; }
 
-    /* ─── Bottom row ─── */
-    .bottom-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
+    /* Co-occurrence Tooltip */
+    .cooccur-tooltip { display:none; position:fixed; background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1rem 1.2rem; max-width:340px; font-size:.85rem; z-index:100; box-shadow:0 4px 20px rgba(0,0,0,.08); }
+    .cooccur-tooltip.show { display:block; }
+    .cooccur-tooltip .ct-header { font-weight:600; font-size:.85rem; margin-bottom:.5rem; }
+    .cooccur-tooltip .ct-count { color:var(--accent); font-size:.78rem; }
+    .cooccur-tooltip .ct-articles { margin-top:.5rem; padding-top:.5rem; border-top:1px solid var(--border); }
+    .cooccur-tooltip .ct-article { display:block; color:var(--accent); text-decoration:none; font-size:.78rem; line-height:1.6; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; max-width:300px; }
+    .cooccur-tooltip .ct-article:hover { text-decoration:underline; }
+
+    /* Timeline */
+    #timeline { width:100%; overflow-x:auto; padding:1rem 0; }
+    .timeline-track { position:relative; min-height:180px; padding:2rem 0; }
+    .timeline-line { position:absolute; top:50%; left:0; right:0; height:2px; background:var(--border); }
+    .timeline-dot { position:absolute; top:50%; width:12px; height:12px; border-radius:50%; background:var(--accent); border:3px solid var(--surface); transform:translate(-50%,-50%); cursor:pointer; transition:all .2s; z-index:2; box-shadow:0 1px 4px rgba(0,0,0,.1); }
+    .timeline-dot:hover { transform:translate(-50%,-50%) scale(1.5); background:var(--accent-light); box-shadow:0 2px 8px rgba(217,119,87,.3); }
+    .timeline-label { position:absolute; font-size:10px; color:var(--muted); white-space:nowrap; transform:translateX(-50%); font-family:var(--font-en); font-variant-numeric:tabular-nums; }
+    .timeline-label.above { bottom:calc(50% + 14px); }
+    .timeline-label.below { top:calc(50% + 14px); }
+
+    /* Radar */
+    #radar-container { max-width:420px; margin:0 auto; }
+    .two-col { display:grid; grid-template-columns:1fr 1fr; gap:2rem; }
+
+    /* Legend */
+    .legend-item { margin-bottom:1rem; }
+    .legend-label { font-weight:500; font-size:.85rem; }
+    .legend-sub { color:var(--muted); font-size:.75rem; padding-left:1.2rem; }
+    .legend-note { margin-top:1.5rem; padding-top:1rem; border-top:1px solid var(--border); font-size:.78rem; color:var(--muted); line-height:1.8; }
+
+    /* Evolution Grid */
+    .evo-scroll { max-height:600px; overflow-y:auto; border:1px solid var(--border); border-radius:8px; }
+    .evo-grid { display:grid; grid-template-columns:90px repeat(var(--topic-count),1fr); gap:0; }
+    .evo-header { position:sticky; top:0; z-index:3; background:var(--surface); padding:.8rem .5rem; text-align:center; font-family:var(--font-zh); font-weight:500; font-size:.8rem; border-bottom:2px solid var(--border); color:var(--text-secondary); }
+    .evo-header.date-col { text-align:right; padding-right:1rem; color:var(--muted); }
+    .evo-date { grid-column:1; text-align:right; padding:.8rem 1rem .8rem 0; font-family:var(--font-en); font-size:.78rem; color:var(--muted); border-top:1px solid var(--border); white-space:nowrap; font-variant-numeric:tabular-nums; }
+    .evo-cell { padding:.6rem; border-top:1px solid var(--border); border-left:1px solid rgba(232,224,216,.5); min-height:60px; }
+    .evo-cell:hover { background:var(--accent-subtle); }
+    .evo-entry { font-family:var(--font-zh); font-size:.78rem; line-height:1.6; cursor:pointer; padding:.5rem; border-radius:8px; transition:background .15s; }
+    .evo-entry:hover { background:var(--surface-alt); }
+    .evo-stance { color:var(--text); display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+    .evo-quote { color:var(--muted); font-style:italic; font-size:.73rem; margin-top:.3rem; }
+    .evo-shift { display:inline-block; margin-top:.4rem; font-size:.68rem; color:var(--sage); background:rgba(107,143,113,.1); padding:.15rem .5rem; border-radius:10px; font-weight:500; }
+    .evo-dot { display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:.4rem; vertical-align:middle; }
+    .evo-empty { display:flex; align-items:center; justify-content:center; height:100%; }
+    .evo-line { width:1px; height:100%; background:var(--border); opacity:.5; }
+
+    /* Quote Wall */
+    .quote-wall { column-count:3; column-gap:1.2rem; }
+    .quote-card { break-inside:avoid; margin-bottom:1.2rem; padding:1.2rem 1.4rem; background:var(--surface-alt); border-radius:12px; border-left:3px solid var(--accent); transition:transform .15s,box-shadow .15s; }
+    .quote-card:hover { transform:translateY(-2px); box-shadow:0 4px 12px rgba(0,0,0,.06); }
+    .quote-text { font-family:var(--font-zh); font-size:.88rem; line-height:1.8; color:var(--text); font-style:italic; }
+    .quote-meta { margin-top:.6rem; display:flex; justify-content:space-between; align-items:center; }
+    .quote-topic { font-size:.68rem; font-weight:500; padding:.15rem .5rem; border-radius:10px; text-transform:uppercase; letter-spacing:.06em; }
+    .quote-source { font-size:.7rem; color:var(--muted); }
+    .quote-source a { color:var(--accent); text-decoration:none; }
+    .quote-source a:hover { text-decoration:underline; }
+
+    /* Tooltips */
+    .tooltip,.wc-tooltip { display:none; position:fixed; background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.2rem; max-width:380px; font-size:.85rem; z-index:100; box-shadow:0 4px 20px rgba(0,0,0,.08),0 1px 4px rgba(0,0,0,.04); }
+    .tooltip.show,.wc-tooltip.show { display:block; }
+    .tooltip .t-date { font-family:var(--font-en); color:var(--accent); font-weight:600; font-size:.8rem; }
+    .tooltip .t-topic { color:var(--text-secondary); margin:.2rem 0; font-size:.75rem; text-transform:uppercase; letter-spacing:.08em; }
+    .tooltip .t-stance { font-family:var(--font-zh); margin:.6rem 0; line-height:1.7; }
+    .tooltip .t-quote { font-family:var(--font-zh); border-left:3px solid var(--accent); padding-left:.8rem; color:var(--text-secondary); font-style:italic; margin-top:.6rem; }
+    .tooltip .t-tension { color:var(--amber); margin-top:.5rem; font-size:.8rem; }
+    .tooltip .t-shift { color:var(--sage); margin-top:.5rem; font-size:.8rem; }
+    .tooltip .t-source { margin-top:.6rem; padding-top:.5rem; border-top:1px solid var(--border); }
+    .tooltip .t-source a { color:var(--accent); text-decoration:none; font-size:.78rem; }
+    .tooltip .t-source a:hover { text-decoration:underline; }
+    .wc-tooltip .wc-t-word { font-size:1.1rem; font-weight:600; }
+    .wc-tooltip .wc-t-count { color:var(--accent); font-size:.8rem; margin-left:.4rem; font-weight:500; }
+    .wc-tooltip .wc-t-articles { margin-top:.6rem; padding-top:.6rem; border-top:1px solid var(--border); }
+    .wc-tooltip .wc-t-articles-label { font-size:.72rem; color:var(--muted); text-transform:uppercase; letter-spacing:.08em; margin-bottom:.4rem; }
+    .wc-tooltip .wc-t-article { display:block; color:var(--accent); text-decoration:none; font-size:.8rem; line-height:1.6; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; max-width:300px; }
+    .wc-tooltip .wc-t-article:hover { text-decoration:underline; }
+
+    /* Back to Top */
+    .back-to-top { position:fixed; bottom:2rem; right:2rem; width:40px; height:40px; border-radius:50%; background:var(--accent); color:white; border:none; cursor:pointer; font-size:1.1rem; display:none; align-items:center; justify-content:center; box-shadow:0 2px 8px rgba(0,0,0,.15); transition:opacity .2s,transform .2s; z-index:40; }
+    .back-to-top:hover { transform:scale(1.1); }
+    .back-to-top.visible { display:flex; }
+
+    /* Footer */
+    footer { text-align:center; padding:2rem 0; color:var(--muted); font-size:.75rem; font-family:var(--font-en); font-style:italic; }
+    footer a { color:var(--accent); text-decoration:none; }
+    footer a:hover { text-decoration:underline; }
+
+    @media (max-width:768px) {
+      .container { padding:1.5rem 1rem; }
+      .two-col { grid-template-columns:1fr; }
+      .quote-wall { column-count:1; }
+      .stats { gap:1.5rem; }
+      header { margin-bottom:2rem; }
+      .nav-links a { font-size:.65rem; padding:.25rem .5rem; }
+      .cooccur-cell { width:44px; height:44px; font-size:.65rem; }
     }
-    @media (max-width: 768px) {
-      .bottom-row { grid-template-columns: 1fr; }
-      .evo-grid { font-size: 0.75rem; }
-    }
+    @media (min-width:769px) and (max-width:1024px) { .quote-wall { column-count:2; } }
   </style>
 </head>
 <body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <ul class="nav-links">
+        <li><a href="#wordcloud-section">文字雲</a></li>
+        <li><a href="#cooccur-section">共現</a></li>
+        <li><a href="#timeline-section">時間軸</a></li>
+        <li><a href="#radar-section">雷達</a></li>
+        <li><a href="#evolution-section">演化</a></li>
+        <li><a href="#quotes-section">語錄</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="theme-toggle" id="theme-toggle" title="切換深色模式">☾</button>
+      </div>
+    </div>
+  </nav>
+
   <div class="container">
     <header>
-      <h1>Sunny's Worldview Dashboard</h1>
-      <p>Perpetual Beta — 永久測試版本的自己就是最好版本</p>
+      <h1><span>Sunny</span>'s Worldview Dashboard</h1>
+      <p class="subtitle">Perpetual Beta — 永久測試版本的自己就是最好版本</p>
       <div class="stats" id="stats"></div>
     </header>
 
-    <div class="section">
-      <h2>Evolution — 主題態度演變</h2>
-      <div id="evolution"></div>
-    </div>
-
-    <div class="section">
+    <div class="section" id="wordcloud-section">
       <h2>Word Cloud — 文字雲</h2>
       <div id="wordcloud"></div>
     </div>
 
-    <div class="section">
-      <h2>Timeline — 時間軸</h2>
-      <div id="timeline">
-        <div class="timeline-track" id="timeline-track"></div>
-      </div>
+    <div class="section" id="cooccur-section">
+      <h2>Co-occurrence — 主題共現</h2>
+      <div class="cooccur-wrapper" id="cooccur-wrapper"></div>
     </div>
 
-    <div class="bottom-row">
+    <div class="section" id="timeline-section">
+      <h2>Timeline — 時間軸</h2>
+      <div id="timeline"><div class="timeline-track" id="timeline-track"></div></div>
+    </div>
+
+    <div class="two-col" id="radar-section">
       <div class="section">
         <h2>Radar — 主題關注度</h2>
-        <div id="radar-container">
-          <canvas id="radar"></canvas>
-        </div>
+        <div id="radar-container"><canvas id="radar"></canvas></div>
       </div>
       <div class="section">
         <h2>Legend — 圖例</h2>
         <div id="legend"></div>
       </div>
     </div>
+
+    <div class="section" id="evolution-section">
+      <h2>Evolution — 主題態度演變</h2>
+      <div class="evo-scroll"><div id="evolution"></div></div>
+    </div>
+
+    <div class="section" id="quotes-section">
+      <h2>Quotes — 語錄牆</h2>
+      <div class="quote-wall" id="quote-wall"></div>
+    </div>
+
+    <footer>Built with care · <a href="https://github.com/mseatingtpe/readme-sunny">Source</a></footer>
   </div>
 
+  <button class="back-to-top" id="back-to-top" title="回到頂部">↑</button>
   <div class="tooltip" id="tooltip"></div>
+  <div class="wc-tooltip" id="wc-tooltip"></div>
+  <div class="cooccur-tooltip" id="cooccur-tooltip"></div>
 
   <script>
     const TOPIC_GROUPS = {
-      'AI & 工具': { sub: ['AI', '工具', '自動化'], color: '#58a6ff' },
-      '工作 & 管理': { sub: ['管理', '工作'], color: '#f78166' },
-      '身份 & 生活': { sub: ['身份', '生活', '情緒'], color: '#7ee787' },
-      '愛 & 關係': { sub: ['愛', '女性', '資本'], color: '#d2a8ff' },
-      '文化 & 創作': { sub: ['文化', '品味', '創作'], color: '#f0c674' },
-      '學習 & 信仰': { sub: ['學習', '信仰'], color: '#79c0ff' },
+      'AI & 工具': { sub: ['AI', '工具', '自動化'], color: '#D97757' },
+      '工作 & 管理': { sub: ['管理', '工作'], color: '#C4944A' },
+      '身份 & 生活': { sub: ['身份', '生活', '情緒'], color: '#6B8F71' },
+      '愛 & 關係': { sub: ['愛', '女性', '資本'], color: '#9B7DB8' },
+      '文化 & 創作': { sub: ['文化', '品味', '創作'], color: '#C97B84' },
+      '學習 & 信仰': { sub: ['學習', '信仰'], color: '#5B9BD5' },
     };
+    const groupNames = Object.keys(TOPIC_GROUPS);
 
-    const tooltip = document.getElementById('tooltip');
+    function getTopicColor(t) { for (const [,{sub,color}] of Object.entries(TOPIC_GROUPS)) if (sub.includes(t)) return color; return '#9B9590'; }
+    function getTopicGroupName(t) { for (const [g,{sub}] of Object.entries(TOPIC_GROUPS)) if (sub.includes(t)) return g; return t; }
+    function getGroupForRawTopic(t) { for (let i=0;i<groupNames.length;i++) if (TOPIC_GROUPS[groupNames[i]].sub.includes(t)) return i; return -1; }
 
-    function showTooltip(e, item) {
-      let html = `<div class="t-date">${item.date}</div>`;
-      if (item.topicGroup) html += `<div class="t-topic">${item.topicGroup}</div>`;
-      html += `<div class="t-stance">${item.stance}</div>`;
-      if (item.key_quote) html += `<div class="t-quote">「${item.key_quote}」</div>`;
-      if (item.tension) html += `<div class="t-tension">⚡ ${item.tension}</div>`;
-      if (item.shift_signal) html += `<div class="t-shift">↗ 轉變：${item.shift_signal}</div>`;
-      tooltip.innerHTML = html;
-      tooltip.classList.add('show');
+    function seededShuffle(arr, seed) {
+      const a=[...arr]; let s=seed;
+      for (let i=a.length-1;i>0;i--) { s=(s*1103515245+12345)&0x7fffffff; const j=s%(i+1); [a[i],a[j]]=[a[j],a[i]]; }
+      return a;
+    }
+
+    function animateCount(el, target, dur=800) {
+      if (isNaN(target)) { el.textContent=target; return; }
+      const n=parseInt(target), start=performance.now();
+      function tick(now) { const p=Math.min((now-start)/dur,1); el.textContent=Math.round(n*(1-Math.pow(1-p,3))); if(p<1) requestAnimationFrame(tick); }
+      requestAnimationFrame(tick);
+    }
+
+    function positionEl(el, e) {
       requestAnimationFrame(() => {
-        const rect = tooltip.getBoundingClientRect();
-        let x = e.clientX + 15, y = e.clientY - 10;
-        if (x + rect.width > window.innerWidth) x = e.clientX - rect.width - 15;
-        if (y + rect.height > window.innerHeight) y = window.innerHeight - rect.height - 10;
-        if (y < 10) y = 10;
-        tooltip.style.left = x + 'px';
-        tooltip.style.top = y + 'px';
+        const r=el.getBoundingClientRect();
+        let x=e.clientX+15, y=e.clientY-10;
+        if (x+r.width>window.innerWidth) x=e.clientX-r.width-15;
+        if (y+r.height>window.innerHeight) y=window.innerHeight-r.height-10;
+        if (y<10) y=10;
+        el.style.left=x+'px'; el.style.top=y+'px';
       });
     }
 
-    function hideTooltip() { tooltip.classList.remove('show'); }
+    // ─── General Tooltip ───
+    const tooltip=document.getElementById('tooltip');
+    let tooltipPinned=false;
+    function renderTooltip(item) {
+      let h=`<div class="t-date">${item.date}</div>`;
+      if (item.topicGroup) h+=`<div class="t-topic">${item.topicGroup}</div>`;
+      h+=`<div class="t-stance">${item.stance}</div>`;
+      if (item.key_quote) h+=`<div class="t-quote">「${item.key_quote}」</div>`;
+      if (item.tension) h+=`<div class="t-tension">⚡ ${item.tension}</div>`;
+      if (item.shift_signal) h+=`<div class="t-shift">↗ ${item.shift_signal}</div>`;
+      if (item.source_url&&item.source_title) h+=`<div class="t-source"><a href="${item.source_url}" target="_blank" rel="noopener">📄 ${item.source_title}</a></div>`;
+      tooltip.innerHTML=h;
+    }
+    function showTooltip(e,item) { if(tooltipPinned)return; renderTooltip(item); tooltip.classList.add('show'); positionEl(tooltip,e); }
+    function pinTooltip(e,item) { e.stopPropagation(); tooltipPinned=true; renderTooltip(item); tooltip.classList.add('show'); positionEl(tooltip,e); }
+    function hideTooltip() { if(!tooltipPinned) tooltip.classList.remove('show'); }
 
-    // ─── Build merged data per group ───
+    // ─── WC Tooltip ───
+    const wcTooltip=document.getElementById('wc-tooltip');
+    let wcPinned=false;
+    function renderWc(wd) {
+      let h=`<span class="wc-t-word">${wd.word}</span><span class="wc-t-count">${wd.count} 次</span>`;
+      if (wd.articles&&wd.articles.length) {
+        h+=`<div class="wc-t-articles"><div class="wc-t-articles-label">關聯文章</div>`;
+        wd.articles.forEach(a => { h+=a.url?`<a class="wc-t-article" href="${a.url}" target="_blank">${a.title}</a>`:`<span class="wc-t-article" style="color:var(--text-secondary)">${a.title}</span>`; });
+        h+=`</div>`;
+      }
+      wcTooltip.innerHTML=h;
+    }
+    function showWc(e,wd) { if(wcPinned)return; renderWc(wd); wcTooltip.classList.add('show'); positionEl(wcTooltip,e); }
+    function pinWc(e,wd) { e.stopPropagation(); wcPinned=true; renderWc(wd); wcTooltip.classList.add('show'); positionEl(wcTooltip,e); }
+    function hideWc() { if(!wcPinned) wcTooltip.classList.remove('show'); }
+
+    // ─── Co-occurrence Tooltip ───
+    const ctTooltip=document.getElementById('cooccur-tooltip');
+    let ctPinned=false;
+    function renderCt(g1,g2,count,articles) {
+      let h=`<div class="ct-header">${g1} × ${g2}</div>`;
+      h+=`<div class="ct-count">${count} 篇共現</div>`;
+      if (articles.length) {
+        h+=`<div class="ct-articles">`;
+        articles.forEach(a => { h+=a.source_url?`<a class="ct-article" href="${a.source_url}" target="_blank">${a.source_title||a.date}</a>`:`<span class="ct-article" style="color:var(--text-secondary)">${a.source_title||a.date}</span>`; });
+        h+=`</div>`;
+      }
+      ctTooltip.innerHTML=h;
+    }
+    function showCt(e,g1,g2,count,articles) { if(ctPinned)return; renderCt(g1,g2,count,articles); ctTooltip.classList.add('show'); positionEl(ctTooltip,e); }
+    function pinCt(e,g1,g2,count,articles) { e.stopPropagation(); ctPinned=true; renderCt(g1,g2,count,articles); ctTooltip.classList.add('show'); positionEl(ctTooltip,e); }
+    function hideCt() { if(!ctPinned) ctTooltip.classList.remove('show'); }
+
+    // Close all pinned on outside click
+    document.addEventListener('click', e => {
+      if (tooltipPinned&&!tooltip.contains(e.target)) { tooltipPinned=false; tooltip.classList.remove('show'); }
+      if (wcPinned&&!wcTooltip.contains(e.target)) { wcPinned=false; wcTooltip.classList.remove('show'); }
+      if (ctPinned&&!ctTooltip.contains(e.target)) { ctPinned=false; ctTooltip.classList.remove('show'); }
+    });
+
     function buildGroupData(topics) {
-      const groupData = {};
-      for (const [group, { sub }] of Object.entries(TOPIC_GROUPS)) {
-        const entries = [];
-        const seen = new Set();
-        for (const t of sub) {
-          if (topics[t]) {
-            for (const e of topics[t]) {
-              const key = e.timestamp + '|' + e.source;
-              if (!seen.has(key)) {
-                seen.add(key);
-                entries.push(e);
-              }
-            }
-          }
-        }
-        entries.sort((a, b) => String(a.timestamp).localeCompare(String(b.timestamp)));
-        groupData[group] = entries;
+      const gd={};
+      for (const [group,{sub}] of Object.entries(TOPIC_GROUPS)) {
+        const entries=[], seen=new Set();
+        for (const t of sub) if(topics[t]) for(const e of topics[t]) { const k=e.timestamp+'|'+e.source; if(!seen.has(k)){seen.add(k);entries.push(e);} }
+        entries.sort((a,b)=>String(a.timestamp).localeCompare(String(b.timestamp)));
+        gd[group]=entries;
       }
-      return groupData;
+      return gd;
     }
 
-    // ─── EVOLUTION GRID ───
-    function renderEvolution(data) {
-      const container = document.getElementById('evolution');
-      const topics = data.topics || {};
-      const groupData = buildGroupData(topics);
-      const groupNames = Object.keys(TOPIC_GROUPS);
-
-      // Collect all unique dates
-      const allDates = new Set();
-      for (const entries of Object.values(groupData)) {
-        for (const e of entries) allDates.add(String(e.timestamp));
-      }
-      const sortedDates = [...allDates].sort();
-
-      const colCount = groupNames.length;
-      const grid = document.createElement('div');
-      grid.className = 'evo-grid';
-      grid.style.setProperty('--topic-count', colCount);
-
-      // Header row
-      const dateHeader = document.createElement('div');
-      dateHeader.className = 'evo-header date-col';
-      dateHeader.textContent = '日期';
-      grid.appendChild(dateHeader);
-
-      groupNames.forEach(group => {
-        const h = document.createElement('div');
-        h.className = 'evo-header';
-        h.innerHTML = `<span class="evo-dot" style="background:${TOPIC_GROUPS[group].color}"></span>${group}`;
-        grid.appendChild(h);
-      });
-
-      // Data rows
-      sortedDates.forEach(date => {
-        // Date cell
-        const dateCell = document.createElement('div');
-        dateCell.className = 'evo-date';
-        dateCell.textContent = date;
-        grid.appendChild(dateCell);
-
-        // Topic cells
-        groupNames.forEach(group => {
-          const cell = document.createElement('div');
-          cell.className = 'evo-cell';
-
-          const entry = groupData[group].find(e => String(e.timestamp) === date);
-          if (entry) {
-            const entryDiv = document.createElement('div');
-            entryDiv.className = 'evo-entry';
-
-            // Truncated stance
-            const stanceText = entry.stance || '';
-            const stanceDiv = document.createElement('div');
-            stanceDiv.className = 'evo-stance';
-            stanceDiv.textContent = stanceText;
-            entryDiv.appendChild(stanceDiv);
-
-            // Key quote preview
-            if (entry.key_quote) {
-              const quoteDiv = document.createElement('div');
-              quoteDiv.className = 'evo-quote';
-              const q = entry.key_quote;
-              quoteDiv.textContent = '「' + (q.length > 25 ? q.slice(0, 23) + '…' : q) + '」';
-              entryDiv.appendChild(quoteDiv);
-            }
-
-            // Shift signal badge
-            if (entry.shift_signal) {
-              const shiftDiv = document.createElement('div');
-              shiftDiv.className = 'evo-shift';
-              shiftDiv.textContent = '↗ 轉變';
-              entryDiv.appendChild(shiftDiv);
-            }
-
-            // Tooltip on hover
-            entryDiv.addEventListener('mouseover', e => showTooltip(e, {
-              date,
-              topicGroup: group,
-              stance: entry.stance,
-              key_quote: entry.key_quote,
-              tension: entry.tension,
-              shift_signal: entry.shift_signal,
-            }));
-            entryDiv.addEventListener('mouseout', hideTooltip);
-
-            cell.appendChild(entryDiv);
-          } else {
-            // Empty cell with faint line
-            const empty = document.createElement('div');
-            empty.className = 'evo-empty';
-            const line = document.createElement('div');
-            line.className = 'evo-line';
-            empty.appendChild(line);
-            cell.appendChild(empty);
-          }
-
-          grid.appendChild(cell);
-        });
-      });
-
-      container.appendChild(grid);
+    // ─── STATS ───
+    function renderStats(data) {
+      const s=document.getElementById('stats');
+      const items=[{num:data.total_extractions,label:'篇萃取'},{num:groupNames.length,label:'個主題群'},{num:data.articles.length,label:'篇文章'},{num:data.last_updated,label:'最後更新'}];
+      s.innerHTML=items.map(i=>`<div class="stat"><div class="num" data-target="${i.num}">0</div><div class="label">${i.label}</div></div>`).join('');
+      s.querySelectorAll('.num').forEach(el=>animateCount(el,el.dataset.target));
     }
 
     // ─── WORD CLOUD ───
     function renderWordCloud() {
-      fetch('wordcloud.json')
-        .then(r => r.json())
-        .then(words => {
-          const container = document.getElementById('wordcloud');
-          if (!words.length) {
-            container.innerHTML = '<p style="color:var(--muted)">尚未產生關鍵字資料。</p>';
-            return;
-          }
-
-          const maxCount = words[0].count;
-          const minCount = words[words.length - 1].count;
-          const colors = ['#58a6ff', '#f78166', '#7ee787', '#d2a8ff', '#f0c674', '#79c0ff', '#e6edf3'];
-
-          // Shuffle for visual variety
-          const shuffled = words.sort(() => Math.random() - 0.5);
-
-          shuffled.forEach(({ word, count }) => {
-            const span = document.createElement('span');
-            span.className = 'wc-word';
-            span.textContent = word;
-
-            const ratio = maxCount === minCount ? 0.5 : (count - minCount) / (maxCount - minCount);
-            const fontSize = 0.75 + ratio * 2.2;
-            span.style.fontSize = fontSize + 'rem';
-            span.style.opacity = 0.45 + ratio * 0.55;
-            span.style.color = colors[Math.floor(Math.random() * colors.length)];
-            span.title = `${word}: ${count} 次`;
-            container.appendChild(span);
-          });
+      fetch('wordcloud.json').then(r=>r.json()).then(words => {
+        const c=document.getElementById('wordcloud');
+        if(!words.length){c.innerHTML='<p style="color:var(--muted)">尚未產生關鍵字資料。</p>';return;}
+        const maxC=words[0].count, minC=words[words.length-1].count;
+        const colors=['#D97757','#C4944A','#6B8F71','#9B7DB8','#C97B84','#5B9BD5','#2D2B28'];
+        seededShuffle(words,42).forEach((wd,i) => {
+          const span=document.createElement('span'); span.className='wc-word'; span.textContent=wd.word;
+          const ratio=maxC===minC?.5:(wd.count-minC)/(maxC-minC);
+          span.style.fontSize=(.8+ratio*2)+'rem'; span.style.opacity=.35+ratio*.65; span.style.color=colors[i%colors.length];
+          span.addEventListener('mouseover',e=>showWc(e,wd)); span.addEventListener('mouseout',hideWc); span.addEventListener('click',e=>pinWc(e,wd));
+          c.appendChild(span);
         });
+      });
+    }
+
+    // ─── CO-OCCURRENCE ───
+    function renderCooccurrence(data) {
+      const wrapper=document.getElementById('cooccur-wrapper');
+      const n=groupNames.length;
+      const matrix=Array.from({length:n},()=>Array(n).fill(0));
+      // Also store the actual articles for each pair
+      const pairArticles=Array.from({length:n},()=>Array.from({length:n},()=>[]));
+
+      for (const event of data.timeline) {
+        const groups=new Set();
+        for (const t of event.topics) { const gi=getGroupForRawTopic(t); if(gi>=0) groups.add(gi); }
+        const arr=[...groups];
+        for (let i=0;i<arr.length;i++) for (let j=0;j<arr.length;j++) {
+          matrix[arr[i]][arr[j]]++;
+          if (arr[i]<=arr[j]) { // avoid duplicate articles
+            pairArticles[arr[i]][arr[j]].push(event);
+            if (arr[i]!==arr[j]) pairArticles[arr[j]][arr[i]].push(event);
+          }
+        }
+      }
+
+      const maxVal=Math.max(...matrix.flat().filter((_,i)=>{const r=Math.floor(i/n),c=i%n;return r!==c;}),1);
+      const grid=document.createElement('div'); grid.className='cooccur-grid';
+      grid.style.gridTemplateColumns=`100px repeat(${n},56px)`;
+      grid.style.gridTemplateRows=`56px repeat(${n},56px)`;
+
+      grid.appendChild(Object.assign(document.createElement('div'),{className:'cooccur-cell'}));
+      groupNames.forEach(g => { const l=document.createElement('div'); l.className='cooccur-label-top'; l.textContent=g.split(' & ')[0]; l.style.color=TOPIC_GROUPS[g].color; grid.appendChild(l); });
+
+      for (let i=0;i<n;i++) {
+        const rl=document.createElement('div'); rl.className='cooccur-label'; rl.textContent=groupNames[i].split(' & ')[0]; rl.style.color=TOPIC_GROUPS[groupNames[i]].color; grid.appendChild(rl);
+        for (let j=0;j<n;j++) {
+          const cell=document.createElement('div'); cell.className='cooccur-cell';
+          const v=matrix[i][j];
+          if (i===j) { cell.style.background=TOPIC_GROUPS[groupNames[i]].color+'20'; cell.style.color=TOPIC_GROUPS[groupNames[i]].color; cell.textContent=v; }
+          else { const intensity=v/maxVal; cell.style.background=`rgba(217,119,87,${intensity*.5})`; cell.style.color=intensity>.3?'#fff':'var(--text-secondary)'; cell.textContent=v||''; }
+          // Deduplicate articles for this pair
+          const seen=new Set(); const arts=pairArticles[i][j].filter(a=>{const k=a.date+a.source;if(seen.has(k))return false;seen.add(k);return true;}).slice(0,5);
+          const g1=groupNames[i], g2=groupNames[j];
+          cell.addEventListener('mouseover',e=>showCt(e,g1,g2,v,arts));
+          cell.addEventListener('mouseout',hideCt);
+          cell.addEventListener('click',e=>pinCt(e,g1,g2,v,arts));
+          grid.appendChild(cell);
+        }
+      }
+      wrapper.appendChild(grid);
     }
 
     // ─── TIMELINE ───
     function renderTimeline(data) {
-      const track = document.getElementById('timeline-track');
-      const events = data.timeline;
-      if (!events.length) return;
-
-      const dates = events.map(e => new Date(e.date));
-      const minDate = Math.min(...dates);
-      const maxDate = Math.max(...dates);
-      const range = maxDate - minDate || 1;
-
-      const trackWidth = Math.max(track.clientWidth, events.length * 55);
-      track.style.width = trackWidth + 'px';
-
-      const line = document.createElement('div');
-      line.className = 'timeline-line';
-      track.appendChild(line);
-
-      // Find topic color for an event
-      function getEventColor(event) {
-        for (const [group, { sub, color }] of Object.entries(TOPIC_GROUPS)) {
-          if (event.topics.some(t => sub.includes(t))) return color;
-        }
-        return '#58a6ff';
-      }
-
-      events.forEach((event, i) => {
-        const date = new Date(event.date);
-        const pct = ((date - minDate) / range) * 85 + 5;
-
-        const dot = document.createElement('div');
-        dot.className = 'timeline-dot';
-        dot.style.left = pct + '%';
-        dot.style.background = getEventColor(event);
-        dot.addEventListener('mouseover', e => showTooltip(e, {
-          date: event.date,
-          topicGroup: event.topics.join(' · '),
-          stance: event.stance,
-          key_quote: event.key_quote,
-          shift_signal: event.shift_signal,
-        }));
-        dot.addEventListener('mouseout', hideTooltip);
+      const track=document.getElementById('timeline-track');
+      const events=data.timeline; if(!events.length)return;
+      const dates=events.map(e=>new Date(e.date)); const minD=Math.min(...dates),maxD=Math.max(...dates),range=maxD-minD||1;
+      track.style.width=Math.max(track.clientWidth,events.length*55)+'px';
+      track.appendChild(Object.assign(document.createElement('div'),{className:'timeline-line'}));
+      events.forEach((event,i) => {
+        const date=new Date(event.date), pct=((date-minD)/range)*85+5;
+        const color=(()=>{for(const[,{sub,color}]of Object.entries(TOPIC_GROUPS))if(event.topics.some(t=>sub.includes(t)))return color;return'#D97757';})();
+        const td={date:event.date,topicGroup:event.topics.join(' · '),stance:event.stance,key_quote:event.key_quote,shift_signal:event.shift_signal,source_title:event.source_title,source_url:event.source_url};
+        const dot=document.createElement('div'); dot.className='timeline-dot'; dot.style.left=pct+'%'; dot.style.background=color;
+        dot.addEventListener('mouseover',e=>showTooltip(e,td)); dot.addEventListener('mouseout',hideTooltip); dot.addEventListener('click',e=>pinTooltip(e,td));
         track.appendChild(dot);
-
-        const label = document.createElement('div');
-        label.className = 'timeline-label ' + (i % 2 === 0 ? 'above' : 'below');
-        label.style.left = pct + '%';
-        label.textContent = event.date;
+        const label=document.createElement('div'); label.className='timeline-label '+(i%2===0?'above':'below'); label.style.left=pct+'%'; label.textContent=event.date;
         track.appendChild(label);
       });
     }
 
     // ─── RADAR ───
     function renderRadar(data) {
-      const labels = [];
-      const values = [];
-      for (const [group, { sub }] of Object.entries(TOPIC_GROUPS)) {
-        const count = sub.reduce((sum, t) => sum + (data.topic_counts[t] || 0), 0);
-        labels.push(group);
-        values.push(count);
-      }
-
-      new Chart(document.getElementById('radar'), {
-        type: 'radar',
-        data: {
-          labels,
-          datasets: [{
-            label: '提及次數',
-            data: values,
-            backgroundColor: 'rgba(88, 166, 255, 0.12)',
-            borderColor: '#58a6ff',
-            borderWidth: 2,
-            pointBackgroundColor: Object.values(TOPIC_GROUPS).map(g => g.color),
-            pointBorderColor: '#0d1117',
-            pointBorderWidth: 2,
-            pointRadius: 5,
-          }]
-        },
-        options: {
-          responsive: true,
-          plugins: { legend: { display: false } },
-          scales: {
-            r: {
-              beginAtZero: true,
-              grid: { color: 'rgba(48,54,61,0.8)' },
-              angleLines: { color: 'rgba(48,54,61,0.8)' },
-              pointLabels: {
-                color: '#e6edf3',
-                font: { size: 12, family: '-apple-system, Noto Sans TC, sans-serif' },
-              },
-              ticks: { color: '#8b949e', backdropColor: 'transparent', stepSize: 5 },
-            },
-          },
-        },
+      const labels=[],values=[];
+      for (const [g,{sub}] of Object.entries(TOPIC_GROUPS)) { labels.push(g); values.push(sub.reduce((s,t)=>s+(data.topic_counts[t]||0),0)); }
+      new Chart(document.getElementById('radar'),{
+        type:'radar',
+        data:{labels,datasets:[{label:'提及次數',data:values,backgroundColor:'rgba(217,119,87,.08)',borderColor:'#D97757',borderWidth:2,pointBackgroundColor:Object.values(TOPIC_GROUPS).map(g=>g.color),pointBorderColor:getComputedStyle(document.documentElement).getPropertyValue('--surface').trim()||'#fff',pointBorderWidth:2,pointRadius:5}]},
+        options:{responsive:true,plugins:{legend:{display:false}},scales:{r:{beginAtZero:true,grid:{color:'rgba(232,224,216,.8)'},angleLines:{color:'rgba(232,224,216,.8)'},pointLabels:{color:getComputedStyle(document.documentElement).getPropertyValue('--text').trim(),font:{size:12,family:'Noto Sans TC,sans-serif'}},ticks:{color:'#9B9590',backdropColor:'transparent',stepSize:5}}}}
       });
     }
 
     // ─── LEGEND ───
     function renderLegend() {
-      const container = document.getElementById('legend');
-      let html = '<div style="padding:0.5rem">';
-      for (const [group, { sub, color }] of Object.entries(TOPIC_GROUPS)) {
-        html += `<div style="margin-bottom:1rem">
-          <div style="font-weight:600;margin-bottom:0.3rem">
-            <span class="evo-dot" style="background:${color}"></span>${group}
-          </div>
-          <div style="color:var(--muted);font-size:0.8rem;padding-left:1.1rem">
-            包含：${sub.join('、')}
-          </div>
-        </div>`;
-      }
-      html += `<div style="margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--border);font-size:0.8rem;color:var(--muted)">
-        <div style="margin-bottom:0.5rem"><span class="evo-shift" style="font-size:0.75rem">↗ 轉變</span> = 態度有明顯變化</div>
-        <div>Hover 任何格子看完整立場、語錄和張力</div>
-      </div>`;
-      container.innerHTML = html;
+      const c=document.getElementById('legend');
+      let h='';
+      for (const [g,{sub,color}] of Object.entries(TOPIC_GROUPS)) h+=`<div class="legend-item"><div class="legend-label"><span class="evo-dot" style="background:${color}"></span>${g}</div><div class="legend-sub">包含：${sub.join('、')}</div></div>`;
+      h+=`<div class="legend-note"><div><span class="evo-shift" style="font-size:.72rem">↗ 轉變</span> 態度有明顯變化</div><div style="margin-top:.4rem">點擊任何元素可固定 tooltip</div></div>`;
+      c.innerHTML=h;
     }
 
-    // ─── STATS ───
-    function renderStats(data) {
-      const stats = document.getElementById('stats');
-      const items = [
-        { num: data.total_extractions, label: '篇萃取' },
-        { num: Object.keys(TOPIC_GROUPS).length, label: '個主題群' },
-        { num: data.articles.length, label: '篇文章' },
-        { num: data.last_updated, label: '最後更新' },
-      ];
-      stats.innerHTML = items.map(s =>
-        `<div class="stat"><div class="num">${s.num}</div><div class="label">${s.label}</div></div>`
-      ).join('');
+    // ─── EVOLUTION GRID ───
+    function renderEvolution(data) {
+      const container=document.getElementById('evolution'),topics=data.topics||{};
+      const groupData=buildGroupData(topics);
+      const allDates=new Set(); for(const entries of Object.values(groupData)) for(const e of entries) allDates.add(String(e.timestamp));
+      const sortedDates=[...allDates].sort();
+      const grid=document.createElement('div'); grid.className='evo-grid'; grid.style.setProperty('--topic-count',groupNames.length);
+      const dh=document.createElement('div'); dh.className='evo-header date-col'; dh.textContent='日期'; grid.appendChild(dh);
+      groupNames.forEach(g=>{const h=document.createElement('div');h.className='evo-header';h.innerHTML=`<span class="evo-dot" style="background:${TOPIC_GROUPS[g].color}"></span>${g}`;grid.appendChild(h);});
+      sortedDates.forEach(date => {
+        const dc=document.createElement('div'); dc.className='evo-date'; dc.textContent=date; grid.appendChild(dc);
+        groupNames.forEach(group => {
+          const cell=document.createElement('div'); cell.className='evo-cell';
+          const entry=groupData[group].find(e=>String(e.timestamp)===date);
+          if(entry){
+            const ed=document.createElement('div'); ed.className='evo-entry';
+            const sd=document.createElement('div'); sd.className='evo-stance'; sd.textContent=entry.stance||''; ed.appendChild(sd);
+            if(entry.key_quote){const qd=document.createElement('div');qd.className='evo-quote';const q=entry.key_quote;qd.textContent='「'+(q.length>25?q.slice(0,23)+'…':q)+'」';ed.appendChild(qd);}
+            if(entry.shift_signal){const sh=document.createElement('div');sh.className='evo-shift';sh.textContent='↗ 轉變';ed.appendChild(sh);}
+            const td={date,topicGroup:group,stance:entry.stance,key_quote:entry.key_quote,tension:entry.tension,shift_signal:entry.shift_signal,source_title:entry.source_title,source_url:entry.source_url};
+            ed.addEventListener('mouseover',e=>showTooltip(e,td)); ed.addEventListener('mouseout',hideTooltip); ed.addEventListener('click',e=>pinTooltip(e,td));
+            cell.appendChild(ed);
+          } else { const em=document.createElement('div');em.className='evo-empty';const ln=document.createElement('div');ln.className='evo-line';em.appendChild(ln);cell.appendChild(em); }
+          grid.appendChild(cell);
+        });
+      });
+      container.appendChild(grid);
     }
+
+    // ─── QUOTE WALL (only from Sunny's own writing: substack + writing) ───
+    function renderQuoteWall(data) {
+      const wall=document.getElementById('quote-wall');
+      const quotes=[];
+      for (const [topic,entries] of Object.entries(data.topics||{})) {
+        for (const e of entries) {
+          // Only include quotes from Sunny's own content
+          if (e.source_type && e.source_type !== 'substack' && e.source_type !== 'writing') continue;
+          if (e.key_quote && e.key_quote.length > 8) {
+            quotes.push({quote:e.key_quote,topic,date:e.timestamp,title:e.source_title,url:e.source_url});
+          }
+        }
+      }
+      const seen=new Set();
+      const unique=quotes.filter(q=>{if(seen.has(q.quote))return false;seen.add(q.quote);return true;});
+      seededShuffle(unique,7).slice(0,18).forEach(q => {
+        const card=document.createElement('div'); card.className='quote-card';
+        const color=getTopicColor(q.topic); card.style.borderLeftColor=color;
+        let src='';
+        if(q.url&&q.title) src=`<span class="quote-source"><a href="${q.url}" target="_blank">${q.title}</a></span>`;
+        else if(q.title) src=`<span class="quote-source">${q.title}</span>`;
+        card.innerHTML=`<div class="quote-text">「${q.quote}」</div><div class="quote-meta"><span class="quote-topic" style="color:${color};background:${color}15">${getTopicGroupName(q.topic)}</span>${src}</div>`;
+        wall.appendChild(card);
+      });
+    }
+
+    // ─── THEME ───
+    const themeBtn=document.getElementById('theme-toggle');
+    function setTheme(dark){document.documentElement.setAttribute('data-theme',dark?'dark':'light');themeBtn.textContent=dark?'☀':'☾';localStorage.setItem('theme',dark?'dark':'light');}
+    themeBtn.addEventListener('click',()=>{setTheme(document.documentElement.getAttribute('data-theme')!=='dark');});
+    if(localStorage.getItem('theme')==='dark') setTheme(true);
+
+    // ─── BACK TO TOP ───
+    const btt=document.getElementById('back-to-top');
+    window.addEventListener('scroll',()=>{btt.classList.toggle('visible',window.scrollY>400);});
+    btt.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+    // ─── NAV ACTIVE ───
+    const navLinks=document.querySelectorAll('.nav-links a');
+    const sectionEls=[...navLinks].map(a=>document.querySelector(a.getAttribute('href')));
+    navLinks.forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth',block:'start'});});});
+    const navObs=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){const id=entry.target.id;navLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+id));}});},{rootMargin:'-80px 0px -60% 0px'});
+    sectionEls.forEach(s=>{if(s)navObs.observe(s);});
 
     // ─── INIT ───
-    fetch('data.json')
-      .then(r => r.json())
-      .then(data => {
-        renderStats(data);
-        renderEvolution(data);
-        renderWordCloud();
-        renderTimeline(data);
-        renderRadar(data);
-        renderLegend();
-      })
-      .catch(err => {
-        document.body.innerHTML = `<div style="padding:3rem;text-align:center;color:#f78166">
-          載入失敗：${err.message}<br>請確認 data.json 存在
-        </div>`;
-      });
+    fetch('data.json').then(r=>r.json()).then(data => {
+      renderStats(data);
+      renderWordCloud();
+      renderCooccurrence(data);
+      renderTimeline(data);
+      renderRadar(data);
+      renderLegend();
+      renderEvolution(data);
+      renderQuoteWall(data);
+    }).catch(err=>{document.body.innerHTML=`<div style="padding:3rem;text-align:center;color:var(--accent)">載入失敗：${err.message}<br>請確認 data.json 存在</div>`;});
   </script>
 </body>
 </html>

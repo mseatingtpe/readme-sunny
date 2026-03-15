@@ -13,7 +13,9 @@ OUTPUT_PATH = ROOT / "docs" / "data.json"
 
 
 def load_articles():
+    """Load articles and build a source-path → metadata lookup."""
     articles = []
+    source_lookup = {}  # "content/raw/filename.md" → {title, url}
     for f in sorted(RAW_DIR.glob("*.md")):
         if f.name.startswith("_"):
             continue
@@ -25,14 +27,22 @@ def load_articles():
             continue
         fm = yaml.safe_load(parts[1])
         if fm:
+            title = fm.get("title", "")
+            url = fm.get("source_url", "")
             articles.append({
-                "title": fm.get("title", ""),
+                "title": title,
                 "date": str(fm.get("date", "")),
                 "source_type": fm.get("source_type", ""),
-                "source_url": fm.get("source_url", ""),
+                "source_url": url,
             })
+            # Key matches the format used in worldview-profile.yaml
+            source_lookup[f"content/raw/{f.name}"] = {
+                "title": title,
+                "url": url,
+                "source_type": fm.get("source_type", ""),
+            }
     articles.sort(key=lambda x: x["date"])
-    return articles
+    return articles, source_lookup
 
 
 def load_profile():
@@ -44,7 +54,17 @@ def load_profile():
 
 def main():
     profile = load_profile()
-    articles = load_articles()
+    articles, source_lookup = load_articles()
+
+    def enrich_entry(entry):
+        """Add source_title and source_url from lookup."""
+        source = entry.get("source", "")
+        meta = source_lookup.get(source, {})
+        enriched = dict(entry)
+        enriched["source_title"] = meta.get("title", "")
+        enriched["source_url"] = meta.get("url", "")
+        enriched["source_type"] = meta.get("source_type", "")
+        return enriched
 
     # Collect timeline events from all topic entries
     timeline = []
@@ -54,6 +74,7 @@ def main():
             for entry in entries:
                 source = entry.get("source", "")
                 key = (entry["timestamp"], source)
+                meta = source_lookup.get(source, {})
                 if key not in seen:
                     seen.add(key)
                     timeline.append({
@@ -63,10 +84,12 @@ def main():
                         "tension": entry.get("tension"),
                         "shift_signal": entry.get("shift_signal"),
                         "source": source,
+                        "source_title": meta.get("title", ""),
+                        "source_url": meta.get("url", ""),
+                        "source_type": meta.get("source_type", ""),
                         "topics": [topic],
                     })
                 else:
-                    # Add topic to existing entry
                     for t in timeline:
                         if str(t["date"]) == str(entry["timestamp"]) and t["source"] == source:
                             if topic not in t["topics"]:
@@ -81,6 +104,12 @@ def main():
         for topic, entries in profile["topics"].items():
             topic_counts[topic] = len(entries)
 
+    # Enrich topic entries with source metadata
+    enriched_topics = {}
+    if profile and "topics" in profile:
+        for topic, entries in profile["topics"].items():
+            enriched_topics[topic] = [enrich_entry(e) for e in entries]
+
     # Keywords for word cloud
     keywords = {}
     if profile and "keywords" in profile:
@@ -92,7 +121,7 @@ def main():
         "articles": articles,
         "timeline": timeline,
         "topic_counts": topic_counts,
-        "topics": dict(profile["topics"]) if profile and "topics" in profile else {},
+        "topics": enriched_topics,
         "keywords": keywords,
     }
 

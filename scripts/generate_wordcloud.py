@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
-"""Generate word frequency data from all articles using jieba."""
+"""Generate word frequency data from all articles using jieba.
+
+Output includes per-word article associations (top 3) for hover display.
+"""
 
 import json
 import re
 import jieba
 import yaml
 from pathlib import Path
-from collections import Counter
+from collections import Counter, defaultdict
 
 ROOT = Path(__file__).parent.parent
 RAW_DIR = ROOT / "content" / "raw"
@@ -61,24 +64,8 @@ CUSTOM_WORDS = [
     "以柔制剛", "心流", "數位遊牧", "試算表",
 ]
 
-
-def load_articles():
-    """Load all article body text + notes."""
-    texts = []
-    for f in sorted(RAW_DIR.glob("*.md")):
-        if f.name.startswith("_"):
-            continue
-        text = f.read_text(encoding="utf-8")
-        if text.startswith("---"):
-            parts = text.split("---", 2)
-            if len(parts) >= 3:
-                texts.append(parts[2])
-        else:
-            texts.append(text)
-    # Include Substack Notes
-    if NOTES_PATH.exists():
-        texts.append(NOTES_PATH.read_text(encoding="utf-8"))
-    return "\n".join(texts)
+# Important single-char words to keep
+KEEP_SINGLE = {"愛", "人", "書"}
 
 
 def clean_text(text):
@@ -93,46 +80,89 @@ def clean_text(text):
     return text
 
 
-def segment_and_count(text):
-    """Segment text and count word frequencies."""
-    text = clean_text(text)
+def is_valid_word(w):
+    """Check if a word should be counted."""
+    if len(w) < 2 and w not in KEEP_SINGLE:
+        return False
+    if w.lower() in STOP_WORDS or w in STOP_WORDS:
+        return False
+    if re.match(r'^[\d\s\.,;:!?\-—–…「」『』（）\(\)\[\]#*_/=&%@]+$', w):
+        return False
+    if re.match(r'^[a-zA-Z]{1,3}$', w):
+        return False
+    return True
 
-    # Add custom words to jieba
+
+def load_and_segment_articles():
+    """Load articles individually, segment each, track word→article mapping."""
     for w in CUSTOM_WORDS:
         jieba.add_word(w)
 
-    # Segment
-    words = jieba.cut(text)
-
-    # Important single-char words to keep
-    keep_single = {"愛", "人", "書"}
-
-    # Filter and count
     counter = Counter()
-    for word in words:
-        w = word.strip()
-        if len(w) < 2 and w not in keep_single:
-            continue
-        if w.lower() in STOP_WORDS or w in STOP_WORDS:
-            continue
-        if re.match(r'^[\d\s\.,;:!?\-—–…「」『』（）\(\)\[\]#*_/=&%@]+$', w):
-            continue
-        if re.match(r'^[a-zA-Z]{1,3}$', w):  # skip short English fragments
-            continue
-        counter[w] += 1
+    # word → list of {title, url, count_in_article}
+    word_articles = defaultdict(list)
 
-    return counter
+    for f in sorted(RAW_DIR.glob("*.md")):
+        if f.name.startswith("_"):
+            continue
+        text = f.read_text(encoding="utf-8")
+        if not text.startswith("---"):
+            continue
+        parts = text.split("---", 2)
+        if len(parts) < 3:
+            continue
+
+        fm = yaml.safe_load(parts[1])
+        if not fm:
+            continue
+
+        title = fm.get("title", "")
+        url = fm.get("source_url", "")
+        body = clean_text(parts[2])
+
+        # Count words in this article
+        article_counter = Counter()
+        for word in jieba.cut(body):
+            w = word.strip()
+            if is_valid_word(w):
+                article_counter[w] += 1
+
+        # Update global counter and word→article mapping
+        for w, c in article_counter.items():
+            counter[w] += c
+            word_articles[w].append({
+                "title": title,
+                "url": url,
+                "count": c,
+            })
+
+    # Include Substack Notes (no article association)
+    if NOTES_PATH.exists():
+        notes_text = clean_text(NOTES_PATH.read_text(encoding="utf-8"))
+        for word in jieba.cut(notes_text):
+            w = word.strip()
+            if is_valid_word(w):
+                counter[w] += 1
+
+    return counter, word_articles
 
 
 def main():
-    text = load_articles()
-    counter = segment_and_count(text)
+    counter, word_articles = load_and_segment_articles()
 
     # Top 100 words
     top = counter.most_common(100)
 
-    # Output as list of {word, count}
-    result = [{"word": w, "count": c} for w, c in top]
+    result = []
+    for w, c in top:
+        # Sort articles by count descending, take top 3
+        arts = sorted(word_articles.get(w, []), key=lambda x: x["count"], reverse=True)[:3]
+        entry = {
+            "word": w,
+            "count": c,
+            "articles": [{"title": a["title"], "url": a["url"]} for a in arts],
+        }
+        result.append(entry)
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:

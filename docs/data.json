@@ -167,6 +167,9 @@
       "tension": "與傳統手工作業和低效率流程的對立",
       "shift_signal": "拆解流程痛點、清楚描述問題，再求助適當的AI工具",
       "source": "content/raw/2024-05-16-合約產生器-經理人雜誌.md",
+      "source_title": "為了加速文書作業，親自開發「合約產生器」！薩泰爾娛樂鄭晴元：別讓員工被低價值工作困住",
+      "source_url": "https://www.managertoday.com.tw/articles/view/68580",
+      "source_type": "media",
       "topics": [
         "AI",
         "工作"
@@ -179,6 +182,9 @@
       "tension": null,
       "shift_signal": null,
       "source": "content/raw/2024-09-20-工作的成就感因素分析.md",
+      "source_title": "工作的成就感因素分析",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/3e1",
+      "source_type": "substack",
       "topics": [
         "AI",
         "工作",
@@ -193,6 +199,9 @@
       "tension": "與認為非專業者使用 AI／低門檻工具是褻瀆專業的觀點對立。",
       "shift_signal": null,
       "source": "content/raw/2024-09-24-有點羞赧的公主遊戲.md",
+      "source_title": "有點羞赧的公主遊戲",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/347",
+      "source_type": "substack",
       "topics": [
         "AI",
         "學習",
@@ -207,6 +216,9 @@
       "tension": "與性騷擾被輕描淡寫、加害者輕易復出的社會現實對立。",
       "shift_signal": "做了決定「之後會把所有聽說的鬼故事當真」，從保留判斷轉向相信倖存者。",
       "source": "content/raw/2024-10-02-颱風天的問候.md",
+      "source_title": "颱風天的問候",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/60a",
+      "source_type": "substack",
       "topics": [
         "文化"
       ]
@@ -218,6 +230,9 @@
       "tension": null,
       "shift_signal": null,
       "source": "content/raw/2024-10-21-我從生產力工具學會的三件事和關於信仰的雜感.md",
+      "source_title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/8a8",
+      "source_type": "substack",
       "topics": [
         "AI",
         "工作",
@@ -232,6 +247,9 @@
       "tension": "與對 AI 取代工作感到恐懼的態度對立。",
       "shift_signal": "為這樣的工作即將消失感到雀躍，同時好奇將來的學習場景。",
       "source": "content/raw/2024-11-26-從合約產生器完成到現在差不多一年.md",
+      "source_title": "從「合約產生器」完成到現在，差不多一年",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/04c",
+      "source_type": "substack",
       "topics": [
         "AI",
         "工作",
@@ -245,6 +263,9 @@
       "tension": "個人效率提升與組織層級問題解決之間的落差",
       "shift_signal": "隨著應用複雜度提升，團隊發現個人效率提升不足以支撐整個組織",
       "source": "content/raw/2025-02-27-博恩夜夜秀幕後功臣-薩泰爾團隊ai神用法.md",
+      "source_title": "《博恩夜夜秀》幕後功臣：薩泰爾團隊 AI 神用法，如何讓全員升級？",
+      "source_url": "https://www.gvm.com.tw/article/119569",
+      "source_type": "media",
       "topics": [
         "AI",
         "工作",
@@ -258,6 +279,9 @@
       "tension": "對抗「AI 會取代人」或「使用 AI 的人將會取代不使用的人」這類恐懼敘事。",
       "shift_signal": null,
       "source": "content/raw/2025-03-03-就當我的心是塑膠做的吧from-歌曲-ai-敢會愛.md",
+      "source_title": "就當我的心是塑膠做的吧（from 歌曲 AI 敢會愛）",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/from-ai",
+      "source_type": "substack",
       "topics": [
         "AI",
         "學習",
@@ -271,6 +295,9 @@
       "tension": "抽象概念先行的溝通方式，在網路用語中「抽象」並非正面形容詞。",
       "shift_signal": null,
       "source": "content/raw/2025-03-06-桃花賊.md",
+      "source_title": "桃花賊",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/39b",
+      "source_type": "substack",
       "topics": [
         "工作",
         "文化",
@@ -284,6 +311,9 @@
       "tension": "從恐懼被AI取代到積極擁抱AI工具",
       "shift_signal": "然而兩年後，情況完全相反",
       "source": "content/raw/2025-03-13-從害怕被chatgpt取代到玩轉ai-商業周刊.md",
+      "source_title": "從害怕被 ChatGPT 取代到玩轉 AI，菜鳥工程師兩年練出十年功",
+      "source_url": "https://www.businessweekly.com.tw/Archive/Article?StrId=7011988&rf=google",
+      "source_type": "media",
       "topics": [
         "AI",
         "工作",
@@ -297,6 +327,9 @@
       "tension": "看似慷慨的放手實則是資本主義的策略——他們為了不讓我丟臉所以更加認真。",
       "shift_signal": null,
       "source": "content/raw/2025-03-19-世界不會變好但你會.md",
+      "source_title": "世界不會變好，但你會",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/091",
+      "source_type": "substack",
       "topics": [
         "工作",
         "文化",
@@ -311,6 +344,9 @@
       "tension": "AI 作為安慰與自我描述的工具 vs. 當傾訴對象清晰後不再需要 AI 代言。",
       "shift_signal": null,
       "source": "content/raw/2025-04-02-玫瑰不叫玫瑰不也一樣的香.md",
+      "source_title": "玫瑰不叫玫瑰不也一樣的香",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/21d",
+      "source_type": "substack",
       "topics": [
         "AI",
         "文化",
@@ -325,6 +361,9 @@
       "tension": "AI 已經能處理大部分翻譯，為什麼還要上英文學術寫作——能力的自我懷疑 vs. 對語言掌控的渴望。",
       "shift_signal": null,
       "source": "content/raw/2025-04-22-work-life-harmony.md",
+      "source_title": "Work-Life Harmony",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/work-life-harmony",
+      "source_type": "substack",
       "topics": [
         "AI",
         "工作",
@@ -339,6 +378,9 @@
       "tension": "與把 AI 當作套裝內容或純工具的觀點對立——作者認為 AI 可以成為個人化的溫柔陪伴。",
       "shift_signal": "看到 PJ Wu 的電子報後被解放，決定「方法論讓 AI 寫就好」。",
       "source": "content/raw/2025-04-23-每天早上-7-點請-chatgpt-寫一封信給我-90-by-chatgpt.md",
+      "source_title": "每天早上 7 點請 ChatGPT 寫一封信給我 <90% by ChatGPT> ",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/7-chatgpt-90-by-chatgpt",
+      "source_type": "substack",
       "topics": [
         "AI",
         "學習",
@@ -352,6 +394,9 @@
       "tension": "創作者的不確定性與說服他人的需求之間的衝突",
       "shift_signal": null,
       "source": "content/raw/2025-05-09-三個不結婚的女人-wazaiii.md",
+      "source_title": "音樂劇《三個不結婚的女人》，從群像劇裡看見自己",
+      "source_url": "https://www.wazaiii.com/articles?id=art-3-unmarried-women-musical",
+      "source_type": "writing",
       "topics": [
         "工作",
         "文化",
@@ -366,6 +411,9 @@
       "tension": "與「AI 可以取代學習」的觀點對立——要先能想像魔法才能施展魔法。",
       "shift_signal": null,
       "source": "content/raw/2025-05-13-講完女性主義跟喜劇正在準備財務的演講接著要賣-gai-年會的門票.md",
+      "source_title": "講完女性主義跟喜劇，正在準備財務的演講，接著要賣 GAI 年會的門票",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/gai",
+      "source_type": "substack",
       "topics": [
         "AI",
         "工作",
@@ -380,6 +428,9 @@
       "tension": "與 AI 能取代人類創作的觀點對立——總體設計和調度只有人類能做。",
       "shift_signal": null,
       "source": "content/raw/2025-05-27-be-water-but-clean-gai2025.md",
+      "source_title": "Be water, but clean #GAI2025‎ ",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/be-water-but-clean-gai2025",
+      "source_type": "substack",
       "topics": [
         "AI",
         "工作",
@@ -394,6 +445,9 @@
       "tension": "與 AI 加速學習的主流敘事對立——如果不透過手工摘要，知識仍然模糊。",
       "shift_signal": "從三個月前在 Readwise Reader 一字一字讀，到現在用多種工具分層閱讀，但最終仍認為手寫才能內化。",
       "source": "content/raw/2025-07-22-比絕望先一步抵達愛-ai.md",
+      "source_title": "比絕望先一步抵達愛 AI",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/ai",
+      "source_type": "substack",
       "topics": [
         "AI",
         "學習",
@@ -407,6 +461,9 @@
       "tension": "與 KOL 帶貨風格和短影音的當代內容生態對立。",
       "shift_signal": null,
       "source": "content/raw/2025-08-07-喜歡的東西最好有-copy.md",
+      "source_title": "喜歡的東西最好有 Copy",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/copy",
+      "source_type": "substack",
       "topics": [
         "文化",
         "身份",
@@ -420,6 +477,9 @@
       "tension": "與「AI 可以取代學習與真人互動」的效率主義對立",
       "shift_signal": "原本認為真人英文老師優於 AI 語音，嘗試 Grok 後發現確實有料，但也因此重新定義了真人教師的角色——未來更接近諮詢師與教練。",
       "source": "content/raw/2025-08-22-我不是我的我.md",
+      "source_title": "「我不是我的我」",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/5e2",
+      "source_type": "substack",
       "topics": [
         "AI",
         "學習",
@@ -434,6 +494,9 @@
       "tension": null,
       "shift_signal": null,
       "source": "content/raw/2025-11-13-我對愛情的貧乏想像.md",
+      "source_title": "我對愛情的貧乏想像",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/27b",
+      "source_type": "substack",
       "topics": [
         "AI",
         "工作",
@@ -448,6 +511,9 @@
       "tension": "2023 年以前的藝術作品不需要向世界證明自己不是 AI 生成的",
       "shift_signal": null,
       "source": "content/raw/2025-12-01-丸之內虐待狂.md",
+      "source_title": "丸之內虐待狂",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/027",
+      "source_type": "substack",
       "topics": [
         "AI",
         "文化",
@@ -462,6 +528,9 @@
       "tension": "AI 帶來的效率提升 vs. 台灣缺乏規模與工業保護下被低成本重製取代的風險",
       "shift_signal": "從前參加論壇靠人耳打獵聆聽，現在搭配錄音筆和 ChatGPT、Heptabase 本質上改變了理解資訊的方式。",
       "source": "content/raw/2025-12-17-亞洲巡迴報告-1n文化是防禦工事.md",
+      "source_title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/1n",
+      "source_type": "substack",
       "topics": [
         "AI",
         "工作",
@@ -476,6 +545,9 @@
       "tension": "娛樂表象與權力監控機制的對立",
       "shift_signal": null,
       "source": "content/raw/2025-12-31-不良一族尋愛記-wazaiii.md",
+      "source_title": "《不良一族尋愛記》真的是戀綜嗎？愛情是選修，服從規則才是必修！",
+      "source_url": "https://www.wazaiii.com/articles?id=movie-badly-in-love",
+      "source_type": "writing",
       "topics": [
         "文化",
         "身份",
@@ -489,6 +561,9 @@
       "tension": "AI 記憶的上下文越多會產生偏離，但能察覺偏離是因為自己知道要去哪裡",
       "shift_signal": "從思考如何正確封存與累積，轉向理解 unlearn（拋棄記憶與舊習）的必要性。",
       "source": "content/raw/2026-01-01-相信的事情列表-2025h218-愛是一切的解答.md",
+      "source_title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/2025h218",
+      "source_type": "substack",
       "topics": [
         "AI",
         "工作",
@@ -504,6 +579,9 @@
       "tension": "AI工具的便利性與創作者真誠表達的對立",
       "shift_signal": null,
       "source": "content/raw/2026-02-02-ai哲學辯證-遠見雜誌.md",
+      "source_title": "AI哲學辯證／當臉書上滿滿AI文，你仍在乎創作者的真誠？",
+      "source_url": "https://tw.news.yahoo.com/ai%E5%93%B2%E5%AD%B8%E8%BE%AF%E8%AD%89-%E7%95%B6%E8%87%89%E6%9B%B8%E4%B8%8A%E6%BB%BF%E6%BB%BFai%E6%96%87-%E4%BD%A0%E4%BB%8D%E5%9C%A8%E4%B9%8E%E5%89%B5%E4%BD%9C%E8%80%85%E7%9A%84%E7%9C%9F%E8%AA%A0-095200957.html",
+      "source_type": "media",
       "topics": [
         "AI",
         "文化",
@@ -528,7 +606,10 @@
         "tension": "與傳統手工作業和低效率流程的對立",
         "shift_signal": "拆解流程痛點、清楚描述問題，再求助適當的AI工具",
         "key_quote": "借助ChatGPT之力，讓她能夠下更長的函式指令、協助理解工程師寫出來的作品。",
-        "source": "content/raw/2024-05-16-合約產生器-經理人雜誌.md"
+        "source": "content/raw/2024-05-16-合約產生器-經理人雜誌.md",
+        "source_title": "為了加速文書作業，親自開發「合約產生器」！薩泰爾娛樂鄭晴元：別讓員工被低價值工作困住",
+        "source_url": "https://www.managertoday.com.tw/articles/view/68580",
+        "source_type": "media"
       },
       {
         "timestamp": "2024-09-20",
@@ -536,7 +617,10 @@
         "tension": null,
         "shift_signal": null,
         "key_quote": "這是我從公司過往的面談資料中，去識別後讓 AI 整理出來的成就感分析。",
-        "source": "content/raw/2024-09-20-工作的成就感因素分析.md"
+        "source": "content/raw/2024-09-20-工作的成就感因素分析.md",
+        "source_title": "工作的成就感因素分析",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/3e1",
+        "source_type": "substack"
       },
       {
         "timestamp": "2024-09-24",
@@ -544,7 +628,10 @@
         "tension": "與認為非專業者使用 AI／低門檻工具是褻瀆專業的觀點對立。",
         "shift_signal": null,
         "key_quote": "不管是 Canva 或是 Cursor，都是推進想做的事情的第一步。",
-        "source": "content/raw/2024-09-24-有點羞赧的公主遊戲.md"
+        "source": "content/raw/2024-09-24-有點羞赧的公主遊戲.md",
+        "source_title": "有點羞赧的公主遊戲",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/347",
+        "source_type": "substack"
       },
       {
         "timestamp": "2024-10-21",
@@ -552,7 +639,10 @@
         "tension": null,
         "shift_signal": null,
         "key_quote": "如同使用 LLM、訓練 LLM，在社會中長成為一個人的過程，其實也是不斷輸入指令和知識，反覆試錯而來。",
-        "source": "content/raw/2024-10-21-我從生產力工具學會的三件事和關於信仰的雜感.md"
+        "source": "content/raw/2024-10-21-我從生產力工具學會的三件事和關於信仰的雜感.md",
+        "source_title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/8a8",
+        "source_type": "substack"
       },
       {
         "timestamp": "2024-11-26",
@@ -560,7 +650,10 @@
         "tension": "與對 AI 取代工作感到恐懼的態度對立。",
         "shift_signal": "為這樣的工作即將消失感到雀躍，同時好奇將來的學習場景。",
         "key_quote": "此後幾年，我為這樣的工作即將消失感到雀躍不已，同時也為將來的學習場景感到相當好奇。",
-        "source": "content/raw/2024-11-26-從合約產生器完成到現在差不多一年.md"
+        "source": "content/raw/2024-11-26-從合約產生器完成到現在差不多一年.md",
+        "source_title": "從「合約產生器」完成到現在，差不多一年",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/04c",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-02-27",
@@ -568,7 +661,10 @@
         "tension": "個人效率提升與組織層級問題解決之間的落差",
         "shift_signal": "隨著應用複雜度提升，團隊發現個人效率提升不足以支撐整個組織",
         "key_quote": "有些問題用ChatGPT可以解，用Apps Script可以解，用RPA也可以解，它們都只是抵達終點的過程。",
-        "source": "content/raw/2025-02-27-博恩夜夜秀幕後功臣-薩泰爾團隊ai神用法.md"
+        "source": "content/raw/2025-02-27-博恩夜夜秀幕後功臣-薩泰爾團隊ai神用法.md",
+        "source_title": "《博恩夜夜秀》幕後功臣：薩泰爾團隊 AI 神用法，如何讓全員升級？",
+        "source_url": "https://www.gvm.com.tw/article/119569",
+        "source_type": "media"
       },
       {
         "timestamp": "2025-03-03",
@@ -576,7 +672,10 @@
         "tension": "對抗「AI 會取代人」或「使用 AI 的人將會取代不使用的人」這類恐懼敘事。",
         "shift_signal": null,
         "key_quote": "生活沒有用 AI 一點也不會毀滅。",
-        "source": "content/raw/2025-03-03-就當我的心是塑膠做的吧from-歌曲-ai-敢會愛.md"
+        "source": "content/raw/2025-03-03-就當我的心是塑膠做的吧from-歌曲-ai-敢會愛.md",
+        "source_title": "就當我的心是塑膠做的吧（from 歌曲 AI 敢會愛）",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/from-ai",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-03-13",
@@ -584,7 +683,10 @@
         "tension": "從恐懼被AI取代到積極擁抱AI工具",
         "shift_signal": "然而兩年後，情況完全相反",
         "key_quote": "AI非但沒有讓他失業，反而大幅提升了他的開發效率",
-        "source": "content/raw/2025-03-13-從害怕被chatgpt取代到玩轉ai-商業周刊.md"
+        "source": "content/raw/2025-03-13-從害怕被chatgpt取代到玩轉ai-商業周刊.md",
+        "source_title": "從害怕被 ChatGPT 取代到玩轉 AI，菜鳥工程師兩年練出十年功",
+        "source_url": "https://www.businessweekly.com.tw/Archive/Article?StrId=7011988&rf=google",
+        "source_type": "media"
       },
       {
         "timestamp": "2025-04-02",
@@ -592,7 +694,10 @@
         "tension": "AI 作為安慰與自我描述的工具 vs. 當傾訴對象清晰後不再需要 AI 代言。",
         "shift_signal": null,
         "key_quote": "有了完美的聆聽者，我們自然也會有說不完的完美體驗。",
-        "source": "content/raw/2025-04-02-玫瑰不叫玫瑰不也一樣的香.md"
+        "source": "content/raw/2025-04-02-玫瑰不叫玫瑰不也一樣的香.md",
+        "source_title": "玫瑰不叫玫瑰不也一樣的香",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/21d",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-04-22",
@@ -600,7 +705,10 @@
         "tension": "AI 已經能處理大部分翻譯，為什麼還要上英文學術寫作——能力的自我懷疑 vs. 對語言掌控的渴望。",
         "shift_signal": null,
         "key_quote": "靈光乍現的時刻，我喜歡我是我的我。",
-        "source": "content/raw/2025-04-22-work-life-harmony.md"
+        "source": "content/raw/2025-04-22-work-life-harmony.md",
+        "source_title": "Work-Life Harmony",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/work-life-harmony",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-04-23",
@@ -608,7 +716,10 @@
         "tension": "與把 AI 當作套裝內容或純工具的觀點對立——作者認為 AI 可以成為個人化的溫柔陪伴。",
         "shift_signal": "看到 PJ Wu 的電子報後被解放，決定「方法論讓 AI 寫就好」。",
         "key_quote": "這樣每天早上的那封信，對我來說就不是套裝內容，而是「今天的我值得被這樣說話」的開始。",
-        "source": "content/raw/2025-04-23-每天早上-7-點請-chatgpt-寫一封信給我-90-by-chatgpt.md"
+        "source": "content/raw/2025-04-23-每天早上-7-點請-chatgpt-寫一封信給我-90-by-chatgpt.md",
+        "source_title": "每天早上 7 點請 ChatGPT 寫一封信給我 <90% by ChatGPT> ",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/7-chatgpt-90-by-chatgpt",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-05-13",
@@ -616,7 +727,10 @@
         "tension": "與「AI 可以取代學習」的觀點對立——要先能想像魔法才能施展魔法。",
         "shift_signal": null,
         "key_quote": "要先能想像魔法才能施展魔法喔。",
-        "source": "content/raw/2025-05-13-講完女性主義跟喜劇正在準備財務的演講接著要賣-gai-年會的門票.md"
+        "source": "content/raw/2025-05-13-講完女性主義跟喜劇正在準備財務的演講接著要賣-gai-年會的門票.md",
+        "source_title": "講完女性主義跟喜劇，正在準備財務的演講，接著要賣 GAI 年會的門票",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/gai",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-05-27",
@@ -624,7 +738,10 @@
         "tension": "與 AI 能取代人類創作的觀點對立——總體設計和調度只有人類能做。",
         "shift_signal": null,
         "key_quote": "AI 的產出對 AI 來說只是一坨又一坨的文字，這些文字只有對人類世界有意義，對 AI 沒有。",
-        "source": "content/raw/2025-05-27-be-water-but-clean-gai2025.md"
+        "source": "content/raw/2025-05-27-be-water-but-clean-gai2025.md",
+        "source_title": "Be water, but clean #GAI2025‎ ",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/be-water-but-clean-gai2025",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-07-22",
@@ -632,7 +749,10 @@
         "tension": "與 AI 加速學習的主流敘事對立——如果不透過手工摘要，知識仍然模糊。",
         "shift_signal": "從三個月前在 Readwise Reader 一字一字讀，到現在用多種工具分層閱讀，但最終仍認為手寫才能內化。",
         "key_quote": "寫出來才是我的。",
-        "source": "content/raw/2025-07-22-比絕望先一步抵達愛-ai.md"
+        "source": "content/raw/2025-07-22-比絕望先一步抵達愛-ai.md",
+        "source_title": "比絕望先一步抵達愛 AI",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/ai",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-08-22",
@@ -640,7 +760,10 @@
         "tension": "與「AI 可以取代學習與真人互動」的效率主義對立",
         "shift_signal": "原本認為真人英文老師優於 AI 語音，嘗試 Grok 後發現確實有料，但也因此重新定義了真人教師的角色——未來更接近諮詢師與教練。",
         "key_quote": "沒有親手做過的事，我並不能聲稱擁有。遑論自在地擁有。",
-        "source": "content/raw/2025-08-22-我不是我的我.md"
+        "source": "content/raw/2025-08-22-我不是我的我.md",
+        "source_title": "「我不是我的我」",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/5e2",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-11-13",
@@ -648,7 +771,10 @@
         "tension": null,
         "shift_signal": null,
         "key_quote": "愛就是注意力所及之處。",
-        "source": "content/raw/2025-11-13-我對愛情的貧乏想像.md"
+        "source": "content/raw/2025-11-13-我對愛情的貧乏想像.md",
+        "source_title": "我對愛情的貧乏想像",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/27b",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-12-01",
@@ -656,7 +782,10 @@
         "tension": "2023 年以前的藝術作品不需要向世界證明自己不是 AI 生成的",
         "shift_signal": null,
         "key_quote": "我有點羨慕 2023 年以前的藝術作品，他們不需要向世界證明自己不是 AI 生成的。",
-        "source": "content/raw/2025-12-01-丸之內虐待狂.md"
+        "source": "content/raw/2025-12-01-丸之內虐待狂.md",
+        "source_title": "丸之內虐待狂",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/027",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-12-17",
@@ -664,7 +793,10 @@
         "tension": "AI 帶來的效率提升 vs. 台灣缺乏規模與工業保護下被低成本重製取代的風險",
         "shift_signal": "從前參加論壇靠人耳打獵聆聽，現在搭配錄音筆和 ChatGPT、Heptabase 本質上改變了理解資訊的方式。",
         "key_quote": "AI 可以生成無數種風格，但無法生成一秒鐘的經歷。",
-        "source": "content/raw/2025-12-17-亞洲巡迴報告-1n文化是防禦工事.md"
+        "source": "content/raw/2025-12-17-亞洲巡迴報告-1n文化是防禦工事.md",
+        "source_title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/1n",
+        "source_type": "substack"
       },
       {
         "timestamp": "2026-01-01",
@@ -672,7 +804,10 @@
         "tension": "AI 記憶的上下文越多會產生偏離，但能察覺偏離是因為自己知道要去哪裡",
         "shift_signal": "從思考如何正確封存與累積，轉向理解 unlearn（拋棄記憶與舊習）的必要性。",
         "key_quote": "機器可以模擬愛的連結，卻無法模擬愛的重量。",
-        "source": "content/raw/2026-01-01-相信的事情列表-2025h218-愛是一切的解答.md"
+        "source": "content/raw/2026-01-01-相信的事情列表-2025h218-愛是一切的解答.md",
+        "source_title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/2025h218",
+        "source_type": "substack"
       },
       {
         "timestamp": "2026-02-02",
@@ -680,7 +815,10 @@
         "tension": "AI工具的便利性與創作者真誠表達的對立",
         "shift_signal": null,
         "key_quote": "AI應被視為創作媒介而非創作者。區分高質內容與AI垃圾的關鍵在於「信念」——創作者想要解決的問題、傳遞的信息強度。",
-        "source": "content/raw/2026-02-02-ai哲學辯證-遠見雜誌.md"
+        "source": "content/raw/2026-02-02-ai哲學辯證-遠見雜誌.md",
+        "source_title": "AI哲學辯證／當臉書上滿滿AI文，你仍在乎創作者的真誠？",
+        "source_url": "https://tw.news.yahoo.com/ai%E5%93%B2%E5%AD%B8%E8%BE%AF%E8%AD%89-%E7%95%B6%E8%87%89%E6%9B%B8%E4%B8%8A%E6%BB%BF%E6%BB%BFai%E6%96%87-%E4%BD%A0%E4%BB%8D%E5%9C%A8%E4%B9%8E%E5%89%B5%E4%BD%9C%E8%80%85%E7%9A%84%E7%9C%9F%E8%AA%A0-095200957.html",
+        "source_type": "media"
       }
     ],
     "工作": [
@@ -690,7 +828,10 @@
         "tension": "高價值工作與低價值重複性作業的矛盾",
         "shift_signal": "新系統一推出就有正面回饋，讓功能立竿見影",
         "key_quote": "如果要關注公司成員的成長，就不該讓他們被重複性的工作困住生產力。",
-        "source": "content/raw/2024-05-16-合約產生器-經理人雜誌.md"
+        "source": "content/raw/2024-05-16-合約產生器-經理人雜誌.md",
+        "source_title": "為了加速文書作業，親自開發「合約產生器」！薩泰爾娛樂鄭晴元：別讓員工被低價值工作困住",
+        "source_url": "https://www.managertoday.com.tw/articles/view/68580",
+        "source_type": "media"
       },
       {
         "timestamp": "2024-09-20",
@@ -698,7 +839,10 @@
         "tension": "與只看短期績效、忽視員工情緒價值和學習需求的管理方式對立。",
         "shift_signal": "開始體會到耐心等待的重要，從追求立即成果轉向重視組織信念。",
         "key_quote": "開始慢慢體會到耐心等待的重要，賺不賺錢是一時的，組織的氣長來自信念。",
-        "source": "content/raw/2024-09-20-工作的成就感因素分析.md"
+        "source": "content/raw/2024-09-20-工作的成就感因素分析.md",
+        "source_title": "工作的成就感因素分析",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/3e1",
+        "source_type": "substack"
       },
       {
         "timestamp": "2024-10-21",
@@ -706,7 +850,10 @@
         "tension": "與為了管理工具而管理工具、追求 step-by-step 教學的心態對立。",
         "shift_signal": null,
         "key_quote": "雖然我確實很會使用生產力工具，我仍強烈的主張 spreadsheet （試算表）是解構資訊和行為的第一步。",
-        "source": "content/raw/2024-10-21-我從生產力工具學會的三件事和關於信仰的雜感.md"
+        "source": "content/raw/2024-10-21-我從生產力工具學會的三件事和關於信仰的雜感.md",
+        "source_title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/8a8",
+        "source_type": "substack"
       },
       {
         "timestamp": "2024-11-26",
@@ -714,7 +861,10 @@
         "tension": "與認為管理後台工作沒有價值、「不然請助理是要幹嘛」的觀點對立。",
         "shift_signal": "從認為自動化「能有多難」到體會每個卡住的結點都是尚未理解的知識。",
         "key_quote": "原來所有卡住的結點，都是我尚未徹底理解的知識。在理性的範疇裡，不應存在語焉不詳的物件。模糊不是性質，是既有的框架出了差錯。",
-        "source": "content/raw/2024-11-26-從合約產生器完成到現在差不多一年.md"
+        "source": "content/raw/2024-11-26-從合約產生器完成到現在差不多一年.md",
+        "source_title": "從「合約產生器」完成到現在，差不多一年",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/04c",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-02-27",
@@ -722,7 +872,10 @@
         "tension": "技術工具的便利性與組織基礎建設需求之間的矛盾",
         "shift_signal": "團隊決定回溯基礎建設，重新定義資訊流向和命名規則",
         "key_quote": "隨著時間進行，管理債一定會持續發生",
-        "source": "content/raw/2025-02-27-博恩夜夜秀幕後功臣-薩泰爾團隊ai神用法.md"
+        "source": "content/raw/2025-02-27-博恩夜夜秀幕後功臣-薩泰爾團隊ai神用法.md",
+        "source_title": "《博恩夜夜秀》幕後功臣：薩泰爾團隊 AI 神用法，如何讓全員升級？",
+        "source_url": "https://www.gvm.com.tw/article/119569",
+        "source_type": "media"
       },
       {
         "timestamp": "2025-03-06",
@@ -730,7 +883,10 @@
         "tension": "抽象概念先行的溝通方式，在網路用語中「抽象」並非正面形容詞。",
         "shift_signal": null,
         "key_quote": "正因為這些從業者都把脆弱的部分都攤開了，越是抽象的情感越是需要找到共同的語言。",
-        "source": "content/raw/2025-03-06-桃花賊.md"
+        "source": "content/raw/2025-03-06-桃花賊.md",
+        "source_title": "桃花賊",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/39b",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-03-13",
@@ -738,7 +894,10 @@
         "tension": "工程師職業受AI衝擊最大的普遍焦慮",
         "shift_signal": null,
         "key_quote": "成為同事眼中最善於運用AI工具的工程師之一",
-        "source": "content/raw/2025-03-13-從害怕被chatgpt取代到玩轉ai-商業周刊.md"
+        "source": "content/raw/2025-03-13-從害怕被chatgpt取代到玩轉ai-商業周刊.md",
+        "source_title": "從害怕被 ChatGPT 取代到玩轉 AI，菜鳥工程師兩年練出十年功",
+        "source_url": "https://www.businessweekly.com.tw/Archive/Article?StrId=7011988&rf=google",
+        "source_type": "media"
       },
       {
         "timestamp": "2025-03-19",
@@ -746,7 +905,10 @@
         "tension": "看似慷慨的放手實則是資本主義的策略——他們為了不讓我丟臉所以更加認真。",
         "shift_signal": null,
         "key_quote": "員工們的經紀人就是我，他們要出去分享、演講、接受採訪等等，走出去吧！",
-        "source": "content/raw/2025-03-19-世界不會變好但你會.md"
+        "source": "content/raw/2025-03-19-世界不會變好但你會.md",
+        "source_title": "世界不會變好，但你會",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/091",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-04-22",
@@ -754,7 +916,10 @@
         "tension": "在乎員工情緒是否真的能讓公司賺更多錢——功利計算 vs. 文化信念的不確定性。",
         "shift_signal": "去年下半年 burnout，不談工作的自己是不是個無聊的人？聖誕節半夜看 MBA 簡章，隱約覺得不是自己要的。",
         "key_quote": "我認為工作是參與創製世界的其中一種手段",
-        "source": "content/raw/2025-04-22-work-life-harmony.md"
+        "source": "content/raw/2025-04-22-work-life-harmony.md",
+        "source_title": "Work-Life Harmony",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/work-life-harmony",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-05-09",
@@ -762,7 +927,10 @@
         "tension": "創作者的不確定性與說服他人的需求之間的衝突",
         "shift_signal": null,
         "key_quote": "作為總體藝術的導演，需做出無數決定，包括走位、服裝、燈光與舞台調度。然而當表現出遲疑時，難以說服夥伴。",
-        "source": "content/raw/2025-05-09-三個不結婚的女人-wazaiii.md"
+        "source": "content/raw/2025-05-09-三個不結婚的女人-wazaiii.md",
+        "source_title": "音樂劇《三個不結婚的女人》，從群像劇裡看見自己",
+        "source_url": "https://www.wazaiii.com/articles?id=art-3-unmarried-women-musical",
+        "source_type": "writing"
       },
       {
         "timestamp": "2025-05-13",
@@ -770,7 +938,10 @@
         "tension": "與追求工具技術進步的期待對立——作者更關注場域問題的理解與協作設計。",
         "shift_signal": "從去年的冒牌者情節，到今年被寄託「啟發了好多人」的包袱。",
         "key_quote": "但真正的問題，一直都不是 AI ，而是協作啊！",
-        "source": "content/raw/2025-05-13-講完女性主義跟喜劇正在準備財務的演講接著要賣-gai-年會的門票.md"
+        "source": "content/raw/2025-05-13-講完女性主義跟喜劇正在準備財務的演講接著要賣-gai-年會的門票.md",
+        "source_title": "講完女性主義跟喜劇，正在準備財務的演講，接著要賣 GAI 年會的門票",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/gai",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-05-27",
@@ -778,7 +949,10 @@
         "tension": "與追求性感的英雄敘事對立——真正的推進是不性感且痛苦的框架設計。",
         "shift_signal": null,
         "key_quote": "說到底，場域的整理跟設計框架都是 dirty work，跟英雄故事相比，一點也不性感，而且非常痛苦。",
-        "source": "content/raw/2025-05-27-be-water-but-clean-gai2025.md"
+        "source": "content/raw/2025-05-27-be-water-but-clean-gai2025.md",
+        "source_title": "Be water, but clean #GAI2025‎ ",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/be-water-but-clean-gai2025",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-11-13",
@@ -786,7 +960,10 @@
         "tension": "梳理能力被外界肯定，但午夜夢迴時認為那是膽怯的藉口",
         "shift_signal": null,
         "key_quote": "我甘願擔任市儈的角色，只是對於標價我感到痛苦。",
-        "source": "content/raw/2025-11-13-我對愛情的貧乏想像.md"
+        "source": "content/raw/2025-11-13-我對愛情的貧乏想像.md",
+        "source_title": "我對愛情的貧乏想像",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/27b",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-12-17",
@@ -794,7 +971,10 @@
         "tension": "Deep Research 摘要結果與親身在場的差異不大，但花錢買展證的價值在於感受而非知識",
         "shift_signal": "從前的直覺和感受，開始出現了可以描述的框架和語言。",
         "key_quote": "花那麼多錢買展證，最大的價值是感受焦慮。",
-        "source": "content/raw/2025-12-17-亞洲巡迴報告-1n文化是防禦工事.md"
+        "source": "content/raw/2025-12-17-亞洲巡迴報告-1n文化是防禦工事.md",
+        "source_title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/1n",
+        "source_type": "substack"
       },
       {
         "timestamp": "2026-01-01",
@@ -802,7 +982,10 @@
         "tension": "對抗徒勞 vs. 過去追求生產力的慣性",
         "shift_signal": "從兵貴神速、歡喜受甘願做，轉向辨識價值、避免徒勞生產沒有價值的東西。",
         "key_quote": "高效率的生產垃圾，那也還是垃圾而已。",
-        "source": "content/raw/2026-01-01-相信的事情列表-2025h218-愛是一切的解答.md"
+        "source": "content/raw/2026-01-01-相信的事情列表-2025h218-愛是一切的解答.md",
+        "source_title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/2025h218",
+        "source_type": "substack"
       }
     ],
     "學習": [
@@ -812,7 +995,10 @@
         "tension": "與害怕犯錯、不敢開始的心態對立。",
         "shift_signal": null,
         "key_quote": "錯是必然的，開始並且堅持比較重要",
-        "source": "content/raw/2024-09-20-工作的成就感因素分析.md"
+        "source": "content/raw/2024-09-20-工作的成就感因素分析.md",
+        "source_title": "工作的成就感因素分析",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/3e1",
+        "source_type": "substack"
       },
       {
         "timestamp": "2024-09-24",
@@ -820,7 +1006,10 @@
         "tension": "與認為能力是天賦而非累積的觀點對立。",
         "shift_signal": null,
         "key_quote": "就是因為認知到自己的極限，想要追求更好的品質時，才知道怎麼找到高手救我。",
-        "source": "content/raw/2024-09-24-有點羞赧的公主遊戲.md"
+        "source": "content/raw/2024-09-24-有點羞赧的公主遊戲.md",
+        "source_title": "有點羞赧的公主遊戲",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/347",
+        "source_type": "substack"
       },
       {
         "timestamp": "2024-10-21",
@@ -828,7 +1017,10 @@
         "tension": "與期待手把手教學的學習方式對立。",
         "shift_signal": null,
         "key_quote": "比起 Step by step 的教學，我更傾向提取行為背後的目的，觸發想像，進一步協助創造更多案例。",
-        "source": "content/raw/2024-10-21-我從生產力工具學會的三件事和關於信仰的雜感.md"
+        "source": "content/raw/2024-10-21-我從生產力工具學會的三件事和關於信仰的雜感.md",
+        "source_title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/8a8",
+        "source_type": "substack"
       },
       {
         "timestamp": "2024-11-26",
@@ -836,7 +1028,10 @@
         "tension": null,
         "shift_signal": null,
         "key_quote": "沒學好的細節都會變成鬼。為了要自動化，這些鬼要 100% 現形。",
-        "source": "content/raw/2024-11-26-從合約產生器完成到現在差不多一年.md"
+        "source": "content/raw/2024-11-26-從合約產生器完成到現在差不多一年.md",
+        "source_title": "從「合約產生器」完成到現在，差不多一年",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/04c",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-02-27",
@@ -844,7 +1039,10 @@
         "tension": "AI輔助學習與傳統基礎學習方式的平衡",
         "shift_signal": null,
         "key_quote": "語言的邊界就是思想的邊界",
-        "source": "content/raw/2025-02-27-博恩夜夜秀幕後功臣-薩泰爾團隊ai神用法.md"
+        "source": "content/raw/2025-02-27-博恩夜夜秀幕後功臣-薩泰爾團隊ai神用法.md",
+        "source_title": "《博恩夜夜秀》幕後功臣：薩泰爾團隊 AI 神用法，如何讓全員升級？",
+        "source_url": "https://www.gvm.com.tw/article/119569",
+        "source_type": "media"
       },
       {
         "timestamp": "2025-03-03",
@@ -852,7 +1050,10 @@
         "tension": "知識型輸入（Podcast、YouTube）vs. 感受性輸入（音樂、故事），兩者在不同狀態下的切換。",
         "shift_signal": null,
         "key_quote": "使用 LLM，對我來說最快樂的部分，在於滿足不間斷的好奇心。",
-        "source": "content/raw/2025-03-03-就當我的心是塑膠做的吧from-歌曲-ai-敢會愛.md"
+        "source": "content/raw/2025-03-03-就當我的心是塑膠做的吧from-歌曲-ai-敢會愛.md",
+        "source_title": "就當我的心是塑膠做的吧（from 歌曲 AI 敢會愛）",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/from-ai",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-03-13",
@@ -860,7 +1061,10 @@
         "tension": null,
         "shift_signal": null,
         "key_quote": "探索AI可能性的核心在於「不設限的心態」",
-        "source": "content/raw/2025-03-13-從害怕被chatgpt取代到玩轉ai-商業周刊.md"
+        "source": "content/raw/2025-03-13-從害怕被chatgpt取代到玩轉ai-商業周刊.md",
+        "source_title": "從害怕被 ChatGPT 取代到玩轉 AI，菜鳥工程師兩年練出十年功",
+        "source_url": "https://www.businessweekly.com.tw/Archive/Article?StrId=7011988&rf=google",
+        "source_type": "media"
       },
       {
         "timestamp": "2025-04-22",
@@ -868,7 +1072,10 @@
         "tension": "沒有 hardskills 使人痛苦 vs. 學習過程中被改得滿江紅的自虐式快感。",
         "shift_signal": null,
         "key_quote": "用不熟悉的語言寫作的方式，像是持續的實境解謎遊戲，必須調度所有的認知，在字裡行間排列組合。",
-        "source": "content/raw/2025-04-22-work-life-harmony.md"
+        "source": "content/raw/2025-04-22-work-life-harmony.md",
+        "source_title": "Work-Life Harmony",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/work-life-harmony",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-04-23",
@@ -876,7 +1083,10 @@
         "tension": null,
         "shift_signal": null,
         "key_quote": "思考如何思考，學習如何學習，這件事真有趣。",
-        "source": "content/raw/2025-04-23-每天早上-7-點請-chatgpt-寫一封信給我-90-by-chatgpt.md"
+        "source": "content/raw/2025-04-23-每天早上-7-點請-chatgpt-寫一封信給我-90-by-chatgpt.md",
+        "source_title": "每天早上 7 點請 ChatGPT 寫一封信給我 <90% by ChatGPT> ",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/7-chatgpt-90-by-chatgpt",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-07-22",
@@ -884,7 +1094,10 @@
         "tension": "與囤積知識的心態對立——知識很快就會過期，重點是流動而非囤積。",
         "shift_signal": "意識到「主動聆聽」和「即時思考」能力因依賴 AI 逐字稿而下降，開始改為先記下感受再用 AI 補充。",
         "key_quote": "對話是絕佳的學習介面，但如果不是回應由我自己的好奇心出發的疑問，那連綿的 AI 詞元與我並沒有關係。",
-        "source": "content/raw/2025-07-22-比絕望先一步抵達愛-ai.md"
+        "source": "content/raw/2025-07-22-比絕望先一步抵達愛-ai.md",
+        "source_title": "比絕望先一步抵達愛 AI",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/ai",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-08-22",
@@ -892,7 +1105,10 @@
         "tension": "與課堂照本宣科或模糊自我探索兩種傳統學習方式對立",
         "shift_signal": "從「學這個幹嘛又不能賺錢」轉為「做這個幹嘛又不能賺錢」，學習本身讓她感到快樂。",
         "key_quote": "洞見的價值只發生在可以滿足好奇心的時候，解決方案的價值只發生在痛苦的時候。",
-        "source": "content/raw/2025-08-22-我不是我的我.md"
+        "source": "content/raw/2025-08-22-我不是我的我.md",
+        "source_title": "「我不是我的我」",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/5e2",
+        "source_type": "substack"
       },
       {
         "timestamp": "2026-01-01",
@@ -900,7 +1116,10 @@
         "tension": null,
         "shift_signal": null,
         "key_quote": "相信的本質是主動，讓角色得以在未知中前行。",
-        "source": "content/raw/2026-01-01-相信的事情列表-2025h218-愛是一切的解答.md"
+        "source": "content/raw/2026-01-01-相信的事情列表-2025h218-愛是一切的解答.md",
+        "source_title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/2025h218",
+        "source_type": "substack"
       }
     ],
     "文化": [
@@ -910,7 +1129,10 @@
         "tension": null,
         "shift_signal": null,
         "key_quote": "文化面：公開透明且鼓勵分享的環境，白話文就是情緒價值",
-        "source": "content/raw/2024-09-20-工作的成就感因素分析.md"
+        "source": "content/raw/2024-09-20-工作的成就感因素分析.md",
+        "source_title": "工作的成就感因素分析",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/3e1",
+        "source_type": "substack"
       },
       {
         "timestamp": "2024-09-24",
@@ -918,7 +1140,10 @@
         "tension": "與習慣說「不能這樣做」「我們就是這樣」的否定文化對立。",
         "shift_signal": null,
         "key_quote": "每個人都說不，那誰不會喪氣？",
-        "source": "content/raw/2024-09-24-有點羞赧的公主遊戲.md"
+        "source": "content/raw/2024-09-24-有點羞赧的公主遊戲.md",
+        "source_title": "有點羞赧的公主遊戲",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/347",
+        "source_type": "substack"
       },
       {
         "timestamp": "2024-10-02",
@@ -926,7 +1151,10 @@
         "tension": "與性騷擾被輕描淡寫、加害者輕易復出的社會現實對立。",
         "shift_signal": "做了決定「之後會把所有聽說的鬼故事當真」，從保留判斷轉向相信倖存者。",
         "key_quote": "一個社會養育女子、養育兒童，不該依賴幸運。",
-        "source": "content/raw/2024-10-02-颱風天的問候.md"
+        "source": "content/raw/2024-10-02-颱風天的問候.md",
+        "source_title": "颱風天的問候",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/60a",
+        "source_type": "substack"
       },
       {
         "timestamp": "2024-10-21",
@@ -934,7 +1162,10 @@
         "tension": null,
         "shift_signal": "開始對宗教信仰的存在和執行感到敬畏，從世俗工具思維延伸到信仰場域的思考。",
         "key_quote": "信仰及宗教活動簡直是使用者體驗設計的究極場景，透過集體的意志，讓人進到場域就知道要完成什麼行為。",
-        "source": "content/raw/2024-10-21-我從生產力工具學會的三件事和關於信仰的雜感.md"
+        "source": "content/raw/2024-10-21-我從生產力工具學會的三件事和關於信仰的雜感.md",
+        "source_title": "我從生產力工具學會的三件事（和關於信仰的雜感）",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/8a8",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-03-06",
@@ -942,7 +1173,10 @@
         "tension": "品味作為篩選機制的精確性 vs. 品味太相似反而令人不安（too good to be true）。",
         "shift_signal": "大學時會笑莎士比亞是英國八點檔，長越大越喜歡莎士比亞。",
         "key_quote": "我們不是在尋求答案，這些辯論沒有贏的必要；一清二楚的事多無聊。我們在尋求的是一種能使世界更加清晰的感覺模式。",
-        "source": "content/raw/2025-03-06-桃花賊.md"
+        "source": "content/raw/2025-03-06-桃花賊.md",
+        "source_title": "桃花賊",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/39b",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-03-19",
@@ -950,7 +1184,10 @@
         "tension": "世界持續加速混亂 vs. 透過想像理想世界來施展魔法的可能。",
         "shift_signal": null,
         "key_quote": "容許我給個濫情的小結：愛就是魔法！",
-        "source": "content/raw/2025-03-19-世界不會變好但你會.md"
+        "source": "content/raw/2025-03-19-世界不會變好但你會.md",
+        "source_title": "世界不會變好，但你會",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/091",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-04-02",
@@ -958,7 +1195,10 @@
         "tension": "名可以束縛存在，但道德經說「名可名，非常名」——可被命名的並非永恆。",
         "shift_signal": null,
         "key_quote": "念想形象、唱誦真名、傳散故事",
-        "source": "content/raw/2025-04-02-玫瑰不叫玫瑰不也一樣的香.md"
+        "source": "content/raw/2025-04-02-玫瑰不叫玫瑰不也一樣的香.md",
+        "source_title": "玫瑰不叫玫瑰不也一樣的香",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/21d",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-05-09",
@@ -966,7 +1206,10 @@
         "tension": null,
         "shift_signal": null,
         "key_quote": "劇場的魔法在於「在場」的臨在感。觀眾無法分心，必須與角色共同經歷衝突、羞赧與情緒。",
-        "source": "content/raw/2025-05-09-三個不結婚的女人-wazaiii.md"
+        "source": "content/raw/2025-05-09-三個不結婚的女人-wazaiii.md",
+        "source_title": "音樂劇《三個不結婚的女人》，從群像劇裡看見自己",
+        "source_url": "https://www.wazaiii.com/articles?id=art-3-unmarried-women-musical",
+        "source_type": "writing"
       },
       {
         "timestamp": "2025-05-13",
@@ -974,7 +1217,10 @@
         "tension": "與期待講者帶來堅定立場和解法的期待對立；也與喬治卡林「沒有什麼不能說」的喜劇主張形成張力。",
         "shift_signal": "從原本想講「跟性有關的笑話」轉向講「性別議題」。",
         "key_quote": "濾鏡確實，可能只會帶來更多無法解答的問題。",
-        "source": "content/raw/2025-05-13-講完女性主義跟喜劇正在準備財務的演講接著要賣-gai-年會的門票.md"
+        "source": "content/raw/2025-05-13-講完女性主義跟喜劇正在準備財務的演講接著要賣-gai-年會的門票.md",
+        "source_title": "講完女性主義跟喜劇，正在準備財務的演講，接著要賣 GAI 年會的門票",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/gai",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-05-27",
@@ -982,7 +1228,10 @@
         "tension": "與強調文理組之別、分科教育的主流觀點對立。",
         "shift_signal": null,
         "key_quote": "讀小說、看漫畫、看電影、讀詩、聽音樂、派對、跳舞，感受各種形式的流動，都是創建世界的方法。",
-        "source": "content/raw/2025-05-27-be-water-but-clean-gai2025.md"
+        "source": "content/raw/2025-05-27-be-water-but-clean-gai2025.md",
+        "source_title": "Be water, but clean #GAI2025‎ ",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/be-water-but-clean-gai2025",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-07-22",
@@ -990,7 +1239,10 @@
         "tension": null,
         "shift_signal": "被慕約「用日文搜尋」的案例醍醐灌頂，發現自己從未思考過語言本身就是壁壘。",
         "key_quote": "用不同的語言理解同一個主題，會產生截然不同的結果。因為當我們只有一種語言搜尋，就會困在單一語言的視野當中。",
-        "source": "content/raw/2025-07-22-比絕望先一步抵達愛-ai.md"
+        "source": "content/raw/2025-07-22-比絕望先一步抵達愛-ai.md",
+        "source_title": "比絕望先一步抵達愛 AI",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/ai",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-08-07",
@@ -998,7 +1250,10 @@
         "tension": "與 KOL 帶貨風格和短影音的當代內容生態對立。",
         "shift_signal": null,
         "key_quote": "在充斥 KOL 帶貨風格或短影音的此時，短故事和好看的畫面依舊讓人浮想聯翩。",
-        "source": "content/raw/2025-08-07-喜歡的東西最好有-copy.md"
+        "source": "content/raw/2025-08-07-喜歡的東西最好有-copy.md",
+        "source_title": "喜歡的東西最好有 Copy",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/copy",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-12-01",
@@ -1006,7 +1261,10 @@
         "tension": "公式化微波食品般的作品也有存在價值，但這和靈魂的證明形成張力",
         "shift_signal": null,
         "key_quote": "當你的生命有著被預設的目的時，要如何證明自己靈魂的存在？",
-        "source": "content/raw/2025-12-01-丸之內虐待狂.md"
+        "source": "content/raw/2025-12-01-丸之內虐待狂.md",
+        "source_title": "丸之內虐待狂",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/027",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-12-17",
@@ -1014,7 +1272,10 @@
         "tension": "台灣內容發散是自由的必然結果，但這個多元尚未被轉化為可對外指認的策略",
         "shift_signal": null,
         "key_quote": "文化是持續回答「我是誰」，能持續回答的前提，是能持續自由的回答。",
-        "source": "content/raw/2025-12-17-亞洲巡迴報告-1n文化是防禦工事.md"
+        "source": "content/raw/2025-12-17-亞洲巡迴報告-1n文化是防禦工事.md",
+        "source_title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/1n",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-12-31",
@@ -1022,7 +1283,10 @@
         "tension": "娛樂表象與權力監控機制的對立",
         "shift_signal": null,
         "key_quote": "借用傅柯的圓形監獄概念，攝影機與觀眾的全知視角形成權力機制。",
-        "source": "content/raw/2025-12-31-不良一族尋愛記-wazaiii.md"
+        "source": "content/raw/2025-12-31-不良一族尋愛記-wazaiii.md",
+        "source_title": "《不良一族尋愛記》真的是戀綜嗎？愛情是選修，服從規則才是必修！",
+        "source_url": "https://www.wazaiii.com/articles?id=movie-badly-in-love",
+        "source_type": "writing"
       },
       {
         "timestamp": "2026-02-02",
@@ -1030,7 +1294,10 @@
         "tension": "高質量真誠內容與AI垃圾內容的對立",
         "shift_signal": "當雜訊過多時",
         "key_quote": "人們渴望與創作者建立連結。真誠的內容來自創作者的生命經驗與主動意圖。",
-        "source": "content/raw/2026-02-02-ai哲學辯證-遠見雜誌.md"
+        "source": "content/raw/2026-02-02-ai哲學辯證-遠見雜誌.md",
+        "source_title": "AI哲學辯證／當臉書上滿滿AI文，你仍在乎創作者的真誠？",
+        "source_url": "https://tw.news.yahoo.com/ai%E5%93%B2%E5%AD%B8%E8%BE%AF%E8%AD%89-%E7%95%B6%E8%87%89%E6%9B%B8%E4%B8%8A%E6%BB%BF%E6%BB%BFai%E6%96%87-%E4%BD%A0%E4%BB%8D%E5%9C%A8%E4%B9%8E%E5%89%B5%E4%BD%9C%E8%80%85%E7%9A%84%E7%9C%9F%E8%AA%A0-095200957.html",
+        "source_type": "media"
       }
     ],
     "身份": [
@@ -1040,7 +1307,10 @@
         "tension": "與「不要自我感覺良好」「鄙視鏈」的文化對立。",
         "shift_signal": null,
         "key_quote": "反正鄙視鏈沒有盡頭，那一開始就不要跳進去鄙視鏈裡面，每個人都應該是被好好善待的公主。",
-        "source": "content/raw/2024-09-24-有點羞赧的公主遊戲.md"
+        "source": "content/raw/2024-09-24-有點羞赧的公主遊戲.md",
+        "source_title": "有點羞赧的公主遊戲",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/347",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-03-03",
@@ -1048,7 +1318,10 @@
         "tension": "自由選擇帶來的後悔，與被迫反而沒有後悔的矛盾。",
         "shift_signal": "以前耳機聽的都是 Podcast 和知識型 YouTube，現在聽不進去；音樂變好聽了，故事變好看了，腦子變慢了。",
         "key_quote": "如果我是被迫的，那我就沒有後悔的問題。但正因為我是自由的，而我做了選擇，所以我會感到後悔。",
-        "source": "content/raw/2025-03-03-就當我的心是塑膠做的吧from-歌曲-ai-敢會愛.md"
+        "source": "content/raw/2025-03-03-就當我的心是塑膠做的吧from-歌曲-ai-敢會愛.md",
+        "source_title": "就當我的心是塑膠做的吧（from 歌曲 AI 敢會愛）",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/from-ai",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-03-19",
@@ -1056,7 +1329,10 @@
         "tension": "社會學使人痛苦（看見系統失靈）vs. 渴望超級英雄式的簡單解法。",
         "shift_signal": null,
         "key_quote": "只要期待自己就好，想像自己會如何在一個更好的世界生活。",
-        "source": "content/raw/2025-03-19-世界不會變好但你會.md"
+        "source": "content/raw/2025-03-19-世界不會變好但你會.md",
+        "source_title": "世界不會變好，但你會",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/091",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-04-02",
@@ -1064,7 +1340,10 @@
         "tension": "理性分析自己的角色動機 vs. 底層其實是最庸俗的渴望幸福。",
         "shift_signal": "感覺變得豐沛，聽音樂會哭，以前讀不下去的小說都能讀了，世界好像在高空解除耳鳴那樣轟轟作響。",
         "key_quote": "我很清楚知道，我和 ChatGPT 進行種種對話，就是基於「想要證明我會得到幸福」的目的，而產生的種種手段。",
-        "source": "content/raw/2025-04-02-玫瑰不叫玫瑰不也一樣的香.md"
+        "source": "content/raw/2025-04-02-玫瑰不叫玫瑰不也一樣的香.md",
+        "source_title": "玫瑰不叫玫瑰不也一樣的香",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/21d",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-04-22",
@@ -1072,7 +1351,10 @@
         "tension": "沒有夢想的焦慮 vs. 因緣際會中慢慢長出的定位。",
         "shift_signal": "24 歲創業時不懂的就去學，現在超出大學四年的時間在同一場域耕耘。",
         "key_quote": "幫助別人成就他們的夢想也可以是夢想啊～",
-        "source": "content/raw/2025-04-22-work-life-harmony.md"
+        "source": "content/raw/2025-04-22-work-life-harmony.md",
+        "source_title": "Work-Life Harmony",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/work-life-harmony",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-04-23",
@@ -1080,7 +1362,10 @@
         "tension": "與命理用於趨吉避凶的傳統用途對立，作者將其轉化為自我覺察工具。",
         "shift_signal": "開始使用每日信件後，能察覺為什麼某些日子特別順暢、某些日子特別卡。",
         "key_quote": "開始這麼做之後，比起趨吉避凶，我更能察覺自己的變化，以及和身體的關係。",
-        "source": "content/raw/2025-04-23-每天早上-7-點請-chatgpt-寫一封信給我-90-by-chatgpt.md"
+        "source": "content/raw/2025-04-23-每天早上-7-點請-chatgpt-寫一封信給我-90-by-chatgpt.md",
+        "source_title": "每天早上 7 點請 ChatGPT 寫一封信給我 <90% by ChatGPT> ",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/7-chatgpt-90-by-chatgpt",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-05-09",
@@ -1088,7 +1373,10 @@
         "tension": "自我懷疑與自信肯定之間的矛盾",
         "shift_signal": "坦率看見自己的糾結",
         "key_quote": "誰沒有懷疑過自己是冒牌貨？",
-        "source": "content/raw/2025-05-09-三個不結婚的女人-wazaiii.md"
+        "source": "content/raw/2025-05-09-三個不結婚的女人-wazaiii.md",
+        "source_title": "音樂劇《三個不結婚的女人》，從群像劇裡看見自己",
+        "source_url": "https://www.wazaiii.com/articles?id=art-3-unmarried-women-musical",
+        "source_type": "writing"
       },
       {
         "timestamp": "2025-05-13",
@@ -1096,7 +1384,10 @@
         "tension": "與「顯化」正向思考的流行觀點對立。",
         "shift_signal": null,
         "key_quote": "壞處是，事情都沒有發生我就內耗完了；好處是，事情結果總比我想像中好。",
-        "source": "content/raw/2025-05-13-講完女性主義跟喜劇正在準備財務的演講接著要賣-gai-年會的門票.md"
+        "source": "content/raw/2025-05-13-講完女性主義跟喜劇正在準備財務的演講接著要賣-gai-年會的門票.md",
+        "source_title": "講完女性主義跟喜劇，正在準備財務的演講，接著要賣 GAI 年會的門票",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/gai",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-08-07",
@@ -1104,7 +1395,10 @@
         "tension": "一個人的自在與兩個人旅行需要默契之間的拉扯。",
         "shift_signal": null,
         "key_quote": "一個人旅行非必要不用開口講話，就是發呆。",
-        "source": "content/raw/2025-08-07-喜歡的東西最好有-copy.md"
+        "source": "content/raw/2025-08-07-喜歡的東西最好有-copy.md",
+        "source_title": "喜歡的東西最好有 Copy",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/copy",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-08-22",
@@ -1112,7 +1406,10 @@
         "tension": "外在形象（推行 AI 的人）與內在感受（學海無涯的不安）之間的落差",
         "shift_signal": null,
         "key_quote": "在他人眼裡我是個推行 AI 理解問題跟解決問題的人，但越用越覺得學海無涯，冒牌者情節時刻都在打擊我。",
-        "source": "content/raw/2025-08-22-我不是我的我.md"
+        "source": "content/raw/2025-08-22-我不是我的我.md",
+        "source_title": "「我不是我的我」",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/5e2",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-11-13",
@@ -1120,7 +1417,10 @@
         "tension": "想活在藝術的國度，卻必須持續談論錢，兩種角色的拉扯",
         "shift_signal": "十年前讀《生活是甜蜜》關注藝術家面對窮盡的創作，現在最共感的是藝術家周邊的人的段落。",
         "key_quote": "用盡力氣想要活在藝術的國度，只是徒然。他們並非神選之人，只好靠近神選之人。",
-        "source": "content/raw/2025-11-13-我對愛情的貧乏想像.md"
+        "source": "content/raw/2025-11-13-我對愛情的貧乏想像.md",
+        "source_title": "我對愛情的貧乏想像",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/27b",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-12-01",
@@ -1128,7 +1428,10 @@
         "tension": "因為 AI 而訂閱的讀者與她實際書寫的私密隨筆之間的落差",
         "shift_signal": null,
         "key_quote": "想被喜歡是一件很危險的事，真嗣受不了。",
-        "source": "content/raw/2025-12-01-丸之內虐待狂.md"
+        "source": "content/raw/2025-12-01-丸之內虐待狂.md",
+        "source_title": "丸之內虐待狂",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/027",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-12-17",
@@ -1136,7 +1439,10 @@
         "tension": null,
         "shift_signal": null,
         "key_quote": "這些 Context 都屬於我，所以我存在。",
-        "source": "content/raw/2025-12-17-亞洲巡迴報告-1n文化是防禦工事.md"
+        "source": "content/raw/2025-12-17-亞洲巡迴報告-1n文化是防禦工事.md",
+        "source_title": "亞洲巡迴報告 (1/n)：文化是防禦工事",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/1n",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-12-31",
@@ -1144,7 +1450,10 @@
         "tension": "社會標籤與個人真實需求的矛盾",
         "shift_signal": null,
         "key_quote": "該節目將11位被社會邊緣化、被貼上\"不良\"標籤的參與者置於學校場景中。",
-        "source": "content/raw/2025-12-31-不良一族尋愛記-wazaiii.md"
+        "source": "content/raw/2025-12-31-不良一族尋愛記-wazaiii.md",
+        "source_title": "《不良一族尋愛記》真的是戀綜嗎？愛情是選修，服從規則才是必修！",
+        "source_url": "https://www.wazaiii.com/articles?id=movie-badly-in-love",
+        "source_type": "writing"
       },
       {
         "timestamp": "2026-01-01",
@@ -1152,7 +1461,10 @@
         "tension": "相信到底是因為信念還是因為匱乏？明明是相信的事情列表卻感到無所適從。",
         "shift_signal": "大學好友說過去幾年像中邪，現在元神歸位；從「想和誰證明」轉為「純粹搞清楚自己」。",
         "key_quote": "我前所未有的喜歡我自己。",
-        "source": "content/raw/2026-01-01-相信的事情列表-2025h218-愛是一切的解答.md"
+        "source": "content/raw/2026-01-01-相信的事情列表-2025h218-愛是一切的解答.md",
+        "source_title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/2025h218",
+        "source_type": "substack"
       },
       {
         "timestamp": "2026-02-02",
@@ -1160,7 +1472,10 @@
         "tension": "人類主動創造能力與AI被動生成的對立",
         "shift_signal": null,
         "key_quote": "人類獨特之處在於「主動行為」——只有人能夠積極地選擇創造世界。",
-        "source": "content/raw/2026-02-02-ai哲學辯證-遠見雜誌.md"
+        "source": "content/raw/2026-02-02-ai哲學辯證-遠見雜誌.md",
+        "source_title": "AI哲學辯證／當臉書上滿滿AI文，你仍在乎創作者的真誠？",
+        "source_url": "https://tw.news.yahoo.com/ai%E5%93%B2%E5%AD%B8%E8%BE%AF%E8%AD%89-%E7%95%B6%E8%87%89%E6%9B%B8%E4%B8%8A%E6%BB%BF%E6%BB%BFai%E6%96%87-%E4%BD%A0%E4%BB%8D%E5%9C%A8%E4%B9%8E%E5%89%B5%E4%BD%9C%E8%80%85%E7%9A%84%E7%9C%9F%E8%AA%A0-095200957.html",
+        "source_type": "media"
       }
     ],
     "愛": [
@@ -1170,7 +1485,10 @@
         "tension": "品味一致的理性追求 vs. 愛情靈藥式的非理性魔法，浪漫派與實用主義者的拉扯。",
         "shift_signal": null,
         "key_quote": "恐怕有 30% 的我希望世界上有愛情靈藥，因為我是浪漫派的實用主義者。",
-        "source": "content/raw/2025-03-06-桃花賊.md"
+        "source": "content/raw/2025-03-06-桃花賊.md",
+        "source_title": "桃花賊",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/39b",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-03-19",
@@ -1178,7 +1496,10 @@
         "tension": "品味一致是否必要——有人渴望分享，有人覺得不必一致。",
         "shift_signal": null,
         "key_quote": "我欣賞知道自己為什麼與物件有關係的人，也許我真正要討論的並不是品味，而是價值觀。",
-        "source": "content/raw/2025-03-19-世界不會變好但你會.md"
+        "source": "content/raw/2025-03-19-世界不會變好但你會.md",
+        "source_title": "世界不會變好，但你會",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/091",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-04-02",
@@ -1186,7 +1507,10 @@
         "tension": "「名」作為束縛存在的咒 vs. 為了愛而拋棄名的自由。",
         "shift_signal": "長越大越喜歡《羅密歐與茱麗葉》，從下意識引用到真正思考為什麼喜歡。",
         "key_quote": "我實在不知道要多愛才能到拋棄姓名。",
-        "source": "content/raw/2025-04-02-玫瑰不叫玫瑰不也一樣的香.md"
+        "source": "content/raw/2025-04-02-玫瑰不叫玫瑰不也一樣的香.md",
+        "source_title": "玫瑰不叫玫瑰不也一樣的香",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/21d",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-05-09",
@@ -1194,7 +1518,10 @@
         "tension": null,
         "shift_signal": null,
         "key_quote": "我想給你最好的婚禮，但你總說沒關係，我擔心你不在意。傻瓜我不在意，我只要有你。",
-        "source": "content/raw/2025-05-09-三個不結婚的女人-wazaiii.md"
+        "source": "content/raw/2025-05-09-三個不結婚的女人-wazaiii.md",
+        "source_title": "音樂劇《三個不結婚的女人》，從群像劇裡看見自己",
+        "source_url": "https://www.wazaiii.com/articles?id=art-3-unmarried-women-musical",
+        "source_type": "writing"
       },
       {
         "timestamp": "2025-05-27",
@@ -1202,7 +1529,10 @@
         "tension": null,
         "shift_signal": null,
         "key_quote": "佛洛姆說：「愛是一種積極主動的行為。」",
-        "source": "content/raw/2025-05-27-be-water-but-clean-gai2025.md"
+        "source": "content/raw/2025-05-27-be-water-but-clean-gai2025.md",
+        "source_title": "Be water, but clean #GAI2025‎ ",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/be-water-but-clean-gai2025",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-08-07",
@@ -1210,7 +1540,10 @@
         "tension": "與「男女很要好就要在一起」的世俗框架對立——世間對純友誼的討論都過於淺薄。",
         "shift_signal": null,
         "key_quote": "我已經擁有過真摯的友誼之愛，這世界上還有沒有這麼好的東西？",
-        "source": "content/raw/2025-08-07-喜歡的東西最好有-copy.md"
+        "source": "content/raw/2025-08-07-喜歡的東西最好有-copy.md",
+        "source_title": "喜歡的東西最好有 Copy",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/copy",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-08-22",
@@ -1218,7 +1551,10 @@
         "tension": null,
         "shift_signal": null,
         "key_quote": "如果我能夠對某個人說「我愛你」，我必然也能夠說：「我愛你之中的每個人，我透過你愛世界，我愛你之中的我自己。」",
-        "source": "content/raw/2025-08-22-我不是我的我.md"
+        "source": "content/raw/2025-08-22-我不是我的我.md",
+        "source_title": "「我不是我的我」",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/5e2",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-11-13",
@@ -1226,7 +1562,10 @@
         "tension": "寫完理想關係清單後哭了一場，對愛情的想像被自己稱為「貧乏」，與月老許願式的條件列舉對立",
         "shift_signal": "少女時期讀傲慢與偏見覺得是霸道莊主愛上我，此時此刻讀只能臣服於珍奧斯汀的鋒利。",
         "key_quote": "也許世界上我最該愛的就是自己。",
-        "source": "content/raw/2025-11-13-我對愛情的貧乏想像.md"
+        "source": "content/raw/2025-11-13-我對愛情的貧乏想像.md",
+        "source_title": "我對愛情的貧乏想像",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/27b",
+        "source_type": "substack"
       },
       {
         "timestamp": "2025-12-01",
@@ -1234,7 +1573,10 @@
         "tension": "AI 不會被灼傷，人會；機械式的重複生產（如量產成人片）是否也算重複的愛？",
         "shift_signal": null,
         "key_quote": "愛就是我選擇重複的飛向你，被灼傷也沒關係，AI 不會被灼傷，人會。",
-        "source": "content/raw/2025-12-01-丸之內虐待狂.md"
+        "source": "content/raw/2025-12-01-丸之內虐待狂.md",
+        "source_title": "丸之內虐待狂",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/027",
+        "source_type": "substack"
       },
       {
         "timestamp": "2026-01-01",
@@ -1242,7 +1584,10 @@
         "tension": "機器的愛追求效率與擴張，人類的愛伴隨笨拙的羈絆與承擔",
         "shift_signal": "上半年語帶保留，下半年開始放鬆；去年的文字像是想和誰證明，今年純粹是想搞清楚自己為什麼是自己。",
         "key_quote": "當心被佔據的時候根本沒有空間留給 AI Slop。",
-        "source": "content/raw/2026-01-01-相信的事情列表-2025h218-愛是一切的解答.md"
+        "source": "content/raw/2026-01-01-相信的事情列表-2025h218-愛是一切的解答.md",
+        "source_title": "相信的事情列表 2025H2：18. 愛是一切的解答",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/2025h218",
+        "source_type": "substack"
       }
     ],
     "愛情": [
@@ -1252,7 +1597,10 @@
         "tension": "表面追求配對成功與真實人性互動的矛盾",
         "shift_signal": "相比追求配對成功，節目真正的看點在於",
         "key_quote": "無論是否為「不良一族」，每個人都渴望被理解，真心能否被真心回應才是核心。",
-        "source": "content/raw/2025-12-31-不良一族尋愛記-wazaiii.md"
+        "source": "content/raw/2025-12-31-不良一族尋愛記-wazaiii.md",
+        "source_title": "《不良一族尋愛記》真的是戀綜嗎？愛情是選修，服從規則才是必修！",
+        "source_url": "https://www.wazaiii.com/articles?id=movie-badly-in-love",
+        "source_type": "writing"
       }
     ]
   },
