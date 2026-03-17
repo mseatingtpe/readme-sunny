@@ -84,14 +84,24 @@ def call_claude_api(prompt):
         method="POST",
     )
 
-    with urlopen(req, timeout=60) as resp:
-        result = json.loads(resp.read())
+    try:
+        with urlopen(req, timeout=60) as resp:
+            result = json.loads(resp.read())
+    except Exception as e:
+        raise RuntimeError(f"Claude API request failed: {e}") from e
 
-    text = result["content"][0]["text"]
+    try:
+        text = result["content"][0]["text"]
+    except (KeyError, IndexError) as e:
+        raise RuntimeError(f"Unexpected API response structure: {result}") from e
+
     # Strip markdown code fences if present
     text = re.sub(r"^```json?\s*", "", text.strip())
     text = re.sub(r"\s*```$", "", text.strip())
-    return json.loads(text)
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError as e:
+        raise RuntimeError(f"Claude returned invalid JSON: {text[:200]}") from e
 
 
 def read_content_file(filepath):
