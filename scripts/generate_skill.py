@@ -97,11 +97,32 @@ def generate_recent_dynamics(extractions, max_items=5):
     lines = ["## 最近動態\n"]
     for ext in recent:
         ts = ext.get("timestamp", "?")
-        stance = ext.get("stance", "")
-        topics = ", ".join(ext.get("topics", []))
+        raw_topics = ext.get("topics", [])
+        # Support both dict format (new) and string format (old)
+        topic_names = []
+        topic_stances = []
+        for t in raw_topics:
+            if isinstance(t, dict):
+                topic_names.append(t.get("name", ""))
+                if t.get("stance"):
+                    topic_stances.append(t["stance"])
+            else:
+                topic_names.append(str(t))
+        # Fallback to top-level stance if no per-topic stances
+        if not topic_stances:
+            stance = ext.get("stance", "")
+            if stance:
+                topic_stances.append(stance)
         quote = ext.get("key_quote", "")
-        lines.append(f"### {ts}｜{topics}")
-        lines.append(f"\n{stance}")
+        if not quote:
+            # Try to get key_quote from first topic
+            for t in raw_topics:
+                if isinstance(t, dict) and t.get("key_quote"):
+                    quote = t["key_quote"]
+                    break
+        lines.append(f"### {ts}｜{', '.join(topic_names)}")
+        for s in topic_stances:
+            lines.append(f"\n{s}")
         if quote:
             lines.append(f'\n> 「{quote}」')
         lines.append("")
