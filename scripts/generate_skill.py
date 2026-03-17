@@ -55,10 +55,16 @@ def call_claude_api(prompt):
         method="POST",
     )
 
-    with urlopen(req, timeout=120) as resp:
-        result = json.loads(resp.read())
+    try:
+        with urlopen(req, timeout=120) as resp:
+            result = json.loads(resp.read())
+    except Exception as e:
+        raise RuntimeError(f"Claude API request failed: {e}") from e
 
-    return result["content"][0]["text"]
+    try:
+        return result["content"][0]["text"]
+    except (KeyError, IndexError) as e:
+        raise RuntimeError(f"Unexpected API response structure: {result}") from e
 
 
 def load_profile():
@@ -188,29 +194,45 @@ def main():
     # Ensure layer directory exists
     (CONTENT_DIR / "skill-layers").mkdir(parents=True, exist_ok=True)
 
-    # Layer 1: Core identity - use existing if available, otherwise use current skill
-    if CORE_IDENTITY_PATH.exists():
-        core_identity = CORE_IDENTITY_PATH.read_text(encoding="utf-8")
-    elif SKILL_PATH.exists():
-        # Extract core sections from existing skill
-        existing = SKILL_PATH.read_text(encoding="utf-8")
-        # Keep everything from ## 核心身份 to before ## 立場
-        match = re.search(r"(## 核心身份.*?)(?=## 立場|## 主題立場|$)", existing, re.DOTALL)
-        if match:
-            core_identity = match.group(1).strip()
+    if args.update_dynamics:
+        # Only update Layer 3 (recent dynamics), reuse existing Layer 1 & 2
+        if CORE_IDENTITY_PATH.exists():
+            core_identity = CORE_IDENTITY_PATH.read_text(encoding="utf-8")
+        else:
+            print("⚠ No existing core identity found, falling back to full generation")
+            args.update_dynamics = False
+
+        if args.update_dynamics and TOPIC_STANCES_PATH.exists():
+            topic_stances = TOPIC_STANCES_PATH.read_text(encoding="utf-8")
+        elif args.update_dynamics:
+            print("⚠ No existing topic stances found, falling back to full generation")
+            args.update_dynamics = False
+
+    if not args.update_dynamics:
+        # Full generation: Layer 1 + Layer 2 + Layer 3
+
+        # Layer 1: Core identity - use existing if available, otherwise use current skill
+        if CORE_IDENTITY_PATH.exists():
+            core_identity = CORE_IDENTITY_PATH.read_text(encoding="utf-8")
+        elif SKILL_PATH.exists():
+            # Extract core sections from existing skill
+            existing = SKILL_PATH.read_text(encoding="utf-8")
+            match = re.search(r"(## 核心身份.*?)(?=## 立場|## 主題立場|$)", existing, re.DOTALL)
+            if match:
+                core_identity = match.group(1).strip()
+            else:
+                core_identity = "## 核心身份\n\n（需要手動編輯）"
+            CORE_IDENTITY_PATH.write_text(core_identity, encoding="utf-8")
+            print(f"✓ Extracted core identity to {CORE_IDENTITY_PATH}")
         else:
             core_identity = "## 核心身份\n\n（需要手動編輯）"
-        CORE_IDENTITY_PATH.write_text(core_identity, encoding="utf-8")
-        print(f"✓ Extracted core identity to {CORE_IDENTITY_PATH}")
-    else:
-        core_identity = "## 核心身份\n\n（需要手動編輯）"
 
-    # Layer 2: Topic stances
-    topic_stances = generate_topic_stances(profile)
-    TOPIC_STANCES_PATH.write_text(topic_stances, encoding="utf-8")
-    print(f"✓ Generated topic stances")
+        # Layer 2: Topic stances
+        topic_stances = generate_topic_stances(profile)
+        TOPIC_STANCES_PATH.write_text(topic_stances, encoding="utf-8")
+        print(f"✓ Generated topic stances")
 
-    # Layer 3: Recent dynamics
+    # Layer 3: Recent dynamics (always updated)
     recent_dynamics = generate_recent_dynamics(extractions)
     RECENT_DYNAMICS_PATH.write_text(recent_dynamics, encoding="utf-8")
     print(f"✓ Generated recent dynamics")
