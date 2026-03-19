@@ -150,7 +150,12 @@ def main():
     CONTENT_DIR.mkdir(parents=True, exist_ok=True)
 
     existing_urls = set() if args.force else get_existing_urls()
-    tree = fetch_feed(args.feed_url)
+    try:
+        tree = fetch_feed(args.feed_url)
+    except Exception as e:
+        print(f"⚠ Failed to fetch feed: {e}")
+        print("Skipping fetch — will use existing content.")
+        return
     root = tree.getroot()
 
     new_count = 0
