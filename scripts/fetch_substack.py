@@ -96,10 +96,14 @@ def get_existing_urls():
 
 
 def fetch_feed(feed_url):
-    """Fetch and parse RSS feed."""
+    """Fetch and parse RSS feed. Returns None if feed is unreachable."""
     req = Request(feed_url, headers={"User-Agent": "sunny-readme/1.0"})
-    with urlopen(req, timeout=30) as resp:
-        return ET.parse(resp)
+    try:
+        with urlopen(req, timeout=30) as resp:
+            return ET.parse(resp)
+    except Exception as e:
+        print(f"Warning: could not fetch feed: {e}")
+        return None
 
 
 def parse_date(date_str):
@@ -151,6 +155,9 @@ def main():
 
     existing_urls = set() if args.force else get_existing_urls()
     tree = fetch_feed(args.feed_url)
+    if tree is None:
+        print("\nDone: 0 new, 0 skipped (feed unavailable)")
+        return
     root = tree.getroot()
 
     new_count = 0
