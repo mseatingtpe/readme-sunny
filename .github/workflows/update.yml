@@ -24,11 +24,20 @@ jobs:
       - name: Check for new content
         id: check
         run: |
-          if git diff --quiet content/raw/; then
-            echo "new_content=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "new_content=true" >> "$GITHUB_OUTPUT"
+          # Check both git diff (from fetch) and unextracted files
+          has_new=false
+          if ! git diff --quiet content/raw/; then
+            has_new=true
           fi
+          for f in content/raw/*.md; do
+            [ "$(basename "$f")" != "_*" ] || continue
+            stem="$(basename "$f" .md)"
+            if [ ! -f "content/extractions/${stem}.yaml" ]; then
+              has_new=true
+              break
+            fi
+          done
+          echo "new_content=${has_new}" >> "$GITHUB_OUTPUT"
 
       - name: Extract worldview dimensions
         if: steps.check.outputs.new_content == 'true'
@@ -42,6 +51,14 @@ jobs:
 
       - name: Generate README
         run: python scripts/generate_readme.py
+
+      - name: Generate dashboard data
+        run: |
+          python scripts/generate_dashboard_data.py
+          if [ -f scripts/generate_wordcloud.py ]; then
+            pip install jieba 2>/dev/null || true
+            python scripts/generate_wordcloud.py || true
+          fi
 
       - name: Commit and push
         run: |
