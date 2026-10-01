@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-06-05",
-  "total_extractions": 28,
+  "last_updated": "2026-08-27",
+  "total_extractions": 30,
   "articles": [
     {
       "title": "為了加速文書作業，親自開發「合約產生器」！薩泰爾娛樂鄭晴元：別讓員工被低價值工作困住",
@@ -169,6 +169,18 @@
       "date": "2026-06-05",
       "source_type": "substack",
       "source_url": "https://masterofnonewithsunnyc.substack.com/p/_ver02"
+    },
+    {
+      "title": "愛人與被愛都不該是幻覺（GAI2026 年會感想和其他有的沒的 )",
+      "date": "2026-07-06",
+      "source_type": "substack",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/gai2026"
+    },
+    {
+      "title": "零人在意你的 Uber 評分是幾顆星",
+      "date": "2026-08-27",
+      "source_type": "substack",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/uber"
     }
   ],
   "timeline": [
@@ -635,15 +647,51 @@
         "身份",
         "愛"
       ]
+    },
+    {
+      "date": "2026-07-06",
+      "stance": "作者肯定 AI 與 agent 工具在工作上能提升效率、建立脈絡（context），但堅決劃清界線：AI 無法取代人類的擁抱、陪伴與真實情感連結。",
+      "key_quote": "AI 無法代替人類擁抱∕無法代替人類派對∕愛與被愛都不應該是幻覺",
+      "tension": "科技帶來的效率與便利 vs. 對人類情感被取代、異化的擔憂",
+      "shift_signal": null,
+      "source": "content/raw/2026-07-06-愛人與被愛都不該是幻覺gai2026-年會感想和其他有的沒的.md",
+      "source_title": "愛人與被愛都不該是幻覺（GAI2026 年會感想和其他有的沒的 )",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/gai2026",
+      "source_type": "substack",
+      "topics": [
+        "AI",
+        "工作",
+        "學習",
+        "文化",
+        "身份",
+        "愛"
+      ]
+    },
+    {
+      "date": "2026-08-27",
+      "stance": "作者以身為「炎上專門戶」公司成員的經驗，發展出一套應對公開輿論危機的實用哲學，重視冷靜觀察勝於立即反應，並以同事情誼為重。",
+      "key_quote": "我認為 B. 讓子彈飛一會是個不錯的選項，是個看清人際狀況的好時機",
+      "tension": null,
+      "shift_signal": null,
+      "source": "content/raw/2026-08-27-零人在意你的-uber-評分是幾顆星.md",
+      "source_title": "零人在意你的 Uber 評分是幾顆星",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/uber",
+      "source_type": "substack",
+      "topics": [
+        "工作",
+        "文化",
+        "身份",
+        "愛"
+      ]
     }
   ],
   "topic_counts": {
-    "AI": 22,
-    "工作": 16,
-    "學習": 14,
-    "文化": 17,
-    "身份": 18,
-    "愛": 12,
+    "AI": 23,
+    "工作": 18,
+    "學習": 15,
+    "文化": 19,
+    "身份": 20,
+    "愛": 14,
     "愛情": 1
   },
   "topics": {
@@ -889,6 +937,17 @@
         "source_title": "我想強調的一直都不是高效率_ver.02",
         "source_url": "https://masterofnonewithsunnyc.substack.com/p/_ver02",
         "source_type": "substack"
+      },
+      {
+        "timestamp": "2026-07-06",
+        "stance": "作者肯定 AI 與 agent 工具在工作上能提升效率、建立脈絡（context），但堅決劃清界線：AI 無法取代人類的擁抱、陪伴與真實情感連結。",
+        "tension": "科技帶來的效率與便利 vs. 對人類情感被取代、異化的擔憂",
+        "shift_signal": null,
+        "key_quote": "AI 無法代替人類擁抱∕無法代替人類派對∕愛與被愛都不應該是幻覺",
+        "source": "content/raw/2026-07-06-愛人與被愛都不該是幻覺gai2026-年會感想和其他有的沒的.md",
+        "source_title": "愛人與被愛都不該是幻覺（GAI2026 年會感想和其他有的沒的 )",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/gai2026",
+        "source_type": "substack"
       }
     ],
     "工作": [
@@ -1067,6 +1126,28 @@
         "source_title": "我想強調的一直都不是高效率_ver.02",
         "source_url": "https://masterofnonewithsunnyc.substack.com/p/_ver02",
         "source_type": "substack"
+      },
+      {
+        "timestamp": "2026-07-06",
+        "stance": "重視同事間長期合作累積的信任與脈絡，認為「蒸餾」專業成 .md 檔雖有效率，卻可能讓人只剩「能力」而非完整的人；但觀察到業界決策者仍努力以人為本。",
+        "tension": "技術允許朝異化狂奔 vs. 老闆與決策者更以人為本的實際選擇",
+        "shift_signal": null,
+        "key_quote": "我只需要跟你的能力工作，而不需要跟你合作。",
+        "source": "content/raw/2026-07-06-愛人與被愛都不該是幻覺gai2026-年會感想和其他有的沒的.md",
+        "source_title": "愛人與被愛都不該是幻覺（GAI2026 年會感想和其他有的沒的 )",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/gai2026",
+        "source_type": "substack"
+      },
+      {
+        "timestamp": "2026-08-27",
+        "stance": "作者以身為「炎上專門戶」公司成員的經驗，發展出一套應對公開輿論危機的實用哲學，重視冷靜觀察勝於立即反應，並以同事情誼為重。",
+        "tension": null,
+        "shift_signal": null,
+        "key_quote": "我認為 B. 讓子彈飛一會是個不錯的選項，是個看清人際狀況的好時機",
+        "source": "content/raw/2026-08-27-零人在意你的-uber-評分是幾顆星.md",
+        "source_title": "零人在意你的 Uber 評分是幾顆星",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/uber",
+        "source_type": "substack"
       }
     ],
     "學習": [
@@ -1222,6 +1303,17 @@
         "source": "content/raw/2026-06-05-我想強調的一直都不是高效率-ver02.md",
         "source_title": "我想強調的一直都不是高效率_ver.02",
         "source_url": "https://masterofnonewithsunnyc.substack.com/p/_ver02",
+        "source_type": "substack"
+      },
+      {
+        "timestamp": "2026-07-06",
+        "stance": "成長不是追逐未來或被恐懼驅動，而是持續整理過去的自己，找到與世界互動最好的方式，再逐步把關心的範圍從小擴大到大。",
+        "tension": "對未來的焦慮作為生存本能 vs. 拒絕讓焦慮主導生命",
+        "shift_signal": null,
+        "key_quote": "未來會怎麼來？我不知道。只能持續地整理過去的自己，來看看怎麼樣跟社會互動是我最好的方式",
+        "source": "content/raw/2026-07-06-愛人與被愛都不該是幻覺gai2026-年會感想和其他有的沒的.md",
+        "source_title": "愛人與被愛都不該是幻覺（GAI2026 年會感想和其他有的沒的 )",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/gai2026",
         "source_type": "substack"
       }
     ],
@@ -1411,6 +1503,28 @@
         "source": "content/raw/2026-04-10-讀你千遍也不厭倦.md",
         "source_title": "讀你千遍也不厭倦",
         "source_url": "https://masterofnonewithsunnyc.substack.com/p/_ver02",
+        "source_type": "substack"
+      },
+      {
+        "timestamp": "2026-07-06",
+        "stance": "推崇誠實、不販賣焦慮的策展品味，認為真正有影響力的社群不靠「改革、顛覆、效率」這類焦慮話術建立，而是由真實的人與真實的互動構成，且相信「不可規模化」的事物很重要。",
+        "tension": "效率至上、販賣焦慮的產業話語 vs. 誠實、以人為本、不可規模化的社群價值",
+        "shift_signal": null,
+        "key_quote": "改革、顛覆、效率、變革這種類型的文字，隱約都在販賣焦慮，看著是覺得有點煩。",
+        "source": "content/raw/2026-07-06-愛人與被愛都不該是幻覺gai2026-年會感想和其他有的沒的.md",
+        "source_title": "愛人與被愛都不該是幻覺（GAI2026 年會感想和其他有的沒的 )",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/gai2026",
+        "source_type": "substack"
+      },
+      {
+        "timestamp": "2026-08-27",
+        "stance": "作者對自己的創作抱持高度自我審查與不確定感，常因「無病呻吟」的恐懼而猶豫發表，最終選擇用 free writing 的方式突破創作焦慮，強調誠實勝於完美。",
+        "tension": "自我審查與表達慾望之間的拉扯",
+        "shift_signal": "從反覆猶豫是否發文，到「無論寫得如何都要送出」的決定",
+        "key_quote": "為了突破這個不知名人士的無病呻吟言靈，這篇文章就是臨時起意的 free writing，無論寫得如何都要送出。",
+        "source": "content/raw/2026-08-27-零人在意你的-uber-評分是幾顆星.md",
+        "source_title": "零人在意你的 Uber 評分是幾顆星",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/uber",
         "source_type": "substack"
       }
     ],
@@ -1612,6 +1726,28 @@
         "source_title": "我想強調的一直都不是高效率_ver.02",
         "source_url": "https://masterofnonewithsunnyc.substack.com/p/_ver02",
         "source_type": "substack"
+      },
+      {
+        "timestamp": "2026-07-06",
+        "stance": "身體的疼痛（椎間盤突出）迫使作者重新丈量自己與物理世界、與家人之間的距離與時間，在阿媽與醫院眾生相中確認真實自我的位置。",
+        "tension": null,
+        "shift_signal": "椎間盤突出引發的身體疼痛讓作者重新感知時間與距離",
+        "key_quote": "疼痛逼得我重新量測身處物理世界中的距離和時間。",
+        "source": "content/raw/2026-07-06-愛人與被愛都不該是幻覺gai2026-年會感想和其他有的沒的.md",
+        "source_title": "愛人與被愛都不該是幻覺（GAI2026 年會感想和其他有的沒的 )",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/gai2026",
+        "source_type": "substack"
+      },
+      {
+        "timestamp": "2026-08-27",
+        "stance": "作者強調在複雜的人際與網路輿論中，仍要盡可能誠實地做自己，同時保護自己免於不必要的傷害，認為外界的誤解和想像終究單薄，不足為懼。",
+        "tension": "想「不在意」卻事與願違，顯示理性認知與情緒反應之間的落差",
+        "shift_signal": "從一開始的自我懷疑（「我也以為，只是事與願違」）到最後以幽默與豁達收尾（「只是我依然貪圖幸福快樂」）",
+        "key_quote": "我盡可能做自己，在保護好自己的狀況之下，誠實的做自己。",
+        "source": "content/raw/2026-08-27-零人在意你的-uber-評分是幾顆星.md",
+        "source_title": "零人在意你的 Uber 評分是幾顆星",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/uber",
+        "source_type": "substack"
       }
     ],
     "愛": [
@@ -1746,6 +1882,28 @@
         "source_title": "我想強調的一直都不是高效率_ver.02",
         "source_url": "https://masterofnonewithsunnyc.substack.com/p/_ver02",
         "source_type": "substack"
+      },
+      {
+        "timestamp": "2026-07-06",
+        "stance": "愛必須是真實、雙向的「承認」而非單方面的投射或消費，作者強烈反對機器人伴侶、詐騙式愛情等「生成式」幻覺愛情，即使自己對於如何去愛仍感困窘脆弱。",
+        "tension": "渴望被對等看見、承認的愛 vs. 現實中愛情市場化、幻覺化、資本化的趨勢",
+        "shift_signal": null,
+        "key_quote": "愛人與被愛都不該是幻覺",
+        "source": "content/raw/2026-07-06-愛人與被愛都不該是幻覺gai2026-年會感想和其他有的沒的.md",
+        "source_title": "愛人與被愛都不該是幻覺（GAI2026 年會感想和其他有的沒的 )",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/gai2026",
+        "source_type": "substack"
+      },
+      {
+        "timestamp": "2026-08-27",
+        "stance": "作者對「被愛」抱持懷疑又渴望的矛盾態度，即使知道是詐騙話術，仍忍不住對「遠方有人愛你」這種說法心動，顯示理性外殼下對情感連結的真實渴望。",
+        "tension": "明知是詐騙的操弄語言，卻依然被觸動，理性判斷與情感渴望互相拉扯",
+        "shift_signal": "從懷疑被騙的警覺，轉為坦承「我依然貪圖幸福快樂」的自我接納",
+        "key_quote": "不可證實，也很難證偽，猜測的範圍太過模糊",
+        "source": "content/raw/2026-08-27-零人在意你的-uber-評分是幾顆星.md",
+        "source_title": "零人在意你的 Uber 評分是幾顆星",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/uber",
+        "source_type": "substack"
       }
     ],
     "愛情": [
@@ -1818,7 +1976,7 @@
     "自由與後悔": 1,
     "相遇": 1,
     "滑雪": 1,
-    "free writing": 2,
+    "free writing": 3,
     "品味": 4,
     "愛情靈藥": 1,
     "語彙": 1,
@@ -1966,6 +2124,21 @@
     "遠方的想像": 1,
     "高效率": 1,
     "自我技術": 1,
-    "自由玩樂": 1
+    "自由玩樂": 1,
+    "脈絡": 1,
+    "蒸餾": 1,
+    "異化": 1,
+    "愛是承認": 1,
+    "機器人之愛": 1,
+    "椎間盤突出": 1,
+    "策展品味": 1,
+    "幻覺": 1,
+    "炎上": 1,
+    "Dcard": 1,
+    "讀心術詐騙": 1,
+    "SSOT": 1,
+    "讓子彈飛一會": 1,
+    "overthinking": 1,
+    "幽默感": 1
   }
 }
