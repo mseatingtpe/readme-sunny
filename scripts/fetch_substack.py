@@ -97,12 +97,19 @@ def get_existing_urls():
 
 def fetch_feed(feed_url):
     """Fetch and parse RSS feed. Returns None if feed is unreachable."""
-    req = Request(feed_url, headers={"User-Agent": "sunny-readme/1.0"})
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+            "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        ),
+        "Accept": "application/rss+xml, application/xml;q=0.9, */*;q=0.8",
+    }
+    req = Request(feed_url, headers=headers)
     try:
         with urlopen(req, timeout=30) as resp:
             return ET.parse(resp)
     except Exception as e:
-        print(f"Warning: could not fetch feed: {e}")
+        print(f"::warning title=Substack feed unavailable::{e}")
         return None
 
 
