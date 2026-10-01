@@ -68,7 +68,7 @@ def call_claude_api(prompt):
         )
 
     body = json.dumps({
-        "model": "claude-sonnet-4-latest",
+        "model": "claude-sonnet-5",
         "max_tokens": 1024,
         "messages": [{"role": "user", "content": prompt}],
     }).encode("utf-8")
