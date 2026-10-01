@@ -73,14 +73,19 @@ def call_claude_api(prompt):
         "messages": [{"role": "user", "content": prompt}],
     }).encode("utf-8")
 
+    headers = {
+        "Content-Type": "application/json",
+        "x-api-key": api_key,
+        "anthropic-version": "2023-06-01",
+    }
+    workspace_id = os.environ.get("ANTHROPIC_WORKSPACE_ID")
+    if workspace_id:
+        headers["anthropic-workspace-id"] = workspace_id
+
     req = Request(
         "https://api.anthropic.com/v1/messages",
         data=body,
-        headers={
-            "Content-Type": "application/json",
-            "x-api-key": api_key,
-            "anthropic-version": "2023-06-01",
-        },
+        headers=headers,
         method="POST",
     )
 
