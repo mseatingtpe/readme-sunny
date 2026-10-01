@@ -40,7 +40,7 @@ def call_claude_api(prompt):
 
     body = json.dumps({
         "model": "claude-sonnet-5",
-        "max_tokens": 2048,
+        "max_tokens": 8192,
         "messages": [{"role": "user", "content": prompt}],
     }).encode("utf-8")
 
@@ -62,8 +62,8 @@ def call_claude_api(prompt):
         raise RuntimeError(f"Claude API request failed: {e}") from e
 
     try:
-        return result["content"][0]["text"]
-    except (KeyError, IndexError) as e:
+        return next(b["text"] for b in result["content"] if b.get("type") == "text")
+    except (KeyError, IndexError, StopIteration) as e:
         raise RuntimeError(f"Unexpected API response structure: {result}") from e
 
 
