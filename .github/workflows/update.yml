@@ -43,6 +43,7 @@ jobs:
         if: steps.check.outputs.new_content == 'true'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_WORKSPACE_ID: ${{ secrets.ANTHROPIC_WORKSPACE_ID }}
         run: python scripts/extract.py --all
 
       - name: Generate Skill (update dynamics only)
