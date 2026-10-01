@@ -88,7 +88,13 @@ def call_claude_api(prompt):
         with urlopen(req, timeout=60) as resp:
             result = json.loads(resp.read())
     except Exception as e:
-        raise RuntimeError(f"Claude API request failed: {e}") from e
+        body = ""
+        if hasattr(e, "read"):
+            try:
+                body = e.read().decode("utf-8", errors="replace")
+            except Exception:
+                pass
+        raise RuntimeError(f"Claude API request failed: {e}\n{body}") from e
 
     try:
         text = result["content"][0]["text"]
