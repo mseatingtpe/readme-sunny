@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-02-02",
-  "total_extractions": 26,
+  "last_updated": "2026-06-05",
+  "total_extractions": 28,
   "articles": [
     {
       "title": "為了加速文書作業，親自開發「合約產生器」！薩泰爾娛樂鄭晴元：別讓員工被低價值工作困住",
@@ -157,6 +157,18 @@
       "date": "2026-02-02",
       "source_type": "media",
       "source_url": "https://tw.news.yahoo.com/ai%E5%93%B2%E5%AD%B8%E8%BE%AF%E8%AD%89-%E7%95%B6%E8%87%89%E6%9B%B8%E4%B8%8A%E6%BB%BF%E6%BB%BFai%E6%96%87-%E4%BD%A0%E4%BB%8D%E5%9C%A8%E4%B9%8E%E5%89%B5%E4%BD%9C%E8%80%85%E7%9A%84%E7%9C%9F%E8%AA%A0-095200957.html"
+    },
+    {
+      "title": "讀你千遍也不厭倦",
+      "date": "2026-04-10",
+      "source_type": "substack",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/_ver02"
+    },
+    {
+      "title": "我想強調的一直都不是高效率_ver.02",
+      "date": "2026-06-05",
+      "source_type": "substack",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/_ver02"
     }
   ],
   "timeline": [
@@ -587,15 +599,51 @@
         "文化",
         "身份"
       ]
+    },
+    {
+      "date": "2026-04-10",
+      "stance": "作者對持續談論 AI 感到厭倦與無趣，認為真實的人際書寫與陪伴比大語言模型更能消解虛無，將 AI 相關內容刻意分流到另一個英文電子報。",
+      "key_quote": "既然要寫信，老是講 AI 真的被自己無趣得氣哭。",
+      "tension": "被期待寫AI相關內容 vs 自己對AI話題感到乏味、更重視人際真實連結",
+      "shift_signal": null,
+      "source": "content/raw/2026-04-10-讀你千遍也不厭倦.md",
+      "source_title": "讀你千遍也不厭倦",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/_ver02",
+      "source_type": "substack",
+      "topics": [
+        "AI",
+        "學習",
+        "文化",
+        "身份",
+        "愛"
+      ]
+    },
+    {
+      "date": "2026-06-05",
+      "stance": "作者承認自己也借助 AI 工具（Spotify 智慧選歌、Claude+Heptabase）處理生活與思考，但明確表示寫作的初衷是抵抗 AI 帶來的「生產力假象」，並認為情感與記憶的意義是 AI 無法解釋或取代的。",
+      "key_quote": "撰寫「我想強調的一直都不是高效率」是為了抵抗所有因為 AI 帶來的生產力假象",
+      "tension": "使用 AI 工具的便利性 vs. 抵抗效率至上的生產力邏輯",
+      "shift_signal": null,
+      "source": "content/raw/2026-06-05-我想強調的一直都不是高效率-ver02.md",
+      "source_title": "我想強調的一直都不是高效率_ver.02",
+      "source_url": "https://masterofnonewithsunnyc.substack.com/p/_ver02",
+      "source_type": "substack",
+      "topics": [
+        "AI",
+        "工作",
+        "學習",
+        "身份",
+        "愛"
+      ]
     }
   ],
   "topic_counts": {
-    "AI": 20,
-    "工作": 15,
-    "學習": 12,
-    "文化": 16,
-    "身份": 16,
-    "愛": 10,
+    "AI": 22,
+    "工作": 16,
+    "學習": 14,
+    "文化": 17,
+    "身份": 18,
+    "愛": 12,
     "愛情": 1
   },
   "topics": {
@@ -819,6 +867,28 @@
         "source_title": "AI哲學辯證／當臉書上滿滿AI文，你仍在乎創作者的真誠？",
         "source_url": "https://tw.news.yahoo.com/ai%E5%93%B2%E5%AD%B8%E8%BE%AF%E8%AD%89-%E7%95%B6%E8%87%89%E6%9B%B8%E4%B8%8A%E6%BB%BF%E6%BB%BFai%E6%96%87-%E4%BD%A0%E4%BB%8D%E5%9C%A8%E4%B9%8E%E5%89%B5%E4%BD%9C%E8%80%85%E7%9A%84%E7%9C%9F%E8%AA%A0-095200957.html",
         "source_type": "media"
+      },
+      {
+        "timestamp": "2026-04-10",
+        "stance": "作者對持續談論 AI 感到厭倦與無趣，認為真實的人際書寫與陪伴比大語言模型更能消解虛無，將 AI 相關內容刻意分流到另一個英文電子報。",
+        "tension": "被期待寫AI相關內容 vs 自己對AI話題感到乏味、更重視人際真實連結",
+        "shift_signal": null,
+        "key_quote": "既然要寫信，老是講 AI 真的被自己無趣得氣哭。",
+        "source": "content/raw/2026-04-10-讀你千遍也不厭倦.md",
+        "source_title": "讀你千遍也不厭倦",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/_ver02",
+        "source_type": "substack"
+      },
+      {
+        "timestamp": "2026-06-05",
+        "stance": "作者承認自己也借助 AI 工具（Spotify 智慧選歌、Claude+Heptabase）處理生活與思考，但明確表示寫作的初衷是抵抗 AI 帶來的「生產力假象」，並認為情感與記憶的意義是 AI 無法解釋或取代的。",
+        "tension": "使用 AI 工具的便利性 vs. 抵抗效率至上的生產力邏輯",
+        "shift_signal": null,
+        "key_quote": "撰寫「我想強調的一直都不是高效率」是為了抵抗所有因為 AI 帶來的生產力假象",
+        "source": "content/raw/2026-06-05-我想強調的一直都不是高效率-ver02.md",
+        "source_title": "我想強調的一直都不是高效率_ver.02",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/_ver02",
+        "source_type": "substack"
       }
     ],
     "工作": [
@@ -986,6 +1056,17 @@
         "source_title": "相信的事情列表 2025H2：18. 愛是一切的解答",
         "source_url": "https://masterofnonewithsunnyc.substack.com/p/2025h218",
         "source_type": "substack"
+      },
+      {
+        "timestamp": "2026-06-05",
+        "stance": "作者反省自己過去用遊戲化「成就系統」來理解產業發展（如單口喜劇登小巨蛋作為里程碑）的想法，如今認為用指標代理體驗、把人生與產業發展量化成解鎖清單，忽略了無法被量化的探索與繞路的價值。",
+        "tension": "成就系統帶來的掌控感與可達成性 vs. 現實生活與產業發展無法被完全量化的本質",
+        "shift_signal": "5/19 我在日記寫下「也許當我用成就系統的概念來思考產業發展的時候就錯了。」這是我對我自己三年前上朋友 podcast 講述的內容的反駁。",
+        "key_quote": "用「指標」來代理「體驗」。人生的每一步都必須累積些什麼，否則就是虛度。",
+        "source": "content/raw/2026-06-05-我想強調的一直都不是高效率-ver02.md",
+        "source_title": "我想強調的一直都不是高效率_ver.02",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/_ver02",
+        "source_type": "substack"
       }
     ],
     "學習": [
@@ -1119,6 +1200,28 @@
         "source": "content/raw/2026-01-01-相信的事情列表-2025h218-愛是一切的解答.md",
         "source_title": "相信的事情列表 2025H2：18. 愛是一切的解答",
         "source_url": "https://masterofnonewithsunnyc.substack.com/p/2025h218",
+        "source_type": "substack"
+      },
+      {
+        "timestamp": "2026-04-10",
+        "stance": "作者相信人生的美好在於親身經驗世界並從中長出智慧，美的經驗與智慧的養成都是高度個人化的歷程，無法被他人代勞。",
+        "tension": null,
+        "shift_signal": null,
+        "key_quote": "所以做為人最美好的就是去經驗世界，長成智慧。",
+        "source": "content/raw/2026-04-10-讀你千遍也不厭倦.md",
+        "source_title": "讀你千遍也不厭倦",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/_ver02",
+        "source_type": "substack"
+      },
+      {
+        "timestamp": "2026-06-05",
+        "stance": "作者認為對「遠方」的想像與探索的自由，比可被量化、解鎖的成就系統更為重要，成長不應被簡化為清單上的里程碑，而應包含無法被量化的繞路、發呆與笨拙嘗試。",
+        "tension": "成就系統帶來的掌控感與可達成的動力 vs. 真正的成長需要容許無效耗損與不確定的探索",
+        "shift_signal": "此時的我，認為對遠方的想像，遠比成就系統重要得多。",
+        "key_quote": "那些沒有即時回報的繞路、無法被量化的發呆、笨拙的嘗試，都是系統「無效的耗損」。",
+        "source": "content/raw/2026-06-05-我想強調的一直都不是高效率-ver02.md",
+        "source_title": "我想強調的一直都不是高效率_ver.02",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/_ver02",
         "source_type": "substack"
       }
     ],
@@ -1298,6 +1401,17 @@
         "source_title": "AI哲學辯證／當臉書上滿滿AI文，你仍在乎創作者的真誠？",
         "source_url": "https://tw.news.yahoo.com/ai%E5%93%B2%E5%AD%B8%E8%BE%AF%E8%AD%89-%E7%95%B6%E8%87%89%E6%9B%B8%E4%B8%8A%E6%BB%BF%E6%BB%BFai%E6%96%87-%E4%BD%A0%E4%BB%8D%E5%9C%A8%E4%B9%8E%E5%89%B5%E4%BD%9C%E8%80%85%E7%9A%84%E7%9C%9F%E8%AA%A0-095200957.html",
         "source_type": "media"
+      },
+      {
+        "timestamp": "2026-04-10",
+        "stance": "作者將品味重新定義為中性的、某種領域的「literacy」，是美在細縫中被共識捕捉與傳遞的過程；同時反思自己長期壓抑創作慾望，渴望重新拾起創作的勇氣。",
+        "tension": "害怕被評價、覺得自己沒有才華 vs 內心深處對創作振奮的渴望",
+        "shift_signal": "生日小誌徵稿讓她看見朋友眼中更靈動的自己，成為「勇氣之書」",
+        "key_quote": "我覺得品味是是中性的，我喜歡稱之為某種領域的 literacy。是得到很多共識的偏愛。",
+        "source": "content/raw/2026-04-10-讀你千遍也不厭倦.md",
+        "source_title": "讀你千遍也不厭倦",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/_ver02",
+        "source_type": "substack"
       }
     ],
     "身份": [
@@ -1476,6 +1590,28 @@
         "source_title": "AI哲學辯證／當臉書上滿滿AI文，你仍在乎創作者的真誠？",
         "source_url": "https://tw.news.yahoo.com/ai%E5%93%B2%E5%AD%B8%E8%BE%AF%E8%AD%89-%E7%95%B6%E8%87%89%E6%9B%B8%E4%B8%8A%E6%BB%BF%E6%BB%BFai%E6%96%87-%E4%BD%A0%E4%BB%8D%E5%9C%A8%E4%B9%8E%E5%89%B5%E4%BD%9C%E8%80%85%E7%9A%84%E7%9C%9F%E8%AA%A0-095200957.html",
         "source_type": "media"
+      },
+      {
+        "timestamp": "2026-04-10",
+        "stance": "作者接受自己的歷史與幼稚的過去無法被竄改，認為只有「自己」的想法才是真正重要的，不再預先揣測他人眼光來困住自己。",
+        "tension": "長期渴望重要他人肯定（「妳很棒，我看見了」）與現在想要自己邁開步伐離開這種依賴之間的拉扯",
+        "shift_signal": "跑步時喉嚨鬆開，意識到無法竄改任何一段歷史後還能成為自己",
+        "key_quote": "答案是不會，無法竄改我的任何一段歷史後還能成為我自己。",
+        "source": "content/raw/2026-04-10-讀你千遍也不厭倦.md",
+        "source_title": "讀你千遍也不厭倦",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/_ver02",
+        "source_type": "substack"
+      },
+      {
+        "timestamp": "2026-06-05",
+        "stance": "作者認為身體與自我維護（醫美、瘦身）是被社會與市場建構出來的「政治」行為，個人對美的渴望並非完全自主，而是被資本化、神話化的常識所滲透。",
+        "tension": "想要「做自己」的渴望 vs. 身體與美已被資本化、無法徹底自主決定的現實",
+        "shift_signal": "看到越來越多人透過節制食慾得到完美的形體，我也忍不住想：也許纖細的身材那也是我想追求的，為了達到某種幸福或美感的狀態，這並不由我 100％ 決定。",
+        "key_quote": "身體是政治的，語言也是。",
+        "source": "content/raw/2026-06-05-我想強調的一直都不是高效率-ver02.md",
+        "source_title": "我想強調的一直都不是高效率_ver.02",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/_ver02",
+        "source_type": "substack"
       }
     ],
     "愛": [
@@ -1588,6 +1724,28 @@
         "source_title": "相信的事情列表 2025H2：18. 愛是一切的解答",
         "source_url": "https://masterofnonewithsunnyc.substack.com/p/2025h218",
         "source_type": "substack"
+      },
+      {
+        "timestamp": "2026-04-10",
+        "stance": "作者重視朋友間真實陪伴與書寫建立的連結，認為這種「強制愛」式的情感交流遠比科技或演算法更能對抗虛無。",
+        "tension": "真實人際連結 vs 科技/AI帶來的焦慮與疏離感",
+        "shift_signal": null,
+        "key_quote": "在週末早上和在意的朋友一起喝杯咖啡，用書寫建立和你和他的連結，遠比任何大語言模型能遠離虛無。",
+        "source": "content/raw/2026-04-10-讀你千遍也不厭倦.md",
+        "source_title": "讀你千遍也不厭倦",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/_ver02",
+        "source_type": "substack"
+      },
+      {
+        "timestamp": "2026-06-05",
+        "stance": "作者對「約會市場」、「擇偶市場」等把關係商品化、計價化的語言感到不安，並渴望建立一種能完全跳脫評估與交易邏輯的關係，視相愛為奇蹟而非市場行為；同時也透過對逝去友人 V 的懷念，展現情感記憶中無法被效率化的珍貴片刻。",
+        "tension": "情感的真摯與不可計量性 vs. 當代語言中將關係市場化、計價化的趨勢",
+        "shift_signal": null,
+        "key_quote": "如果「市場」的本質是永無止境的評估與交易，那麼我想建構的是能徹底免除於這套遊戲規則的關係。",
+        "source": "content/raw/2026-06-05-我想強調的一直都不是高效率-ver02.md",
+        "source_title": "我想強調的一直都不是高效率_ver.02",
+        "source_url": "https://masterofnonewithsunnyc.substack.com/p/_ver02",
+        "source_type": "substack"
       }
     ],
     "愛情": [
@@ -1661,7 +1819,7 @@
     "相遇": 1,
     "滑雪": 1,
     "free writing": 2,
-    "品味": 3,
+    "品味": 4,
     "愛情靈藥": 1,
     "語彙": 1,
     "靈魂共振": 1,
@@ -1793,6 +1951,21 @@
     "真誠": 1,
     "信念": 1,
     "主動行為": 1,
-    "批判性思考": 1
+    "批判性思考": 1,
+    "余秀華": 1,
+    "literacy": 1,
+    "小誌": 1,
+    "創作": 1,
+    "十年": 1,
+    "強制愛": 1,
+    "Algo is the new oracle": 1,
+    "成就系統": 1,
+    "身體是政治": 1,
+    "約會市場": 1,
+    "相愛是奇蹟": 1,
+    "遠方的想像": 1,
+    "高效率": 1,
+    "自我技術": 1,
+    "自由玩樂": 1
   }
 }
