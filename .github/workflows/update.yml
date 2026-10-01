@@ -33,7 +33,8 @@ jobs:
             has_new=true
           fi
           for f in content/raw/*.md; do
-            [ "$(basename "$f")" != "_*" ] || continue
+            name="$(basename "$f")"
+            case "$name" in _*) continue ;; esac
             stem="$(basename "$f" .md)"
             if [ ! -f "content/extractions/${stem}.yaml" ]; then
               has_new=true
